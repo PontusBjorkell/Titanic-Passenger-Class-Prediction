@@ -1,0 +1,88 @@
+{
+  "raw_quality": {
+    "shape": {
+      "rows": 891,
+      "columns": 12
+    },
+    "duplicate_rows": 0,
+    "duplicate_passenger_ids": 0,
+    "missing_values": {
+      "Age": {
+        "count": 177,
+        "percentage": 19.87
+      },
+      "Cabin": {
+        "count": 687,
+        "percentage": 77.1
+      },
+      "Embarked": {
+        "count": 2,
+        "percentage": 0.22
+      }
+    },
+    "data_types": {
+      "PassengerId": "int64",
+      "Survived": "int64",
+      "Pclass": "int64",
+      "Name": "str",
+      "Sex": "str",
+      "Age": "float64",
+      "SibSp": "int64",
+      "Parch": "int64",
+      "Ticket": "str",
+      "Fare": "float64",
+      "Cabin": "str",
+      "Embarked": "str"
+    },
+    "numeric_columns": [
+      "PassengerId",
+      "Survived",
+      "Pclass",
+      "Age",
+      "SibSp",
+      "Parch",
+      "Fare"
+    ],
+    "categorical_columns": [
+      "Name",
+      "Sex",
+      "Ticket",
+      "Cabin",
+      "Embarked"
+    ],
+    "invalid_values": {
+      "negative_age_rows": 0,
+      "age_above_100_rows": 0,
+      "negative_fare_rows": 0,
+      "negative_sibsp_rows": 0,
+      "negative_parch_rows": 0
+    },
+    "unexpected_categories": {
+      "Pclass": [],
+      "Survived": [],
+      "Sex": [],
+      "Embarked": []
+    }
+  },
+  "raw_shape": {
+    "rows": 891,
+    "columns": 12
+  },
+  "processed_shape": {
+    "rows": 891,
+    "columns": 23
+  },
+  "added_columns": [
+    "AgeGroup",
+    "CabinCount",
+    "CabinDeck",
+    "FamilySize",
+    "FamilySizeGroup",
+    "FareLog",
+    "HasCabin",
+    "IsAlone",
+    "Surname",
+    "TicketPrefix",
+    "Title"
+  ]
+}

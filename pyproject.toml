@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "titanic-passenger-class-prediction"
+version = "0.1.0"
+description = "End-to-end analytics and machine learning project for Titanic passenger class prediction."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "streamlit",
+    "joblib",
+    "pyarrow",
+    "sqlalchemy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
