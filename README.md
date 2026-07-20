@@ -234,6 +234,24 @@ The training pipeline automatically produces
 
 ---
 
+## Confusion Matrix
+
+![Confusion Matrix](artifacts/figures/confusion_matrix.png)
+
+---
+
+## Feature Importance
+
+![Feature Importance](artifacts/figures/feature_importance.png)
+
+---
+
+## Permutation Importance
+
+![Permutation Importance](artifacts/figures/permutation_importance.png)
+
+---
+
 ## Testing
 
 The repository includes a comprehensive pytest suite covering
