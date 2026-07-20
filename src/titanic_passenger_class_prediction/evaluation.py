@@ -2,11 +2,19 @@
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
+from typing import Any
 
 import numpy as np
 import pandas as pd
 from sklearn.base import BaseEstimator
+from sklearn.metrics import (
+    accuracy_score,
+    balanced_accuracy_score,
+    classification_report,
+    confusion_matrix,
+    f1_score,
+)
 from sklearn.model_selection import (
     StratifiedKFold,
     cross_validate,
@@ -20,7 +28,7 @@ from titanic_passenger_class_prediction.config import (
 
 
 # ---------------------------------------------------------------------------
-# Evaluation metrics
+# Evaluation configuration
 # ---------------------------------------------------------------------------
 
 SCORING: dict[str, str] = {
@@ -31,16 +39,12 @@ SCORING: dict[str, str] = {
 
 
 # ---------------------------------------------------------------------------
-# Cross-validation configuration
+# Cross-validation
 # ---------------------------------------------------------------------------
 
 def build_cross_validator() -> StratifiedKFold:
     """
     Create the shared stratified cross-validation strategy.
-
-    Stratification preserves the approximate target-class distribution
-    inside every fold. Shuffling prevents the original row order from
-    determining the fold composition.
 
     Returns
     -------
@@ -54,10 +58,6 @@ def build_cross_validator() -> StratifiedKFold:
     )
 
 
-# ---------------------------------------------------------------------------
-# Individual model evaluation
-# ---------------------------------------------------------------------------
-
 def evaluate_model_cv(
     model_name: str,
     estimator: BaseEstimator,
@@ -70,49 +70,30 @@ def evaluate_model_cv(
     Parameters
     ----------
     model_name
-        Stable name used to identify the model in reports.
+        Stable model identifier used in reports.
     estimator
         Unfitted scikit-learn estimator or pipeline.
     features
         Modeling feature matrix.
     target
-        Target class labels.
+        Target labels.
 
     Returns
     -------
     dict[str, float | str]
-        Cross-validation summary containing the mean and standard
-        deviation of each metric, plus average fit and scoring times.
-
-    Raises
-    ------
-    ValueError
-        If the feature matrix or target is empty, or if their lengths
-        do not match.
+        Mean and standard deviation for each metric, plus timing data.
     """
-    if features.empty:
-        raise ValueError(
-            "Cannot evaluate a model with an empty feature matrix."
-        )
-
-    if target.empty:
-        raise ValueError(
-            "Cannot evaluate a model with an empty target."
-        )
-
-    if len(features) != len(target):
-        raise ValueError(
-            "Features and target must contain the same number of rows."
-        )
-
-    cross_validator = build_cross_validator()
+    _validate_features_and_target(
+        features=features,
+        target=target,
+    )
 
     scores = cross_validate(
         estimator=estimator,
         X=features,
         y=target,
         scoring=SCORING,
-        cv=cross_validator,
+        cv=build_cross_validator(),
         n_jobs=N_JOBS,
         return_train_score=False,
         error_score="raise",
@@ -147,63 +128,52 @@ def evaluate_model_cv(
     }
 
 
-# ---------------------------------------------------------------------------
-# Candidate-model comparison
-# ---------------------------------------------------------------------------
-
 def compare_models_cv(
     models: Mapping[str, BaseEstimator],
     features: pd.DataFrame,
     target: pd.Series,
 ) -> pd.DataFrame:
     """
-    Compare candidate models using the same cross-validation strategy.
+    Compare candidate models using identical cross-validation folds.
 
-    Every candidate receives the same folds and evaluation metrics,
-    making their results directly comparable.
+    Models are ranked by:
 
-    Models are ranked primarily by macro F1, then by balanced accuracy,
-    and finally by ordinary accuracy.
+    1. Macro F1
+    2. Balanced accuracy
+    3. Accuracy
 
     Parameters
     ----------
     models
-        Mapping between stable model names and unfitted estimators.
+        Mapping of model names to unfitted estimators.
     features
         Modeling feature matrix.
     target
-        Target class labels.
+        Target labels.
 
     Returns
     -------
     pandas.DataFrame
-        Candidate-model comparison table sorted from strongest to
-        weakest.
-
-    Raises
-    ------
-    ValueError
-        If no candidate models are supplied.
+        Sorted model-comparison table.
     """
     if not models:
         raise ValueError(
             "At least one candidate model is required."
         )
 
-    results: list[dict[str, float | str]] = []
-
-    for model_name, estimator in models.items():
-        result = evaluate_model_cv(
+    results = [
+        evaluate_model_cv(
             model_name=model_name,
             estimator=estimator,
             features=features,
             target=target,
         )
-        results.append(result)
+        for model_name, estimator in models.items()
+    ]
 
     comparison = pd.DataFrame(results)
 
-    comparison = comparison.sort_values(
+    return comparison.sort_values(
         by=[
             "cv_f1_macro_mean",
             "cv_balanced_accuracy_mean",
@@ -216,36 +186,22 @@ def compare_models_cv(
         ],
     ).reset_index(drop=True)
 
-    return comparison
-
-
-# ---------------------------------------------------------------------------
-# Model selection
-# ---------------------------------------------------------------------------
 
 def select_best_model_name(
     comparison: pd.DataFrame,
 ) -> str:
     """
-    Select the highest-ranked model from a comparison table.
-
-    The comparison table is expected to have already been sorted by
-    ``compare_models_cv``.
+    Return the name of the highest-ranked model.
 
     Parameters
     ----------
     comparison
-        Sorted cross-validation model-comparison table.
+        Sorted model-comparison table.
 
     Returns
     -------
     str
-        Stable name of the highest-ranked candidate.
-
-    Raises
-    ------
-    ValueError
-        If the table is empty or does not contain a ``model`` column.
+        Selected model name.
     """
     if comparison.empty:
         raise ValueError(
@@ -258,3 +214,147 @@ def select_best_model_name(
         )
 
     return str(comparison.iloc[0]["model"])
+
+
+# ---------------------------------------------------------------------------
+# Holdout-test evaluation
+# ---------------------------------------------------------------------------
+
+def evaluate_holdout(
+    estimator: BaseEstimator,
+    features: pd.DataFrame,
+    target: pd.Series,
+    labels: Sequence[int] | None = None,
+) -> dict[str, Any]:
+    """
+    Evaluate a fitted estimator on unseen holdout data.
+
+    Parameters
+    ----------
+    estimator
+        Fitted estimator or pipeline.
+    features
+        Holdout feature matrix.
+    target
+        Holdout target labels.
+    labels
+        Optional ordered class labels. When omitted, labels are inferred
+        from the target and predictions.
+
+    Returns
+    -------
+    dict[str, Any]
+        Overall metrics, confusion matrix, and classification report.
+    """
+    _validate_features_and_target(
+        features=features,
+        target=target,
+    )
+
+    predictions = estimator.predict(features)
+
+    resolved_labels = (
+        list(labels)
+        if labels is not None
+        else sorted(
+            set(target.tolist())
+            | set(predictions.tolist())
+        )
+    )
+
+    matrix = confusion_matrix(
+        target,
+        predictions,
+        labels=resolved_labels,
+    )
+
+    report = classification_report(
+        target,
+        predictions,
+        labels=resolved_labels,
+        output_dict=True,
+        zero_division=0,
+    )
+
+    return {
+        "accuracy": float(
+            accuracy_score(
+                target,
+                predictions,
+            )
+        ),
+        "balanced_accuracy": float(
+            balanced_accuracy_score(
+                target,
+                predictions,
+            )
+        ),
+        "f1_macro": float(
+            f1_score(
+                target,
+                predictions,
+                average="macro",
+                zero_division=0,
+            )
+        ),
+        "labels": [
+            int(label)
+            for label in resolved_labels
+        ],
+        "confusion_matrix": matrix.tolist(),
+        "classification_report": (
+            _convert_report_values(report)
+        ),
+        "test_rows": int(len(target)),
+    }
+
+
+# ---------------------------------------------------------------------------
+# Internal helpers
+# ---------------------------------------------------------------------------
+
+def _validate_features_and_target(
+    features: pd.DataFrame,
+    target: pd.Series,
+) -> None:
+    """
+    Validate feature and target inputs used during evaluation.
+    """
+    if features.empty:
+        raise ValueError(
+            "Cannot evaluate a model with an empty feature matrix."
+        )
+
+    if target.empty:
+        raise ValueError(
+            "Cannot evaluate a model with an empty target."
+        )
+
+    if len(features) != len(target):
+        raise ValueError(
+            "Features and target must contain the same number of rows."
+        )
+
+
+def _convert_report_values(
+    value: Any,
+) -> Any:
+    """
+    Convert NumPy values in a classification report to native Python.
+    """
+    if isinstance(value, dict):
+        return {
+            str(key): _convert_report_values(item)
+            for key, item in value.items()
+        }
+
+    if isinstance(value, list):
+        return [
+            _convert_report_values(item)
+            for item in value
+        ]
+
+    if isinstance(value, np.generic):
+        return value.item()
+
+    return value

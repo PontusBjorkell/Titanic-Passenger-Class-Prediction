@@ -1,0 +1,44 @@
+{
+    "candidate_models": [
+        "dummy",
+        "logistic_regression",
+        "random_forest"
+    ],
+    "created_at_utc": "2026-07-20T17:39:22.890830+00:00",
+    "cv_folds": 5,
+    "feature_columns": [
+        "Age",
+        "SibSp",
+        "Parch",
+        "Fare",
+        "FamilySize",
+        "IsAlone",
+        "HasCabin",
+        "CabinCount",
+        "FareLog",
+        "Sex",
+        "Embarked",
+        "Title",
+        "FamilySizeGroup",
+        "CabinDeck",
+        "TicketPrefix"
+    ],
+    "holdout_accuracy": 0.9162011173184358,
+    "holdout_balanced_accuracy": 0.9225419923094341,
+    "holdout_f1_macro": 0.9078320578787319,
+    "model_name": "random_forest",
+    "n_jobs": -1,
+    "processed_filename": "passengers.parquet",
+    "random_state": 42,
+    "selected_metric": "cv_f1_macro_mean",
+    "selected_metric_value": 0.9087581244376197,
+    "target_classes": [
+        1,
+        2,
+        3
+    ],
+    "target_column": "Pclass",
+    "test_rows": 179,
+    "test_size": 0.2,
+    "training_rows": 712
+}

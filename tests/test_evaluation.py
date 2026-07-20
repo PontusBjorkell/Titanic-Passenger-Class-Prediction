@@ -469,3 +469,125 @@ def test_select_best_model_name_requires_model_column() -> None:
         match="'model' column",
     ):
         select_best_model_name(comparison)
+
+def test_evaluate_holdout_returns_expected_results() -> None:
+    from titanic_passenger_class_prediction.evaluation import (
+        evaluate_holdout,
+    )
+
+    features = pd.DataFrame(
+        {
+            "value": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+            ],
+        }
+    )
+
+    target = pd.Series(
+        [
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+        ]
+    )
+
+    estimator = DummyClassifier(
+        strategy="most_frequent",
+    )
+    estimator.fit(
+        features,
+        target,
+    )
+
+    metrics = evaluate_holdout(
+        estimator=estimator,
+        features=features,
+        target=target,
+        labels=[
+            1,
+            2,
+            3,
+        ],
+    )
+
+    assert set(metrics) == {
+        "accuracy",
+        "balanced_accuracy",
+        "f1_macro",
+        "labels",
+        "confusion_matrix",
+        "classification_report",
+        "test_rows",
+    }
+
+    assert 0.0 <= metrics["accuracy"] <= 1.0
+    assert 0.0 <= metrics["balanced_accuracy"] <= 1.0
+    assert 0.0 <= metrics["f1_macro"] <= 1.0
+
+    assert metrics["labels"] == [
+        1,
+        2,
+        3,
+    ]
+
+    assert len(metrics["confusion_matrix"]) == 3
+    assert metrics["test_rows"] == 6
+
+
+def test_evaluate_holdout_rejects_length_mismatch() -> None:
+    from titanic_passenger_class_prediction.evaluation import (
+        evaluate_holdout,
+    )
+
+    features = pd.DataFrame(
+        {
+            "value": [
+                1,
+                2,
+                3,
+            ],
+        }
+    )
+
+    target = pd.Series(
+        [
+            1,
+            2,
+        ]
+    )
+
+    estimator = DummyClassifier()
+    estimator.fit(
+        pd.DataFrame(
+            {
+                "value": [
+                    1,
+                    2,
+                ],
+            }
+        ),
+        pd.Series(
+            [
+                1,
+                2,
+            ]
+        ),
+    )
+
+    with pytest.raises(
+        ValueError,
+        match="same number of rows",
+    ):
+        evaluate_holdout(
+            estimator=estimator,
+            features=features,
+            target=target,
+        )
