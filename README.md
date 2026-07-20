@@ -236,19 +236,19 @@ The training pipeline automatically produces
 
 ## Confusion Matrix
 
-![Confusion Matrix](artifacts/figures/confusion_matrix.png)
+![Confusion Matrix](reports/figures/confusion_matrix.png)
 
 ---
 
 ## Feature Importance
 
-![Feature Importance](artifacts/figures/feature_importance.png)
+![Feature Importance](reports/figures/feature_importance.png)
 
 ---
 
 ## Permutation Importance
 
-![Permutation Importance](artifacts/figures/permutation_importance.png)
+![Permutation Importance](reports/figures/permutation_importance.png)
 
 ---
 
