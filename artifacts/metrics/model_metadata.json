@@ -1,10 +1,20 @@
 {
+    "baseline_cv_f1_macro": 0.9087581244376197,
+    "best_hyperparameters": {
+        "model__bootstrap": false,
+        "model__class_weight": null,
+        "model__max_depth": 30,
+        "model__max_features": null,
+        "model__min_samples_leaf": 4,
+        "model__min_samples_split": 10,
+        "model__n_estimators": 750
+    },
     "candidate_models": [
         "dummy",
         "logistic_regression",
         "random_forest"
     ],
-    "created_at_utc": "2026-07-20T17:39:22.890830+00:00",
+    "created_at_utc": "2026-07-20T21:49:56.173089+00:00",
     "cv_folds": 5,
     "feature_columns": [
         "Age",
@@ -23,15 +33,16 @@
         "CabinDeck",
         "TicketPrefix"
     ],
-    "holdout_accuracy": 0.9162011173184358,
-    "holdout_balanced_accuracy": 0.9225419923094341,
-    "holdout_f1_macro": 0.9078320578787319,
+    "holdout_accuracy": 0.888268156424581,
+    "holdout_balanced_accuracy": 0.8599572087944182,
+    "holdout_f1_macro": 0.8641097724230254,
     "model_name": "random_forest",
+    "model_variant": "tuned",
     "n_jobs": -1,
     "processed_filename": "passengers.parquet",
     "random_state": 42,
     "selected_metric": "cv_f1_macro_mean",
-    "selected_metric_value": 0.9087581244376197,
+    "selected_metric_value": 0.9140963960223056,
     "target_classes": [
         1,
         2,
@@ -40,5 +51,8 @@
     "target_column": "Pclass",
     "test_rows": 179,
     "test_size": 0.2,
-    "training_rows": 712
+    "training_rows": 712,
+    "tuned_cv_f1_macro": 0.9140963960223056,
+    "tuning_enabled": true,
+    "tuning_iterations": 5
 }

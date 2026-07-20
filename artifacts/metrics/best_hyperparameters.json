@@ -1,0 +1,13 @@
+{
+  "best_cv_f1_macro": 0.9140963960223056,
+  "best_parameters": {
+    "model__bootstrap": false,
+    "model__class_weight": null,
+    "model__max_depth": 30,
+    "model__max_features": null,
+    "model__min_samples_leaf": 4,
+    "model__min_samples_split": 10,
+    "model__n_estimators": 750
+  },
+  "model_name": "random_forest"
+}

@@ -163,8 +163,15 @@ def plot_confusion_matrix(
         confusion_matrix=matrix,
         display_labels=display_labels if display_labels is not None else labels,
     )
-    display.plot(ax=axis, values_format=".2f" if normalize else "d")
-    axis.set_title(title)
+    display.plot(
+        ax=axis,
+        values_format=".2f" if normalize else "d",
+        colorbar=True,
+    )
+    axis.set_title(title, fontsize=15, pad=12)
+    axis.set_xlabel("Predicted class", fontsize=12)
+    axis.set_ylabel("True class", fontsize=12)
+    axis.tick_params(axis="both", labelsize=11)
 
     return _save_and_close_figure(
         figure=figure,
@@ -347,9 +354,84 @@ def plot_feature_importance(
         displayed_table["feature"],
         displayed_table["importance"],
     )
-    axis.set_title(title)
-    axis.set_xlabel("Importance")
-    axis.set_ylabel("Feature")
+    axis.set_title(title, fontsize=15, pad=12)
+    axis.set_xlabel("Importance", fontsize=12)
+    axis.set_ylabel("Feature", fontsize=12)
+    axis.tick_params(axis="both", labelsize=10)
+
+    return _save_and_close_figure(
+        figure=figure,
+        output_path=output_path,
+        dpi=dpi,
+    )
+
+
+def aggregate_model_feature_importance(
+    pipeline: Pipeline,
+    original_features: Sequence[str],
+) -> pd.DataFrame:
+    """Aggregate transformed-feature importance to original input columns.
+
+    One-hot encoded values such as ``Embarked_C`` and ``Embarked_S`` are
+    grouped under their source column, ``Embarked``. Numeric columns retain
+    their original names.
+    """
+    if not original_features:
+        raise ValueError("original_features cannot be empty.")
+
+    importance_table = extract_model_feature_importance(pipeline)
+    source_features = sorted(
+        {str(feature) for feature in original_features},
+        key=len,
+        reverse=True,
+    )
+
+    def resolve_source_feature(transformed_name: str) -> str:
+        for source_feature in source_features:
+            if transformed_name == source_feature:
+                return source_feature
+            if transformed_name.startswith(f"{source_feature}_"):
+                return source_feature
+        return transformed_name
+
+    aggregated = importance_table.assign(
+        feature=importance_table["feature"].map(resolve_source_feature)
+    )
+    aggregated = (
+        aggregated.groupby("feature", as_index=False)["importance"]
+        .sum()
+        .sort_values("importance", ascending=False, ignore_index=True)
+    )
+    return aggregated
+
+
+def plot_aggregated_feature_importance(
+    pipeline: Pipeline,
+    original_features: Sequence[str],
+    output_path: Path,
+    *,
+    top_n: int = DEFAULT_TOP_FEATURES,
+    title: str = "Original Feature Importance",
+    dpi: int = DEFAULT_FIGURE_DPI,
+) -> Path:
+    """Plot model-derived importance aggregated to original columns."""
+    _validate_feature_limit(top_n)
+    importance_table = aggregate_model_feature_importance(
+        pipeline=pipeline,
+        original_features=original_features,
+    )
+    displayed_table = importance_table.head(top_n).sort_values(
+        by="importance",
+        ascending=True,
+    )
+
+    figure_height = max(5.0, 0.45 * len(displayed_table))
+    figure, axis = plt.subplots(figsize=(10, figure_height))
+    axis.barh(displayed_table["feature"], displayed_table["importance"])
+    axis.set_title(title, fontsize=15, pad=12)
+    axis.set_xlabel("Aggregated importance", fontsize=12)
+    axis.set_ylabel("Original feature", fontsize=12)
+    axis.tick_params(axis="both", labelsize=10)
 
     return _save_and_close_figure(
         figure=figure,
@@ -522,9 +604,11 @@ def plot_permutation_importance(
         capsize=3,
     )
     axis.axvline(0.0, linewidth=1)
-    axis.set_title(title)
-    axis.set_xlabel(f"Decrease in {scoring}")
-    axis.set_ylabel("Feature")
+    axis.set_title(title, fontsize=15, pad=12)
+    scoring_label = "Macro F1" if scoring == "f1_macro" else scoring
+    axis.set_xlabel(f"Decrease in {scoring_label}", fontsize=12)
+    axis.set_ylabel("Feature", fontsize=12)
+    axis.tick_params(axis="both", labelsize=10)
 
     return _save_and_close_figure(
         figure=figure,
