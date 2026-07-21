@@ -147,14 +147,28 @@ def add_passenger_features(dataframe: pd.DataFrame) -> pd.DataFrame:
     featured["Title"] = featured["Name"].map(extract_title)
     featured["Surname"] = featured["Name"].map(extract_surname)
 
+    # Family relationship counts can be missing in external datasets.
+    # Treat missing counts as zero when constructing family-size features.
+    sibsp = pd.to_numeric(
+        featured["SibSp"],
+        errors="coerce",
+    ).fillna(0)
+
+    parch = pd.to_numeric(
+        featured["Parch"],
+        errors="coerce",
+    ).fillna(0)
+
     featured["FamilySize"] = (
-        featured["SibSp"]
-        + featured["Parch"]
+        sibsp
+        + parch
         + 1
-    )
+    ).astype("int64")
 
     featured["IsAlone"] = (
-        featured["FamilySize"].eq(1).astype("int8")
+        featured["FamilySize"]
+        .eq(1)
+        .astype("int8")
     )
 
     featured["FamilySizeGroup"] = pd.cut(

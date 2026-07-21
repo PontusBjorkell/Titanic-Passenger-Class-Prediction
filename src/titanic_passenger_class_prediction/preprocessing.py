@@ -19,7 +19,12 @@ def standardize_column_types(
     """
     Apply consistent data types without imputing missing values.
 
-    The original dataframe is not modified.
+    Integer-like columns use the standard NumPy ``int64`` dtype when
+    all values are present. If missing values occur, pandas' nullable
+    ``Int64`` dtype is used instead.
+
+    Continuous numeric columns use ``float64`` and string-like columns
+    use ``object``. The original dataframe is not modified.
     """
     standardized = dataframe.copy()
 
@@ -40,13 +45,29 @@ def standardize_column_types(
     ]
 
     for column in integer_columns:
-        if column in standardized.columns:
-            standardized[column] = pd.to_numeric(
-                standardized[column],
-                errors="raise",
-            ).astype("int64")
+        if column not in standardized.columns:
+            continue
 
-    for column in ["Age", "Fare"]:
+        numeric_values = pd.to_numeric(
+            standardized[column],
+            errors="raise",
+        )
+
+        # Ordinary int64 preserves the project's original behavior.
+        # Nullable Int64 is used only when missing values are present.
+        if numeric_values.isna().any():
+            standardized[column] = numeric_values.astype(
+                "Int64"
+            )
+        else:
+            standardized[column] = numeric_values.astype(
+                "int64"
+            )
+
+    for column in [
+        "Age",
+        "Fare",
+    ]:
         if column in standardized.columns:
             standardized[column] = pd.to_numeric(
                 standardized[column],
@@ -55,7 +76,9 @@ def standardize_column_types(
 
     for column in string_columns:
         if column in standardized.columns:
-            standardized[column] = standardized[column].astype("object")
+            standardized[column] = standardized[
+                column
+            ].astype("object")
 
     return standardized
 

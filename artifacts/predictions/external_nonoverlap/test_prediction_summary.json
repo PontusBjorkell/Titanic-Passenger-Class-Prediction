@@ -1,0 +1,81 @@
+{
+  "created_at_utc": "2026-07-21T00:58:48.798644+00:00",
+  "external_evaluation_performed": true,
+  "external_metrics": {
+    "accuracy": 0.6990920881971465,
+    "balanced_accuracy": 0.6141774881356911,
+    "confusion_matrix": [
+      [
+        32,
+        119,
+        44
+      ],
+      [
+        2,
+        133,
+        48
+      ],
+      [
+        1,
+        18,
+        374
+      ]
+    ],
+    "evaluation_type": "external_labeled_test_set",
+    "f1_macro": 0.5787457714245001,
+    "labels": [
+      1,
+      2,
+      3
+    ],
+    "rows": 771,
+    "target_column": "Pclass"
+  },
+  "input_path": "data/external/titanic_external_nonoverlap.csv",
+  "low_confidence_count": 154,
+  "low_confidence_percentage": 19.974059662775616,
+  "low_confidence_threshold": 0.6,
+  "maximum_prediction_confidence": 1.0,
+  "mean_prediction_confidence": 0.8901813806023916,
+  "median_prediction_confidence": 1.0,
+  "minimum_prediction_confidence": 0.5476000000000028,
+  "model_classes": [
+    1,
+    2,
+    3
+  ],
+  "model_features": [
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "FamilySize",
+    "IsAlone",
+    "HasCabin",
+    "CabinCount",
+    "FareLog",
+    "Sex",
+    "Embarked",
+    "Title",
+    "FamilySizeGroup",
+    "CabinDeck",
+    "TicketPrefix"
+  ],
+  "model_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/artifacts/models/best_model.joblib",
+  "predicted_class_counts": {
+    "1": 35,
+    "2": 270,
+    "3": 466
+  },
+  "predicted_class_percentages": {
+    "1": 4.539559014267185,
+    "2": 35.019455252918284,
+    "3": 60.440985732814525
+  },
+  "prediction_rows": 771,
+  "prepared_columns": 25,
+  "prepared_rows": 771,
+  "raw_columns": 14,
+  "raw_rows": 771,
+  "target_available": true
+}
