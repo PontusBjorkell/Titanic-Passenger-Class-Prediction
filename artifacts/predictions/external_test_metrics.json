@@ -1,0 +1,30 @@
+{
+  "accuracy": 0.9090909090909091,
+  "balanced_accuracy": 0.896144164510075,
+  "confusion_matrix": [
+    [
+      95,
+      10,
+      2
+    ],
+    [
+      4,
+      80,
+      9
+    ],
+    [
+      1,
+      12,
+      205
+    ]
+  ],
+  "evaluation_type": "external_labeled_test_set",
+  "f1_macro": 0.8943625591591932,
+  "labels": [
+    1,
+    2,
+    3
+  ],
+  "rows": 418,
+  "target_column": "Pclass"
+}

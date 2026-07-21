@@ -1,21 +1,9 @@
 """Generate passenger-class predictions for an external Titanic dataset.
 
-This script loads the fitted model pipeline produced by ``scripts/train.py``,
-prepares a raw Titanic CSV using the project's deterministic feature
-engineering, generates class predictions and probabilities, and saves the
-results as reusable artifacts.
-
-When the input dataset contains the true target column ``Pclass``, the script
-also performs external evaluation and saves:
-
-- accuracy;
-- balanced accuracy;
-- Macro F1;
-- classification report;
-- confusion matrix values.
-
-This external evaluation is separate from the internal holdout evaluation
-created during model training.
+This command-line script is intentionally thin. Reusable inference logic lives
+in ``titanic_passenger_class_prediction.prediction`` so that batch prediction,
+Streamlit, notebooks, and tests all use the same feature-engineering and model
+prediction code.
 
 Examples
 --------
@@ -46,14 +34,12 @@ from __future__ import annotations
 
 import argparse
 import json
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Sequence
 
-import numpy as np
 import pandas as pd
-from sklearn.base import BaseEstimator
 from sklearn.metrics import (
     accuracy_score,
     balanced_accuracy_score,
@@ -69,17 +55,17 @@ from titanic_passenger_class_prediction.config import (
     TARGET_COLUMN,
     TEST_DATA_PATH,
 )
-from titanic_passenger_class_prediction.modeling import (
-    MODEL_FEATURES,
-)
-from titanic_passenger_class_prediction.persistence import (
-    load_model,
-)
-from titanic_passenger_class_prediction.features import (
-    add_passenger_features,
-)
-from titanic_passenger_class_prediction.preprocessing import (
-    standardize_column_types,
+from titanic_passenger_class_prediction.modeling import MODEL_FEATURES
+from titanic_passenger_class_prediction.persistence import load_model
+from titanic_passenger_class_prediction.prediction import (
+    CONFIDENCE_COLUMN,
+    LOW_CONFIDENCE_COLUMN,
+    LOW_CONFIDENCE_THRESHOLD,
+    PREDICTION_COLUMN,
+    get_model_classes,
+    predict_passengers,
+    prepare_prediction_data,
+    validate_fitted_model,
 )
 
 
@@ -92,11 +78,7 @@ EXTERNAL_CLASSIFICATION_REPORT_FILENAME = (
     "external_classification_report.csv"
 )
 
-PREDICTION_COLUMN = "PredictedPclass"
-CONFIDENCE_COLUMN = "PredictionConfidence"
 CORRECT_COLUMN = "PredictionCorrect"
-
-LOW_CONFIDENCE_THRESHOLD = 0.60
 
 
 @dataclass(frozen=True)
@@ -121,25 +103,7 @@ class PredictionRunResult:
 
 
 def load_input_data(input_path: Path) -> pd.DataFrame:
-    """Load a raw external Titanic CSV.
-
-    Parameters
-    ----------
-    input_path
-        Path to a raw Titanic-compatible CSV file.
-
-    Returns
-    -------
-    pandas.DataFrame
-        Loaded raw input data.
-
-    Raises
-    ------
-    FileNotFoundError
-        If the requested file does not exist.
-    ValueError
-        If the input file is not a regular file or contains no rows.
-    """
+    """Load a raw Titanic-compatible CSV file."""
     input_path = Path(input_path)
 
     if not input_path.exists():
@@ -160,343 +124,6 @@ def load_input_data(input_path: Path) -> pd.DataFrame:
         )
 
     return dataframe
-
-
-def validate_raw_prediction_data(
-    dataframe: pd.DataFrame,
-) -> None:
-    """Validate raw external data before feature engineering.
-
-    The deterministic preparation pipeline requires the original Titanic
-    passenger columns used to construct engineered features.
-    """
-    if dataframe.empty:
-        raise ValueError(
-            "Prediction dataframe must contain at least one row."
-        )
-
-    required_raw_columns = {
-        "PassengerId",
-        "Name",
-        "Sex",
-        "Age",
-        "SibSp",
-        "Parch",
-        "Ticket",
-        "Fare",
-        "Cabin",
-        "Embarked",
-    }
-
-    missing_columns = sorted(
-        required_raw_columns - set(dataframe.columns)
-    )
-
-    if missing_columns:
-        raise ValueError(
-            "Raw prediction data is missing required columns: "
-            f"{missing_columns}"
-        )
-
-    if dataframe[ID_COLUMN].isna().any():
-        raise ValueError(
-            f"Identifier column '{ID_COLUMN}' contains missing values."
-        )
-
-    if dataframe[ID_COLUMN].duplicated().any():
-        duplicated_ids = (
-            dataframe.loc[
-                dataframe[ID_COLUMN].duplicated(keep=False),
-                ID_COLUMN,
-            ]
-            .drop_duplicates()
-            .tolist()
-        )
-
-        raise ValueError(
-            f"Identifier column '{ID_COLUMN}' contains duplicate values: "
-            f"{duplicated_ids[:10]}"
-        )
-
-
-def prepare_prediction_data(
-    raw_dataframe: pd.DataFrame,
-) -> pd.DataFrame:
-    """Prepare labelled or unlabelled passenger data for inference.
-
-    Prediction data should not be required to contain the target column
-    ``Pclass`` or the historical outcome column ``Survived``.
-
-    The project's general ``prepare_passenger_data`` function is designed
-    for labelled training data and therefore validates against the complete
-    training schema. This inference-specific function instead:
-
-    1. validates only the raw columns required to construct model features;
-    2. standardizes available column types;
-    3. applies the same deterministic feature engineering used in training;
-    4. confirms that every model feature is available;
-    5. preserves Pclass and Survived when they are present.
-
-    Parameters
-    ----------
-    raw_dataframe
-        Raw Titanic-compatible passenger data. The dataframe may be labelled
-        or unlabelled.
-
-    Returns
-    -------
-    pandas.DataFrame
-        Type-standardized and feature-engineered passenger data suitable for
-        the fitted model pipeline.
-
-    Raises
-    ------
-    ValueError
-        If required inference columns are missing, passenger identifiers are
-        invalid, or the engineered output lacks model features.
-    """
-    validate_raw_prediction_data(
-        raw_dataframe
-    )
-
-    # The standardization function converts only columns that are actually
-    # present. It therefore safely supports both labelled and unlabelled
-    # inference datasets.
-    prepared_dataframe = standardize_column_types(
-        raw_dataframe
-    )
-
-    # Feature engineering depends only on passenger attributes such as name,
-    # age, fare, ticket, family counts, and cabin. It does not require Pclass
-    # or Survived.
-    prepared_dataframe = add_passenger_features(
-        prepared_dataframe
-    )
-
-    missing_model_features = sorted(
-        set(MODEL_FEATURES)
-        - set(prepared_dataframe.columns)
-    )
-
-    if missing_model_features:
-        raise ValueError(
-            "Prepared prediction data is missing model features: "
-            f"{missing_model_features}"
-        )
-
-    if len(prepared_dataframe) != len(raw_dataframe):
-        raise ValueError(
-            "Prediction preparation unexpectedly changed the number "
-            "of passenger rows."
-        )
-
-    if not prepared_dataframe[
-        ID_COLUMN
-    ].is_unique:
-        raise ValueError(
-            f"Prepared identifier column '{ID_COLUMN}' "
-            "must remain unique."
-        )
-
-    return prepared_dataframe
-
-
-def get_model_classes(
-    model: BaseEstimator,
-) -> list[Any]:
-    """Extract class labels from a fitted estimator or pipeline."""
-    classes = getattr(model, "classes_", None)
-
-    if classes is None and hasattr(model, "named_steps"):
-        final_estimator = model.named_steps.get("model")
-        classes = getattr(final_estimator, "classes_", None)
-
-    if classes is None:
-        raise AttributeError(
-            "The fitted model does not expose class labels through "
-            "'classes_'."
-        )
-
-    return [
-        value.item() if hasattr(value, "item") else value
-        for value in classes
-    ]
-
-
-def validate_fitted_model(
-    model: BaseEstimator,
-) -> None:
-    """Confirm that the loaded artifact supports prediction."""
-    if not hasattr(model, "predict"):
-        raise TypeError(
-            "Loaded model artifact does not implement predict()."
-        )
-
-    if not hasattr(model, "predict_proba"):
-        raise TypeError(
-            "Loaded model artifact does not implement predict_proba(). "
-            "Probability outputs are required by this workflow."
-        )
-
-    get_model_classes(model)
-
-
-def build_probability_column_name(
-    class_label: Any,
-) -> str:
-    """Create a stable output name for one class-probability column."""
-    label = (
-        class_label.item()
-        if hasattr(class_label, "item")
-        else class_label
-    )
-
-    return f"ProbabilityClass{label}"
-
-
-def generate_predictions(
-    model: BaseEstimator,
-    prepared_dataframe: pd.DataFrame,
-) -> pd.DataFrame:
-    """Generate predicted classes, probabilities, and confidence values."""
-    validate_fitted_model(model)
-
-    if prepared_dataframe.empty:
-        raise ValueError(
-            "Cannot generate predictions for an empty dataframe."
-        )
-
-    missing_features = sorted(
-        set(MODEL_FEATURES) - set(prepared_dataframe.columns)
-    )
-
-    if missing_features:
-        raise ValueError(
-            "Prediction dataframe is missing model features: "
-            f"{missing_features}"
-        )
-
-    features = prepared_dataframe.loc[:, MODEL_FEATURES].copy()
-
-    predictions = np.asarray(model.predict(features))
-    probabilities = np.asarray(model.predict_proba(features))
-    classes = get_model_classes(model)
-
-    if predictions.shape[0] != len(prepared_dataframe):
-        raise ValueError(
-            "Model returned an unexpected number of predictions."
-        )
-
-    if probabilities.ndim != 2:
-        raise ValueError(
-            "predict_proba() must return a two-dimensional array."
-        )
-
-    if probabilities.shape != (
-        len(prepared_dataframe),
-        len(classes),
-    ):
-        raise ValueError(
-            "Probability output dimensions do not match the input rows "
-            "and model classes."
-        )
-
-    if not np.isfinite(probabilities).all():
-        raise ValueError(
-            "Model produced non-finite probability values."
-        )
-
-    if not np.allclose(
-        probabilities.sum(axis=1),
-        1.0,
-        atol=1e-6,
-    ):
-        raise ValueError(
-            "Predicted class probabilities do not sum to one."
-        )
-
-    identifiers = prepared_dataframe[ID_COLUMN].reset_index(
-        drop=True
-    )
-
-    output = pd.DataFrame(
-        {
-            ID_COLUMN: identifiers,
-            PREDICTION_COLUMN: predictions,
-        }
-    )
-
-    for class_index, class_label in enumerate(classes):
-        output[
-            build_probability_column_name(class_label)
-        ] = probabilities[:, class_index]
-
-    output[CONFIDENCE_COLUMN] = probabilities.max(axis=1)
-
-    output["SecondHighestProbability"] = np.sort(
-        probabilities,
-        axis=1,
-    )[:, -2]
-
-    output["ProbabilityMargin"] = (
-        output[CONFIDENCE_COLUMN]
-        - output["SecondHighestProbability"]
-    )
-
-    output["LowConfidencePrediction"] = (
-        output[CONFIDENCE_COLUMN]
-        < LOW_CONFIDENCE_THRESHOLD
-    )
-
-    return output
-
-
-def add_context_columns(
-    predictions: pd.DataFrame,
-    prepared_dataframe: pd.DataFrame,
-) -> pd.DataFrame:
-    """Attach useful passenger context without duplicating model features."""
-    output = predictions.copy()
-
-    context_columns = [
-        column
-        for column in [
-            "Name",
-            "Sex",
-            "Age",
-            "Fare",
-            "Embarked",
-        ]
-        if column in prepared_dataframe.columns
-    ]
-
-    context = prepared_dataframe[
-        [ID_COLUMN, *context_columns]
-    ].copy()
-
-    output = output.merge(
-        context,
-        on=ID_COLUMN,
-        how="left",
-        validate="one_to_one",
-    )
-
-    ordered_columns = [
-        ID_COLUMN,
-        *context_columns,
-        PREDICTION_COLUMN,
-    ]
-
-    remaining_columns = [
-        column
-        for column in output.columns
-        if column not in ordered_columns
-    ]
-
-    return output.loc[
-        :,
-        ordered_columns + remaining_columns,
-    ]
 
 
 def evaluate_external_predictions(
@@ -564,10 +191,7 @@ def evaluate_external_predictions(
             accuracy_score(target, predictions)
         ),
         "balanced_accuracy": float(
-            balanced_accuracy_score(
-                target,
-                predictions,
-            )
+            balanced_accuracy_score(target, predictions)
         ),
         "f1_macro": float(
             f1_score(
@@ -609,9 +233,7 @@ def build_prediction_metadata(
     )
 
     return {
-        "created_at_utc": datetime.now(
-            timezone.utc
-        ).isoformat(),
+        "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "input_path": str(input_path),
         "model_path": str(model_path),
         "raw_rows": int(raw_dataframe.shape[0]),
@@ -651,20 +273,32 @@ def build_prediction_metadata(
         "maximum_prediction_confidence": float(
             predictions[CONFIDENCE_COLUMN].max()
         ),
-        "low_confidence_threshold": (
-            LOW_CONFIDENCE_THRESHOLD
-        ),
+        "low_confidence_threshold": LOW_CONFIDENCE_THRESHOLD,
         "low_confidence_count": int(
-            predictions["LowConfidencePrediction"].sum()
+            predictions[LOW_CONFIDENCE_COLUMN].sum()
         ),
         "low_confidence_percentage": float(
-            predictions[
-                "LowConfidencePrediction"
-            ].mean()
-            * 100
+            predictions[LOW_CONFIDENCE_COLUMN].mean() * 100
         ),
         "external_metrics": external_metrics,
     }
+
+
+def _json_default(value: Any) -> Any:
+    """Convert common non-native values for JSON serialization."""
+    if hasattr(value, "item"):
+        return value.item()
+
+    if isinstance(value, Path):
+        return str(value)
+
+    if isinstance(value, datetime):
+        return value.isoformat()
+
+    raise TypeError(
+        f"Object of type {type(value).__name__} "
+        "is not JSON serializable."
+    )
 
 
 def save_json(
@@ -697,23 +331,6 @@ def save_json(
         )
 
     return output_path
-
-
-def _json_default(value: Any) -> Any:
-    """Convert common non-native values for JSON serialization."""
-    if hasattr(value, "item"):
-        return value.item()
-
-    if isinstance(value, Path):
-        return str(value)
-
-    if isinstance(value, datetime):
-        return value.isoformat()
-
-    raise TypeError(
-        f"Object of type {type(value).__name__} "
-        "is not JSON serializable."
-    )
 
 
 def save_prediction_artifacts(
@@ -802,24 +419,29 @@ def run_prediction_workflow(
     model_path = Path(model_path)
     output_directory = Path(output_directory)
 
-    raw_dataframe = load_input_data(input_path)
+    raw_dataframe = load_input_data(
+        input_path
+    )
+
     prepared_dataframe = prepare_prediction_data(
         raw_dataframe
     )
 
-    model = load_model(model_path)
-    validate_fitted_model(model)
-
-    model_classes = get_model_classes(model)
-
-    predictions = generate_predictions(
-        model=model,
-        prepared_dataframe=prepared_dataframe,
+    model = load_model(
+        model_path
     )
 
-    predictions = add_context_columns(
-        predictions=predictions,
-        prepared_dataframe=prepared_dataframe,
+    validate_fitted_model(
+        model
+    )
+
+    model_classes = get_model_classes(
+        model
+    )
+
+    predictions = predict_passengers(
+        raw_dataframe=raw_dataframe,
+        model=model,
     )
 
     external_metrics: dict[str, Any] | None = None
@@ -829,7 +451,10 @@ def run_prediction_workflow(
         TARGET_COLUMN in prepared_dataframe.columns
     )
 
-    if evaluate_when_target_available and target_available:
+    if (
+        evaluate_when_target_available
+        and target_available
+    ):
         external_metrics, report_dataframe = (
             evaluate_external_predictions(
                 true_target=prepared_dataframe[
@@ -969,8 +594,7 @@ def print_prediction_summary(
     print("=" * 78)
 
     print(
-        f"Predicted rows: "
-        f"{len(result.predictions):,}"
+        f"Predicted rows: {len(result.predictions):,}"
     )
 
     print(
@@ -992,7 +616,9 @@ def print_prediction_summary(
             "predicted_class_counts"
         ].items()
     ):
-        print(f"  Class {class_label}: {count:,}")
+        print(
+            f"  Class {class_label}: {count:,}"
+        )
 
     if result.external_metrics is not None:
         print()
@@ -1019,17 +645,15 @@ def print_prediction_summary(
     print()
     print("Artifacts:")
     print(
-        f"  Predictions: "
-        f"{result.artifacts.predictions_path}"
+        f"  Predictions: {result.artifacts.predictions_path}"
     )
     print(
-        f"  Metadata: "
-        f"{result.artifacts.metadata_path}"
+        f"  Metadata: {result.artifacts.metadata_path}"
     )
 
     if result.artifacts.metrics_path is not None:
         print(
-            f"  External metrics: "
+            "  External metrics: "
             f"{result.artifacts.metrics_path}"
         )
 
@@ -1057,7 +681,9 @@ def main() -> None:
         ),
     )
 
-    print_prediction_summary(result)
+    print_prediction_summary(
+        result
+    )
 
 
 if __name__ == "__main__":
