@@ -1,316 +1,388 @@
 # Titanic Passenger Class Prediction
 
-> A production-style machine learning project that predicts passenger class
-> from Titanic passenger information using feature engineering, model
-> comparison, hyperparameter tuning, automated reporting, and extensive
-> software engineering practices.
+> **Production-inspired end-to-end machine learning project built with Python, scikit-learn, SQLite, Streamlit, and pytest.**
+
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Machine%20Learning-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue)
+![pytest](https://img.shields.io/badge/pytest-Tested-green)
 
 ---
 
-## Project Overview
+# Overview
 
-This project demonstrates how to build a complete machine learning system
-rather than a single notebook.
+This repository demonstrates an end-to-end machine learning workflow using the classic Titanic dataset.
 
-Instead of focusing only on predictive performance, the repository
-emphasizes
+Rather than stopping at a predictive model, this project implements a complete, production-inspired pipeline including:
 
-- clean software architecture
-- reusable Python modules
-- automated testing
-- reproducible machine learning
-- model comparison
-- experiment tracking
-- automated report generation
-
-The final solution follows a production-inspired workflow from raw CSV files
-to a fully trained model and automatically generated evaluation reports.
-
----
-
-## Project Goals
-
-The project was designed to demonstrate practical machine learning engineering
-skills that are commonly expected in data analyst and junior machine learning
-roles.
-
-Specifically, it demonstrates:
-
-- Data validation
+- Exploratory Data Analysis (EDA)
 - Feature engineering
-- Pipeline-based preprocessing
-- Cross-validation
-- Hyperparameter optimization
-- Model comparison
-- Model persistence
-- Automated reporting
-- SQLite integration
-- Unit testing with pytest
+- Model training and comparison
+- Automated evaluation
+- SQLite database integration
+- SQL analytics
+- Interactive Streamlit dashboard
+- Reusable prediction API
+- Automated testing with pytest
+
+The goal is to demonstrate both machine learning and software engineering practices commonly used in real-world data science projects.
 
 ---
 
-## Repository Structure
+# Features
+
+- Interactive Streamlit dashboard
+- Comprehensive Exploratory Data Analysis
+- Feature engineering pipeline
+- Candidate model comparison
+- SQL analytics using SQLite
+- Automated prediction pipeline
+- External model validation
+- Reusable prediction API
+- Automated testing with pytest
+- Modular project architecture
+
+---
+
+# Dashboard
+
+The repository includes a multi-page Streamlit application.
+
+---
+
+## Data Explorer
+
+Interactively explore the dataset using filters, descriptive statistics, visualizations, and passenger-level records.
+
+![](images/data_explorer.png)
+
+---
+
+## SQL Analytics
+
+Browse SQL reports generated directly from the SQLite database.
+
+View analytical summaries, inspect query results, and download tables.
+
+![](images/sql_analytics_1.png)
+
+![](images/sql_analytics_2.png)
+
+---
+
+## Model Performance
+
+Review candidate models, compare cross-validation performance, inspect evaluation metrics, and analyze prediction confidence.
+
+![](images/model_performance.png)
+
+---
+
+## Passenger Class Prediction
+
+Generate predictions by entering passenger information through an interactive interface.
+
+The prediction page uses the same preprocessing and feature engineering pipeline employed during model training.
+
+![](images/prediction_1.png)
+
+After submitting the form, the dashboard displays:
+
+- Predicted passenger class
+- Prediction confidence
+- Probability distribution across all classes
+
+![](images/prediction_2.png)
+
+---
+
+# Repository Structure
 
 ```text
-Titanic-Passenger-Class-Prediction/
+Titanic-Passenger-Class-Prediction
+│
+├── app/
+│   ├── app.py
+│   ├── utils.py
+│   └── pages/
+│
+├── artifacts/
 │
 ├── data/
 │   ├── raw/
 │   └── processed/
 │
-├── artifacts/
-│   ├── models/
-│   ├── metrics/
-│   └── figures/
+├── notebooks/
+│
+├── reports/
 │
 ├── scripts/
 │   ├── prepare_data.py
 │   ├── build_database.py
-│   └── train.py
+│   ├── train.py
+│   ├── predict.py
+│   └── run_analysis.py
 │
 ├── sql/
-│   ├── create_schema.sql
-│   └── create_views.sql
 │
 ├── src/
 │   └── titanic_passenger_class_prediction/
-│       ├── config.py
-│       ├── data.py
-│       ├── preprocessing.py
-│       ├── validation.py
-│       ├── features.py
-│       ├── modeling.py
-│       ├── tuning.py
-│       ├── evaluation.py
-│       ├── visualization.py
-│       ├── reporting.py
-│       ├── persistence.py
-│       └── database.py
 │
 ├── tests/
 │
-├── README.md
-├── requirements.txt
-└── pyproject.toml
+└── README.md
 ```
 
 ---
 
-## Machine Learning Workflow
+# Dataset
 
-```text
-Raw CSV
-    │
-    ▼
-Data Validation
-    │
-    ▼
-Preprocessing
-    │
-    ▼
-Feature Engineering
-    │
-    ▼
-Candidate Models
-    │
-    ▼
-5-Fold Stratified Cross Validation
-    │
-    ▼
-Randomized Hyperparameter Search
-    │
-    ▼
-Best Model Selection
-    │
-    ▼
-Holdout Evaluation
-    │
-    ▼
-Automatic Reports
-    │
-    ▼
-Saved Model
-```
+The project uses the classic Titanic passenger dataset.
+
+The objective is to predict passenger class (First, Second, or Third) using passenger characteristics including:
+
+- Age
+- Sex
+- Fare
+- Ticket
+- Cabin
+- Family information
+- Embarkation port
 
 ---
 
-## Feature Engineering
+# Exploratory Data Analysis
 
-Several domain-inspired features were created before model training.
+The accompanying notebook performs:
 
-Examples include
+- Dataset overview
+- Missing value analysis
+- Feature distributions
+- Correlation analysis
+- Target distribution
+- Statistical summaries
+- Data visualizations
+
+The notebook documents the reasoning behind feature engineering and model development.
+
+---
+
+# Feature Engineering
+
+The preprocessing pipeline automatically constructs engineered variables including:
 
 - FamilySize
+- FamilySizeGroup
 - IsAlone
-- CabinCount
-- CabinDeck
 - FareLog
 - Passenger Title
-- Ticket Prefix
-- FamilySizeGroup
+- TicketPrefix
+- CabinDeck
+- CabinCount
+- HasCabin
 
-These engineered variables significantly improve predictive performance over
-using the raw dataset alone.
+The identical feature engineering pipeline is reused during:
 
----
+- model training
+- batch prediction
+- Streamlit predictions
 
-## Candidate Models
-
-The project compares multiple classification algorithms.
-
-| Model | Purpose |
-|-------|---------|
-| Dummy Classifier | Baseline |
-| Logistic Regression | Linear baseline |
-| Random Forest | Final production model |
-
-The best model is selected using **Macro F1** obtained from stratified
-cross-validation.
+This guarantees consistent predictions across the project.
 
 ---
 
-## Hyperparameter Tuning
+# Machine Learning Workflow
 
-Random Forest hyperparameters are optimized using
-RandomizedSearchCV.
-
-Optimized parameters include
-
-- Number of trees
-- Maximum tree depth
-- Minimum samples split
-- Minimum samples leaf
-- Bootstrap
-- Feature selection
-- Class weighting
-
-Model selection is performed **only** using cross-validation.
-The holdout dataset is never used during tuning.
-
----
-
-## Final Model Performance
-
-| Metric | Value |
-|---------|-------|
-| Accuracy | **88.83%** |
-| Balanced Accuracy | **86.00%** |
-| Macro F1 | **86.41%** |
-
-The final model achieved approximately **91.4% Macro F1 during
-cross-validation** before being evaluated once on the unseen holdout set.
-
----
-
-## Feature Importance
-
-The trained Random Forest identified the following features as the most
-important predictors.
-
-1. Fare
-2. FareLog
-3. CabinCount
-4. CabinDeck
-5. HasCabin
-
-Permutation importance confirmed that ticket price and family-related
-features contributed most strongly to predictive performance.
+```text
+Raw Data
+      │
+      ▼
+Validation
+      │
+      ▼
+Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Preprocessing Pipeline
+      │
+      ▼
+Model Training
+      │
+      ▼
+Evaluation
+      │
+      ▼
+Saved Artifacts
+      │
+      ▼
+Prediction API
+      │
+      ▼
+Streamlit Dashboard
+```
 
 ---
 
-## Generated Reports
+# Model Evaluation
 
-The training pipeline automatically produces
+Candidate models are evaluated using:
 
-- Model comparison table
-- Classification report
-- Confusion matrix
-- Feature importance plot
-- Permutation importance plot
-- Training summary
-- Model metadata
-- Hyperparameter search results
-- Saved model
+- Accuracy
+- Balanced Accuracy
+- Macro F1
+- Classification Report
+- Confusion Matrix
+- Internal validation
+- External validation
 
----
-
-## Confusion Matrix
-
-![Confusion Matrix](reports/figures/confusion_matrix.png)
+Model artifacts are automatically saved for later inspection.
 
 ---
 
-## Feature Importance
+# SQL Analytics
 
-![Feature Importance](reports/figures/feature_importance.png)
+The project integrates SQLite to provide analytical SQL reports covering:
 
----
+- Passenger demographics
+- Passenger-class composition
+- Fare analysis
+- Family-size profiles
+- Embarkation statistics
+- Data-quality summaries
 
-## Permutation Importance
-
-![Permutation Importance](reports/figures/permutation_importance.png)
-
----
-
-## Testing
-
-The repository includes a comprehensive pytest suite covering
-
-- Data loading
-- Validation
-- Feature engineering
-- Preprocessing
-- Modeling
-- Cross-validation
-- Hyperparameter tuning
-- Persistence
-- Reporting
-- Visualization
-- SQLite utilities
-- Training pipeline
-
-This helps ensure correctness and reproducibility across the entire project.
+These reports are available directly from the Streamlit dashboard.
 
 ---
 
-## Technologies
+# Software Engineering
+
+Reusable functionality is implemented inside
+
+```text
+src/titanic_passenger_class_prediction/
+```
+
+while command-line workflows are provided in
+
+```text
+scripts/
+```
+
+This architecture improves:
+
+- maintainability
+- reusability
+- testing
+- deployment
+
+---
+
+# Testing
+
+The project includes automated tests covering:
+
+- preprocessing
+- feature engineering
+- model training
+- prediction API
+- batch prediction workflow
+
+Run all tests:
+
+```bash
+pytest -v
+```
+
+---
+
+# Technologies
 
 - Python
 - pandas
 - NumPy
 - scikit-learn
-- matplotlib
 - SQLite
+- SQL
+- Streamlit
+- matplotlib
 - pytest
 - joblib
 
 ---
 
-## Future Improvements
+# Installation
 
-Potential extensions include
+```bash
+git clone https://github.com/PontusBjorkell/Titanic-Passenger-Class-Prediction.git
 
-- Streamlit application
-- SHAP explainability
-- Docker support
-- GitHub Actions CI
-- Batch inference
-- Prediction CLI
-- REST API
+cd Titanic-Passenger-Class-Prediction
+
+python -m venv .venv
+
+source .venv/bin/activate
+
+pip install -r requirements.txt
+```
 
 ---
 
-## Author
+# Running the Project
 
-Pontus Björkell
+Prepare data
 
-Master's degree in Philosophy
+```bash
+python scripts/prepare_data.py
+```
 
-Minor studies in
+Build SQLite database
 
-- Statistics
-- Computer Science
-- Mathematics
+```bash
+python scripts/build_database.py
+```
 
-Currently building a portfolio of production-style machine learning projects
-for data analyst and machine learning positions.
+Train models
+
+```bash
+python scripts/train.py
+```
+
+Generate predictions
+
+```bash
+python scripts/predict.py
+```
+
+Launch Streamlit
+
+```bash
+streamlit run app/app.py
+```
+
+Run tests
+
+```bash
+pytest -v
+```
+
+---
+
+# Future Improvements
+
+Potential future enhancements include:
+
+- SHAP explainability
+- Hyperparameter optimization with Optuna
+- Docker support
+- GitHub Actions CI/CD
+- MLflow experiment tracking
+- Streamlit Cloud deployment
+
+---
+
+# About
+
+This repository was created as part of my machine learning and data analytics portfolio. The project emphasizes not only predictive performance, but also reproducibility, software engineering, automated testing, SQL analytics, and interactive presentation through a web application.
