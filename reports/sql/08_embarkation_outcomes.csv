@@ -1,0 +1,5 @@
+embarkation_port,passenger_count,average_passenger_class,average_fare,survival_rate_percent,percent_with_cabin
+S,644,2.35,27.08,33.7,20.03
+C,168,1.89,59.95,55.36,41.07
+Q,77,2.91,13.28,38.96,5.19
+Unknown,2,1.0,80.0,100.0,100.0

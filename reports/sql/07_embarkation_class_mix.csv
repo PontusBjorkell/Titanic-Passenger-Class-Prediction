@@ -1,0 +1,10 @@
+embarkation_port,passenger_class,passenger_count,percentage_within_port
+C,1,85,50.6
+C,2,17,10.12
+C,3,66,39.29
+Q,1,2,2.6
+Q,2,3,3.9
+Q,3,72,93.51
+S,1,127,19.72
+S,2,164,25.47
+S,3,353,54.81

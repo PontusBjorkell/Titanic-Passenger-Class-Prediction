@@ -1,0 +1,6 @@
+passenger_title,passenger_count,average_passenger_class,average_age,average_fare,survival_rate_percent
+Mr,517,2.41,32.37,24.44,15.67
+Miss,185,2.29,21.85,43.8,70.27
+Mrs,126,1.99,35.79,45.33,79.37
+Master,40,2.63,4.57,34.7,57.5
+Rare,23,1.35,45.55,37.17,34.78

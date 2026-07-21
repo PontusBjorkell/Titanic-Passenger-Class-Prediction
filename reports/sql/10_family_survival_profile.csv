@@ -1,0 +1,5 @@
+family_size_group,passenger_count,average_family_size,average_fare,average_passenger_class,survival_rate_percent,percent_travelling_alone
+Alone,537,1.0,21.24,2.4,30.35,100.0
+Small,292,2.55,46.82,2.04,57.88,0.0
+Medium,37,5.59,67.39,2.62,16.22,0.0
+Large,25,8.36,44.83,3.0,16.0,0.0

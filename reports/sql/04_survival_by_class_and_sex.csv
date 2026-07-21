@@ -1,0 +1,7 @@
+passenger_class,sex,passenger_count,survivor_count,non_survivor_count,survival_rate_percent
+1,female,94,91,3,96.81
+1,male,122,45,77,36.89
+2,female,76,70,6,92.11
+2,male,108,17,91,15.74
+3,female,144,72,72,50.0
+3,male,347,47,300,13.54

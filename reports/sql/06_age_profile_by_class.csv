@@ -1,0 +1,4 @@
+passenger_class,passenger_count,passengers_with_known_age,missing_age_count,average_age,youngest_age,oldest_age,child_count,adult_count,senior_count
+1,216,186,30,38.23,0.92,80.0,12,157,17
+2,184,173,11,29.88,0.67,70.0,23,146,4
+3,491,355,136,25.14,0.42,74.0,78,272,5

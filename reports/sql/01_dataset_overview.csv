@@ -1,0 +1,2 @@
+passenger_count,unique_passengers,passenger_classes,survival_rate_percent,missing_age_count,missing_cabin_count,missing_embarkation_count,missing_fare_count
+891,891,3,38.38,177,687,2,0

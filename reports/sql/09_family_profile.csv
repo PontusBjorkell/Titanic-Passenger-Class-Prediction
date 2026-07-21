@@ -1,0 +1,11 @@
+family_size_group,passenger_class,passenger_count,average_fare
+Alone,1,109,63.67
+Alone,2,104,14.07
+Alone,3,324,9.27
+Small,1,101,95.65
+Small,2,78,29.45
+Small,3,113,15.18
+Medium,1,6,262.79
+Medium,2,2,20.88
+Medium,3,29,30.17
+Large,3,25,44.83

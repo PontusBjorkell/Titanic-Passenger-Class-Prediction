@@ -1,0 +1,4 @@
+passenger_class,passenger_count,average_age,average_fare,average_family_size,percent_travelling_alone,percent_with_cabin,survival_rate_percent
+1,216,38.23,84.15,1.77,50.46,81.48,62.96
+2,184,29.88,20.66,1.78,56.52,8.7,47.28
+3,491,25.14,13.68,2.01,65.99,2.44,24.24

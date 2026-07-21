@@ -1,0 +1,4 @@
+passenger_class,passenger_count,missing_age_count,missing_age_percent,missing_cabin_count,missing_cabin_percent,missing_embarkation_count
+1,216,30,13.89,40,18.52,2
+2,184,11,5.98,168,91.3,0
+3,491,136,27.7,479,97.56,0

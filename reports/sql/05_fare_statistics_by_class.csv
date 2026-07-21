@@ -1,0 +1,4 @@
+passenger_class,passengers_with_fare,minimum_fare,average_fare,maximum_fare,fare_variance
+1,216,0.0,84.15,512.33,6115.04
+2,184,0.0,20.66,73.5,179.05
+3,491,0.0,13.68,69.55,138.44

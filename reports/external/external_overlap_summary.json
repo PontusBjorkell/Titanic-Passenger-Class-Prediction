@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "clean_external_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/data/external/titanic_external_clean.csv",
+    "nonoverlap_external_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/data/external/titanic_external_nonoverlap.csv",
+    "overlap_audit_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/external/external_overlap_audit.csv",
+    "overlap_summary_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/external/external_overlap_summary.json"
+  },
+  "clean_class_counts": {
+    "1": 324,
+    "2": 284,
+    "3": 709
+  },
+  "clean_external_columns": 14,
+  "clean_external_rows": 1317,
+  "created_at_utc": "2026-07-21T00:24:59.303878+00:00",
+  "excluded_class_counts": {
+    "deck crew": 66,
+    "engineering crew": 324,
+    "restaurant staff": 69,
+    "victualling crew": 431
+  },
+  "excluded_nonpassenger_rows": 890,
+  "external_input_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/data/raw/titanic_external.csv",
+  "missing_value_counts": {
+    "Age": 2,
+    "Cabin": 1317,
+    "Country": 77,
+    "Embarked": 0,
+    "ExternalSourceRow": 0,
+    "Fare": 26,
+    "Name": 0,
+    "Parch": 10,
+    "PassengerId": 0,
+    "Pclass": 0,
+    "Sex": 0,
+    "SibSp": 10,
+    "Survived": 0,
+    "Ticket": 1
+  },
+  "name_and_ticket_match_rows": 4,
+  "name_match_rows": 542,
+  "name_or_ticket_match_rows": 546,
+  "nonoverlap_class_counts": {
+    "1": 195,
+    "2": 183,
+    "3": 393
+  },
+  "nonoverlap_percentage_of_clean": 58.54214123006834,
+  "nonoverlap_rows": 771,
+  "overlap_rows_under_selected_rule": 546,
+  "overlap_rule_for_strict_dataset": "either",
+  "retained_first_class_rows": 324,
+  "retained_passenger_rows": 1317,
+  "retained_second_class_rows": 284,
+  "retained_third_class_rows": 709,
+  "source_rows": 2207,
+  "ticket_match_rows": 8,
+  "training_input_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/data/raw/train.csv"
+}

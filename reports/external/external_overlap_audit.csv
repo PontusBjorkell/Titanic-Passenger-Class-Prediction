@@ -1,0 +1,1318 @@
+PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked,Country,ExternalSourceRow,NormalizedName,NormalizedTicket,NameMatch,TicketMatch,NameAndTicketMatch,NameOrTicketMatch,MatchedTrainingIdsByName,MatchedTrainingIdsByTicket,OverlapEvidence
+1,0,3,"Abbing, Mr. Anthony",male,42.0,0,0,5547.0,7.11,,S,United States,1,abbing mr anthony,55470,True,False,False,True,[846],[],name_only
+2,0,3,"Abbott, Mr. Eugene Joseph",male,13.0,0,2,2673.0,20.05,,S,United States,2,abbott mr eugene joseph,26730,False,False,False,False,[],[],none
+3,0,3,"Abbott, Mr. Rossmore Edward",male,16.0,1,1,2673.0,20.05,,S,United States,3,abbott mr rossmore edward,26730,True,False,False,True,[747],[],name_only
+4,1,3,"Abbott, Mrs. Rhoda Mary 'Rosa'",female,39.0,1,1,2673.0,20.05,,S,England,4,abbott mrs rhoda mary rosa,26730,False,False,False,False,[],[],none
+5,1,3,"Abelseth, Miss. Karen Marie",female,16.0,0,0,348125.0,7.13,,S,Norway,5,abelseth miss karen marie,3481250,False,False,False,False,[],[],none
+6,1,3,"Abelseth, Mr. Olaus Jørgensen",male,25.0,0,0,348122.0,7.13,,S,United States,6,abelseth mr olaus j rgensen,3481220,False,False,False,False,[],[],none
+7,0,2,"Abelson, Mr. Samuel",male,30.0,1,0,3381.0,24.0,,C,France,7,abelson mr samuel,33810,True,False,False,True,[309],[],name_only
+8,1,2,"Abelson, Mrs. Hannah",female,28.0,1,0,3381.0,24.0,,C,France,8,abelson mrs hannah,33810,False,False,False,False,[],[],none
+9,1,3,"Abī-Al-Munà, Mr. Nāsīf Qāsim",male,27.0,0,0,2699.0,18.1509,,C,Lebanon,9,abi al muna mr nasif qasim,26990,False,False,False,False,[],[],none
+10,1,3,"Abrahamsson, Mr. Abraham August Johannes",male,20.0,0,0,3101284.0,7.1806,,S,Finland,10,abrahamsson mr abraham august johannes,31012840,False,False,False,False,[],[],none
+11,0,3,"Ådahl, Mr. Mauritz",male,30.0,0,0,7076.0,7.05,,S,Sweden,11,adahl mr mauritz,70760,False,False,False,False,[],[],none
+12,0,3,"Adams, Mr. John",male,27.0,0,0,341826.0,8.01,,S,England,12,adams mr john,3418260,True,False,False,True,[402],[],name_only
+13,0,3,"Ahlin, Mrs. Johanna Persdotter",female,40.0,1,0,7546.0,9.0906,,S,Sweden,13,ahlin mrs johanna persdotter,75460,False,False,False,False,[],[],none
+14,1,3,"Aks, Master. Frank Philip",male,0.8333333333,0,1,392091.0,9.07,,S,England,14,aks master frank philip,3920910,False,False,False,False,[],[],none
+15,1,3,"Aks, Mrs. Leah",female,18.0,0,1,392091.0,9.07,,S,England,15,aks mrs leah,3920910,False,False,False,False,[],[],none
+16,0,2,"Aldworth, Mr. Augustus Henry",male,35.0,0,0,248744.0,13.0,,S,England,16,aldworth mr augustus henry,2487440,False,False,False,False,[],[],none
+17,0,3,"Alexander, Mr. William Albert",male,25.0,0,0,3474.0,7.1709,,S,England,17,alexander mr william albert,34740,False,False,False,False,[],[],none
+18,0,3,"Alhomäki, Mr. Ilmari Rudolf",male,19.0,0,0,3101287.0,7.1806,,S,Finland,18,alhomaki mr ilmari rudolf,31012870,True,False,False,True,[841],[],name_only
+19,0,3,"Ali, Mr. Ahmed",male,24.0,0,0,3101311.0,7.01,,S,Argentina,19,ali mr ahmed,31013110,True,False,False,True,[211],[],name_only
+20,0,3,"Ali, Mr. William",male,25.0,0,0,3101312.0,7.01,,S,Argentina,20,ali mr william,31013120,True,False,False,True,[785],[],name_only
+21,1,1,"Allen, Miss. Elisabeth Walton",female,29.0,0,0,24160.0,211.6009,,S,United States,21,allen miss elisabeth walton,241600,True,False,False,True,[731],[],name_only
+22,0,3,"Allen, Mr. William Henry",male,39.0,0,0,373450.0,8.01,,S,England,22,allen mr william henry,3734500,True,False,False,True,[5],[],name_only
+23,1,1,"Allison, Master. Hudson Trevor",male,0.9166666667,1,2,113781.0,151.16,,S,Canada,23,allison master hudson trevor,1137810,True,False,False,True,[306],[],name_only
+24,0,1,"Allison, Miss. Helen Loraine",female,2.0,1,2,113781.0,151.16,,S,Canada,24,allison miss helen loraine,1137810,True,False,False,True,[298],[],name_only
+25,0,1,"Allison, Mr. Hudson Joshua Creighton",male,30.0,1,2,113781.0,151.16,,S,Canada,25,allison mr hudson joshua creighton,1137810,False,False,False,False,[],[],none
+26,0,1,"Allison, Mrs. Bessie Waldo",female,25.0,1,2,113781.0,151.16,,S,United States,26,allison mrs bessie waldo,1137810,False,False,False,False,[],[],none
+27,0,3,"Allum, Mr. Owen George",male,18.0,0,0,2223.0,8.06,,S,England,27,allum mr owen george,22230,True,False,False,True,[835],[],name_only
+28,0,3,"Al-Munà, Mr. Farīd Husayn Qāsim",male,19.0,0,0,2700.0,7.0407,,C,Lebanon,28,al muna mr farid husayn qasim,27000,False,False,False,False,[],[],none
+29,1,3,"Andersen-Jensen, Miss. Carla Christine Nielsine",female,19.0,1,0,350046.0,7.1701,,S,Denmark,29,andersen jensen miss carla christine nielsine,3500460,True,False,False,True,[193],[],name_only
+30,0,3,"Andersen, Mr. Albert Karvin",male,33.0,0,0,4001.0,22.1006,,S,Norway,30,andersen mr albert karvin,40010,False,False,False,False,[],[],none
+31,1,1,"Anderson, Mr. Harry",male,47.0,0,0,19952.0,26.11,,S,United States,31,anderson mr harry,199520,True,False,False,True,[461],[],name_only
+32,0,3,"Andersson, Master. Sigvard Harald Elias",male,4.0,4,2,347082.0,31.0506,,S,Sweden,32,andersson master sigvard harald elias,3470820,True,False,False,True,[851],[],name_only
+33,0,3,"Andersson, Miss. Ebba Iris Alfrida",female,6.0,4,2,347082.0,31.0506,,S,Sweden,33,andersson miss ebba iris alfrida,3470820,True,False,False,True,[814],[],name_only
+34,0,3,"Andersson, Miss. Ellis Anna Maria",female,2.0,4,2,347082.0,31.0506,,S,Sweden,34,andersson miss ellis anna maria,3470820,True,False,False,True,[120],[],name_only
+35,1,3,"Andersson, Miss. Erna Alexandra",female,16.0,4,2,3101281.0,7.1806,,S,Finland,35,andersson miss erna alexandra,31012810,True,False,False,True,[69],[],name_only
+36,0,3,"Andersson, Miss. Ida Augusta Margareta",female,38.0,4,2,347091.0,7.1506,,S,Sweden,36,andersson miss ida augusta margareta,3470910,False,False,False,False,[],[],none
+37,0,3,"Andersson, Miss. Ingeborg Constanzia",female,9.0,4,2,347082.0,31.0506,,S,Sweden,37,andersson miss ingeborg constanzia,3470820,True,False,False,True,[542],[],name_only
+38,0,3,"Andersson, Miss. Sigrid Elisabeth",female,11.0,4,2,347082.0,31.0506,,S,Sweden,38,andersson miss sigrid elisabeth,3470820,True,False,False,True,[543],[],name_only
+39,0,3,"Andersson, Mr. Anders Johan",male,39.0,1,5,347082.0,31.0506,,S,Sweden,39,andersson mr anders johan,3470820,True,False,False,True,[14],[],name_only
+40,0,3,"Andersson, Mr. Johan Samuel",male,26.0,0,0,347075.0,7.1506,,S,Sweden,40,andersson mr johan samuel,3470750,False,False,False,False,[],[],none
+41,0,3,"Andersson, Mrs. Alfrida Konstantia Brogren",female,39.0,1,5,347082.0,31.0506,,S,Sweden,41,andersson mrs alfrida konstantia brogren,3470820,False,False,False,False,[],[],none
+42,0,3,"Andreasson, Mr. Pål Edvin",male,20.0,0,0,347466.0,7.1701,,S,Sweden,42,andreasson mr pal edvin,3474660,False,False,False,False,[],[],none
+43,0,2,"Andrew, Mr. Edgar Samuel",male,17.0,0,0,231945.0,11.1,,S,Argentina,43,andrew mr edgar samuel,2319450,False,False,False,False,[],[],none
+44,0,2,"Andrew, Mr. Frank Thomas",male,27.0,0,0,34050.0,10.1,,S,England,44,andrew mr frank thomas,340500,False,False,False,False,[],[],none
+45,1,1,"Andrews, Miss. Kornelia Theodosia",female,62.0,1,0,13502.0,77.1902,,C,United States,45,andrews miss kornelia theodosia,135020,True,False,False,True,[276],[],name_only
+46,0,1,"Andrews, Mr. Thomas",male,39.0,0,0,112050.0,,,B,Northern Ireland,46,andrews mr thomas,1120500,False,False,False,False,[],[],none
+47,0,3,"Angheloff, Mr. Minko",male,26.0,0,0,349202.0,7.1711,,S,Bulgaria,47,angheloff mr minko,3492020,False,False,False,False,[],[],none
+48,1,2,"Angle, Mrs. Florence Agnes",female,36.0,1,0,226875.0,26.0,,S,England,48,angle mrs florence agnes,2268750,False,False,False,False,[],[],none
+49,0,2,"Angle, Mr. William",male,31.0,1,0,226875.0,26.0,,S,England,49,angle mr william,2268750,False,False,False,False,[],[],none
+50,1,1,"Appleton, Mrs. Charlotte",female,53.0,2,0,11769.0,51.0907,,S,United States,50,appleton mrs charlotte,117690,False,False,False,False,[],[],none
+51,0,3,"Arnold-Franchi, Mr. Josef",male,25.0,1,0,349237.0,17.16,,S,Switzerland,51,arnold franchi mr josef,3492370,True,False,False,True,[354],[],name_only
+52,0,3,"Arnold-Franchi, Mrs. Josefine",female,18.0,1,0,349237.0,17.16,,S,Switzerland,52,arnold franchi mrs josefine,3492370,False,False,False,False,[],[],none
+53,0,3,"Aronsson, Mr. Ernst Axel Algot",male,25.0,0,0,349911.0,7.1506,,S,Sweden,53,aronsson mr ernst axel algot,3499110,False,False,False,False,[],[],none
+54,0,1,"Artagaveytia, Mr. Ramon",male,71.0,0,0,17609.0,49.1001,,C,Argentina,54,artagaveytia mr ramon,176090,True,False,False,True,[494],[],name_only
+55,0,2,"Ashby, Mr. John",male,57.0,0,0,244346.0,13.0,,S,England,55,ashby mr john,2443460,False,False,False,False,[],[],none
+56,0,3,"Asim, Mr. Adola",male,35.0,0,0,3101310.0,7.01,,S,Argentina,56,asim mr adola,31013100,True,False,False,True,[364],[],name_only
+57,0,3,"Asplund, Master. Carl Edgar",male,5.0,4,2,347077.0,31.0709,,S,Sweden,57,asplund master carl edgar,3470770,False,False,False,False,[],[],none
+58,0,3,"Asplund, Master. Clarence Gustaf Hugo",male,9.0,4,2,347077.0,31.0709,,S,Sweden,58,asplund master clarence gustaf hugo,3470770,True,False,False,True,[183],[],name_only
+59,1,3,"Asplund, Master. Edvin Rojj Felix",male,3.0,4,2,347077.0,31.0709,,S,Sweden,59,asplund master edvin rojj felix,3470770,True,False,False,True,[262],[],name_only
+60,0,3,"Asplund, Master. Filip Oscar",male,13.0,4,2,347077.0,31.0709,,S,Sweden,60,asplund master filip oscar,3470770,False,False,False,False,[],[],none
+61,1,3,"Asplund, Miss. Lillian Gertrud",female,5.0,4,2,347077.0,31.0709,,S,Sweden,61,asplund miss lillian gertrud,3470770,True,False,False,True,[234],[],name_only
+62,0,3,"Asplund, Mr. Carl Oscar Vilhelm Gustafsson",male,40.0,1,5,347077.0,31.0709,,S,Sweden,62,asplund mr carl oscar vilhelm gustafsson,3470770,False,False,False,False,[],[],none
+63,1,3,"Asplund, Mr. Johan Charles",male,23.0,0,0,350054.0,7.1511,,S,Sweden,63,asplund mr johan charles,3500540,False,False,False,False,[],[],none
+64,1,3,"Asplund, Mrs. Selma Augusta Emilia",female,38.0,1,5,347077.0,31.0709,,S,Sweden,64,asplund mrs selma augusta emilia,3470770,False,False,False,False,[],[],none
+65,1,3,"Assaf, Mrs. Mariana",female,45.0,0,0,2696.0,7.0406,,C,Lebanon,65,assaf mrs mariana,26960,False,False,False,False,[],[],none
+66,0,3,"Assam, Mr. Ali",male,23.0,0,0,3101309.0,7.01,,S,Argentina,66,assam mr ali,31013090,False,False,False,False,[],[],none
+67,0,1,"Astor, Colonel. John Jacob",male,47.0,1,0,17757.0,247.1006,,C,United States,67,astor colonel john jacob,177570,False,False,False,False,[],[],none
+68,1,1,"Astor, Mrs. Madeleine Talmage",female,18.0,1,0,17757.0,247.1006,,C,United States,68,astor mrs madeleine talmage,177570,False,False,False,False,[],[],none
+69,0,3,"Attalah, Miss. Malake",female,17.0,0,0,2627.0,14.0902,,C,Lebanon,69,attalah miss malake,26270,True,False,False,True,[115],[],name_only
+70,0,3,"Attala, Mr. Sleiman",male,27.0,0,0,2694.0,7.0406,,C,Canada,70,attala mr sleiman,26940,False,False,False,False,[],[],none
+71,1,1,"Aubart, Mme. Léontine Pauline",female,24.0,0,0,17477.0,69.06,,C,France,71,aubart mme leontine pauline,174770,True,False,False,True,[370],[],name_only
+72,0,3,"Augustsson, Mr. Albert",male,23.0,0,0,347468.0,7.1701,,S,Sweden,72,augustsson mr albert,3474680,True,False,False,True,[834],[],name_only
+73,1,3,"Ayoub Daher, Miss. Banoura",female,15.0,0,0,2687.0,7.0407,,C,Lebanon,73,ayoub daher miss banoura,26870,False,False,False,False,[],[],none
+74,0,3,"Backström, Mr. Karl Alfred",male,32.0,1,0,3101278.0,15.17,,S,Finland,74,backstrom mr karl alfred,31012780,True,False,False,True,[207],[],name_only
+75,1,3,"Backström, Mrs. Maria Mathilda",female,33.0,3,0,3101278.0,15.17,,S,Finland,75,backstrom mrs maria mathilda,31012780,False,False,False,False,[],[],none
+76,1,3,"Baclini, Miss. Eugenie",female,3.0,2,1,2666.0,19.0502,,C,Lebanon,76,baclini miss eugenie,26660,True,False,False,True,[645],[],name_only
+77,1,3,"Baclini, Miss. Helene Barbara",female,0.75,2,1,2666.0,19.0502,,C,Lebanon,77,baclini miss helene barbara,26660,True,False,False,True,[470],[],name_only
+78,1,3,"Baclini, Miss. Marie Catherine",female,5.0,2,1,2666.0,19.0502,,C,Lebanon,78,baclini miss marie catherine,26660,True,False,False,True,[449],[],name_only
+79,1,3,"Baclini, Mrs. Latifa",female,23.0,0,3,2666.0,19.0502,,C,Lebanon,79,baclini mrs latifa,26660,False,False,False,False,[],[],none
+80,1,3,"Badman, Miss. Emily Louisa",female,18.0,0,0,31416.0,8.01,,S,England,80,badman miss emily louisa,314160,False,False,False,False,[],[],none
+81,0,3,"Badt, Mr. Mohamed",male,40.0,0,0,2623.0,7.0406,,C,Lebanon,81,badt mr mohamed,26230,True,False,False,True,[662],[],name_only
+82,0,2,"Bailey, Mr. Percy",male,18.0,0,0,29108.0,11.1,,S,England,82,bailey mr percy,291080,False,False,False,False,[],[],none
+83,0,2,"Bainbrigge, Mr. Charles Robert",male,22.0,0,0,31030.0,10.1,,S,Channel Islands,83,bainbrigge mr charles robert,310300,False,False,False,False,[],[],none
+84,0,3,"Balkic, Mr. Cerin",male,26.0,0,0,349248.0,7.1711,,S,Bosnia,84,balkic mr cerin,3492480,True,False,False,True,[871],[],name_only
+85,1,2,"Balls, Mrs. Ada E.",female,36.0,0,0,28551.0,13.0,,S,England,85,balls mrs ada e,285510,False,False,False,False,[],[],none
+86,0,2,"Banfield, Mr. Frederick James",male,28.0,0,0,34068.0,10.1,,S,England,86,banfield mr frederick james,340680,True,False,False,True,[884],[],name_only
+87,1,3,"Banski, Mrs. Mara",female,31.0,0,0,349244.0,8.1308,,S,Hungary,87,banski mrs mara,3492440,False,False,False,False,[],[],none
+88,0,3,"Barbara, Miss. Saiide",female,18.0,0,1,2691.0,14.0901,,C,Lebanon,88,barbara miss saiide,26910,True,False,False,True,[703],[],name_only
+89,0,3,"Barbara, Mrs. Catherine David",female,45.0,0,1,2691.0,14.0901,,C,Lebanon,89,barbara mrs catherine david,26910,True,False,False,True,[363],[],name_only
+90,1,1,"Barber, Miss. Ellen Mary",female,27.0,0,0,19877.0,78.17,,S,,90,barber miss ellen mary,198770,False,False,False,False,[],[],none
+91,1,1,"Barkworth, Mr. Algernon Henry",male,47.0,0,0,27042.0,30.0,,S,England,91,barkworth mr algernon henry,270420,False,False,False,False,[],[],none
+92,0,3,"Barry, Miss. Julia",female,30.0,0,0,330844.0,7.1707,,Q,Ireland,92,barry miss julia,3308440,False,False,False,False,[],[],none
+93,0,3,"Barton, Mr. David John",male,22.0,0,0,324669.0,8.01,,S,England,93,barton mr david john,3246690,True,False,False,True,[113],[],name_only
+94,1,1,"Bassani, Mrs. Albina",female,32.0,0,0,11813.0,76.051,,C,Italy,94,bassani mrs albina,118130,False,False,False,False,[],[],none
+95,0,2,"Bateman, Revd. Robert James",male,52.0,0,0,1166.0,12.1006,,S,England,95,bateman revd robert james,11660,False,False,False,False,[],[],none
+96,0,3,"Batoshev, Mr. Hristo Lalev",male,23.0,0,0,349217.0,7.1711,,S,Bulgaria,96,batoshev mr hristo lalev,3492170,False,False,False,False,[],[],none
+97,0,1,"Baumann, Mr. John D.",male,60.0,0,0,17318.0,25.1806,,C,United States,97,baumann mr john d,173180,True,False,False,True,[169],[],name_only
+98,0,1,"Baxter, Mr. Quigg Edmond",male,24.0,0,1,17558.0,247.1005,,C,Canada,98,baxter mr quigg edmond,175580,True,False,False,True,[119],[],name_only
+99,1,1,"Baxter, Mrs. Hélène",female,50.0,0,1,17558.0,247.1005,,C,Canada,99,baxter mrs helene,175580,False,False,False,False,[],[],none
+100,1,2,"Beane, Mr. Edward",male,32.0,1,0,2908.0,26.0,,S,England,100,beane mr edward,29080,True,False,False,True,[544],[],name_only
+101,1,2,"Beane, Mrs. Ethel",female,22.0,1,0,2908.0,26.0,,S,England,101,beane mrs ethel,29080,False,False,False,False,[],[],none
+102,0,1,"Beattie, Mr. Thomson",male,36.0,0,0,13050.0,75.041,,S,Canada,102,beattie mr thomson,130500,False,False,False,False,[],[],none
+103,0,2,"Beauchamp, Mr. Henry James",male,44.0,0,0,244358.0,26.0,,S,England,103,beauchamp mr henry james,2443580,False,False,False,False,[],[],none
+104,0,3,"Beavan, Mr. William Thomas",male,20.0,0,0,323951.0,8.01,,S,England,104,beavan mr william thomas,3239510,True,False,False,True,[373],[],name_only
+105,1,2,"Becker, Master. Richard F.",male,1.0,2,1,230136.0,39.0,,S,India,105,becker master richard f,2301360,True,False,False,True,[184],[],name_only
+106,1,2,"Becker, Miss. Marion Louise",female,4.0,2,1,230136.0,39.0,,S,India,106,becker miss marion louise,2301360,True,False,False,True,[619],[],name_only
+107,1,2,"Becker, Miss. Ruth Elizabeth",female,12.0,2,1,230136.0,39.0,,S,India,107,becker miss ruth elizabeth,2301360,False,False,False,False,[],[],none
+108,1,2,"Becker, Mrs. Nellie E.",female,35.0,0,3,230136.0,39.0,,S,United States,108,becker mrs nellie e,2301360,False,False,False,False,[],[],none
+109,1,1,"Beckwith, Mr. Richard Leonard",male,37.0,1,1,11751.0,52.1101,,S,United States,109,beckwith mr richard leonard,117510,True,False,False,True,[249],[],name_only
+110,1,1,"Beckwith, Mrs. Sallie",female,46.0,1,1,11751.0,52.1101,,S,United States,110,beckwith mrs sallie,117510,False,False,False,False,[],[],none
+111,1,2,"Beesley, Mr. Lawrence",male,34.0,0,0,248698.0,13.0,,S,England,111,beesley mr lawrence,2486980,True,False,False,True,[22],[],name_only
+112,1,1,"Behr, Mr. Karl Howell",male,26.0,0,0,111369.0,30.0,,C,United States,112,behr mr karl howell,1113690,True,False,False,True,[890],[],name_only
+113,0,3,"Bengtsson, Mr. Johan Viktor",male,26.0,0,0,347068.0,7.1506,,S,Sweden,113,bengtsson mr johan viktor,3470680,False,False,False,False,[],[],none
+114,1,2,"Bentham, Miss. Lillian W.",female,19.0,0,0,28404.0,13.0,,S,United States,114,bentham miss lillian w,284040,False,False,False,False,[],[],none
+115,0,3,"Berglund, Mr. Karl Ivar Sven",male,22.0,0,0,4348.0,9.07,,S,Finland,115,berglund mr karl ivar sven,43480,True,False,False,True,[226],[],name_only
+116,0,2,"Berriman, Mr. William John",male,23.0,0,0,28425.0,13.0,,S,England,116,berriman mr william john,284250,True,False,False,True,[734],[],name_only
+117,1,1,"Bessette, Miss. Nellie Mayo",female,39.0,0,0,17760.0,63.0702,,C,United States,117,bessette miss nellie mayo,177600,False,False,False,False,[],[],none
+118,1,1,"Bidois, Miss. Rosalie",female,46.0,0,0,17757.0,247.1006,,C,,118,bidois miss rosalie,177570,True,False,False,True,[381],[],name_only
+119,1,3,"Bing, Mr. Lee",male,32.0,0,0,1601.0,56.0911,,S,,119,bing mr lee,16010,True,False,False,True,[75],[],name_only
+120,1,1,"Bird, Miss. Ellen",female,31.0,0,0,17483.0,221.1507,,S,England,120,bird miss ellen,174830,False,False,False,False,[],[],none
+121,0,3,"Birkeland, Mr. Hans Martin Monsen",male,21.0,0,0,312992.0,7.1506,,S,Norway,121,birkeland mr hans martin monsen,3129920,True,False,False,True,[409],[],name_only
+122,0,1,"Birnbaum, Mr. Jakob",male,24.0,0,0,13905.0,26.0,,C,,122,birnbaum mr jakob,139050,False,False,False,False,[],[],none
+123,1,1,"Bishop, Mr. Dickinson H.",male,25.0,1,0,11967.0,91.0107,,C,United States,123,bishop mr dickinson h,119670,True,False,False,True,[485],[],name_only
+124,1,1,"Bishop, Mrs. Helen",female,19.0,1,0,11967.0,91.0107,,C,United States,124,bishop mrs helen,119670,False,False,False,False,[],[],none
+125,0,3,"Björklund, Mr. Ernst Herbert",male,18.0,0,0,347090.0,7.15,,S,Sweden,125,bjorklund mr ernst herbert,3470900,False,False,False,False,[],[],none
+126,1,1,"Björnström-Steffansson, Mr. Mauritz Hokan",male,28.0,0,0,110564.0,26.11,,S,Sweden,126,bjornstrom steffansson mr mauritz hokan,1105640,False,False,False,False,[],[],none
+127,0,1,"Blackwell, Mr. Stephen Weart",male,45.0,0,0,113784.0,35.1,,S,United States,127,blackwell mr stephen weart,1137840,True,False,False,True,[340],[],name_only
+128,1,1,"Blank, Mr. Henry",male,39.0,0,0,112277.0,31.0,,C,United States,128,blank mr henry,1122770,True,False,False,True,[210],[],name_only
+129,1,1,"Bonnell, Miss. Caroline",female,30.0,0,0,36928.0,164.1704,,S,United States,129,bonnell miss caroline,369280,False,False,False,False,[],[],none
+130,1,1,"Bonnell, Miss. Elizabeth",female,61.0,0,0,113783.0,26.11,,S,England,130,bonnell miss elizabeth,1137830,True,False,False,True,[12],[],name_only
+131,0,1,"Borebank, Mr. John James",male,41.0,0,0,110489.0,26.11,,S,England,131,borebank mr john james,1104890,False,False,False,False,[],[],none
+132,0,3,"Bostandyeff, Mr. Guentcho",male,26.0,0,0,349224.0,7.1711,,S,,132,bostandyeff mr guentcho,3492240,True,False,False,True,[629],[],name_only
+133,0,2,"Botsford, Mr. William Hull",male,25.0,0,0,237670.0,13.0,,S,United States,133,botsford mr william hull,2376700,False,False,False,False,[],[],none
+134,0,3,"Bourke, Miss. Mary",female,40.0,0,2,364848.0,7.15,,Q,Ireland,134,bourke miss mary,3648480,True,False,False,True,[594],[],name_only
+135,0,3,"Bourke, Mr. John",male,42.0,1,1,364849.0,15.1,,Q,Ireland,135,bourke mr john,3648490,True,False,False,True,[189],[],name_only
+136,0,3,"Bourke, Mrs. Catherine",female,32.0,1,1,364849.0,15.1,,Q,Ireland,136,bourke mrs catherine,3648490,False,False,False,False,[],[],none
+137,1,1,"Bowen, Miss. Grace Scott",female,45.0,0,0,17608.0,262.0706,,C,United States,137,bowen miss grace scott,176080,False,False,False,False,[],[],none
+138,0,3,"Bowen, Mr. David John 'Dai'",male,26.0,0,0,54636.0,16.02,,S,Wales,138,bowen mr david john dai,546360,True,False,False,True,[625],[],name_only
+139,0,2,"Bowenur, Mr. Solomon",male,42.0,0,0,211535.0,13.0,,S,,139,bowenur mr solomon,2115350,False,False,False,False,[],[],none
+140,1,1,"Bowerman, Miss. Elsie Edith",female,22.0,0,1,113505.0,55.0,,S,England,140,bowerman miss elsie edith,1135050,True,False,False,True,[357],[],name_only
+141,0,2,"Bracken, Mr. James Hollen",male,30.0,0,0,220367.0,13.0,,S,United States,141,bracken mr james hollen,2203670,False,False,False,False,[],[],none
+142,1,3,"Bradley, Miss. Bridget Delia",female,22.0,0,0,334914.0,7.1406,,Q,Ireland,142,bradley miss bridget delia,3349140,False,False,False,False,[],[],none
+143,0,1,"Brady, Mr. John Bertram",male,41.0,0,0,113054.0,30.1,,S,United States,143,brady mr john bertram,1130540,False,False,False,False,[],[],none
+144,0,3,"Braf, Miss. Elin Ester Maria",female,20.0,0,0,347471.0,7.1701,,S,Sweden,144,braf miss elin ester maria,3474710,False,False,False,False,[],[],none
+145,0,2,"Brailey, Mr. William Theodore Ronald",male,24.0,,,250654.0,,,S,England,145,brailey mr william theodore ronald,2506540,False,False,False,False,[],[],none
+146,0,1,"Brandeis, Mr. Emil Franklin",male,48.0,0,0,17591.0,50.0911,,C,United States,146,brandeis mr emil franklin,175910,False,False,False,False,[],[],none
+147,0,3,"Braund, Mr. Lewis Richard",male,29.0,1,0,3460.0,7.0,,S,England,147,braund mr lewis richard,34600,True,False,False,True,[478],[],name_only
+148,0,3,"Braund, Mr. Owen Harris",male,23.0,1,0,21171.0,7.05,,S,England,148,braund mr owen harris,211710,True,False,False,True,[1],[],name_only
+149,1,1,"Brereton, Mr. George Andrew",male,37.0,0,0,111427.0,26.11,,S,United States,149,brereton mr george andrew,1114270,False,False,False,False,[],[],none
+150,0,1,"Brewe, Dr. Arthur Jackson",male,46.0,0,0,112379.0,39.12,,C,United States,150,brewe dr arthur jackson,1123790,True,False,False,True,[767],[],name_only
+151,0,2,"Bricoux, Mr. Roger Marie",male,20.0,,,250654.0,,,S,France,151,bricoux mr roger marie,2506540,False,False,False,False,[],[],none
+152,0,2,"Brito, Mr. José Joaquim de",male,32.0,0,0,244360.0,13.0,,S,,152,brito mr jose joaquim de,2443600,False,False,False,False,[],[],none
+153,0,3,"Brobäck, Mr. Karl Rudolf",male,22.0,0,0,350045.0,7.1511,,S,Sweden,153,broback mr karl rudolf,3500450,False,False,False,False,[],[],none
+154,0,3,"Brocklebank, Mr. William Alfred",male,40.0,0,0,364512.0,8.01,,S,England,154,brocklebank mr william alfred,3645120,True,False,False,True,[615],[],name_only
+155,1,2,"Brown, Miss. Amelia Mary",female,18.0,0,0,248733.0,13.0,,S,England,155,brown miss amelia mary,2487330,False,False,False,False,[],[],none
+156,1,2,"Brown, Miss. Edith Eileen",female,15.0,0,2,29750.0,39.0,,S,South Africa,156,brown miss edith eileen,297500,False,False,False,False,[],[],none
+157,1,1,"Brown, Mrs. Caroline Lane",female,59.0,2,0,11769.0,51.0907,,S,United States,157,brown mrs caroline lane,117690,False,False,False,False,[],[],none
+158,1,2,"Brown, Mrs. Elizabeth Catherine",female,40.0,1,1,29750.0,39.0,,S,South Africa,158,brown mrs elizabeth catherine,297500,False,False,False,False,[],[],none
+159,1,1,"Brown, Mrs. Margaret",female,44.0,0,0,17610.0,27.1405,,C,United States,159,brown mrs margaret,176100,False,False,False,False,[],[],none
+160,0,2,"Brown, Mr. Thomas William Solomon",male,60.0,1,1,29750.0,39.0,,S,South Africa,160,brown mr thomas william solomon,297500,True,False,False,True,[685],[],name_only
+161,1,2,"Bryhl, Miss. Dagmar Jenny Ingeborg",female,20.0,1,0,236853.0,26.0,,S,Sweden,161,bryhl miss dagmar jenny ingeborg,2368530,False,False,False,False,[],[],none
+162,0,2,"Bryhl, Mr. Kurt Arnold Gottfrid",male,25.0,1,0,236853.0,26.0,,S,Sweden,162,bryhl mr kurt arnold gottfrid,2368530,True,False,False,True,[729],[],name_only
+163,0,3,"Buckley, Miss. Katherine",female,22.0,0,0,329944.0,7.0508,,Q,Ireland,163,buckley miss katherine,3299440,False,False,False,False,[],[],none
+164,1,3,"Buckley, Mr. Daniel",male,21.0,0,0,330920.0,7.1517,,Q,Ireland,164,buckley mr daniel,3309200,False,False,False,False,[],[],none
+165,1,1,"Bucknell, Mrs. Emma Eliza",female,58.0,0,0,11813.0,76.051,,C,India,165,bucknell mrs emma eliza,118130,False,False,False,False,[],[],none
+166,0,3,"Būlus, Master. Akar",male,7.0,1,1,2678.0,15.0411,,C,Lebanon,166,bulus master akar,26780,False,False,False,False,[],[],none
+167,0,3,"Būlus, Miss. Nūr al-'ayn",female,10.0,1,1,2678.0,15.0411,,C,Lebanon,167,bulus miss nur al ayn,26780,False,False,False,False,[],[],none
+168,0,3,"Būlus, Mrs. Sultānah",female,40.0,0,2,2678.0,15.0411,,C,Lebanon,168,bulus mrs sultanah,26780,False,False,False,False,[],[],none
+169,0,3,"Burke, Mr. Jeremiah",male,19.0,0,0,365222.0,6.15,,Q,Ireland,169,burke mr jeremiah,3652220,True,False,False,True,[144],[],name_only
+170,1,1,"Burns, Miss. Elizabeth Margaret",female,41.0,0,0,16966.0,134.1,,C,,170,burns miss elizabeth margaret,169660,True,False,False,True,[338],[],name_only
+171,0,3,"Burns, Miss. Mary Delia",female,17.0,0,0,330963.0,7.1707,,Q,Ireland,171,burns miss mary delia,3309630,False,False,False,False,[],[],none
+172,1,2,"Buss, Miss. Kate",female,36.0,0,0,27849.0,13.0,,S,England,172,buss miss kate,278490,True,False,False,True,[388],[],name_only
+173,0,2,"Butler, Mr. Reginald Fenton",male,26.0,0,0,234686.0,13.0,,S,England,173,butler mr reginald fenton,2346860,True,False,False,True,[667],[],name_only
+174,0,3,"Butrus-Ka'wī, Mr. Tannūs",male,21.0,0,0,2648.0,7.0407,,C,Lebanon,174,butrus ka wi mr tannus,26480,False,False,False,False,[],[],none
+175,0,1,"Butt, Major. Archibald Willingham",male,46.0,0,0,113050.0,26.11,,S,United States,175,butt major archibald willingham,1130500,True,False,False,True,[537],[],name_only
+176,0,2,"Byles, Fr. Thomas Roussel Davids",male,42.0,0,0,244310.0,13.0,,S,England,176,byles fr thomas roussel davids,2443100,False,False,False,False,[],[],none
+177,1,2,"Byström, Mrs. Karolina",female,40.0,0,0,236852.0,13.0,,S,United States,177,bystrom mrs karolina,2368520,True,False,False,True,[866],[],name_only
+178,0,3,"Cacic, Miss. Manda",female,21.0,0,0,315087.0,8.1303,,S,Croatia (Modern),178,cacic miss manda,3150870,False,False,False,False,[],[],none
+179,0,3,"Cacic, Miss. Marija",female,30.0,0,0,315084.0,8.1303,,S,Croatia (Modern),179,cacic miss marija,3150840,True,False,False,True,[535],[],name_only
+180,0,3,"Cacic, Mr. Jego Grga",male,18.0,0,0,315091.0,8.1303,,S,Croatia (Modern),180,cacic mr jego grga,3150910,False,False,False,False,[],[],none
+181,0,3,"Cacic, Mr. Luka",male,38.0,0,0,315089.0,8.1303,,S,Croatia (Modern),181,cacic mr luka,3150890,True,False,False,True,[472],[],name_only
+182,0,1,"Cairns, Mr. Alexander Milne",male,28.0,0,0,113798.0,31.0,,S,Scotland,182,cairns mr alexander milne,1137980,False,False,False,False,[],[],none
+183,1,1,"Calderhead, Mr. Edward Pennington",male,42.0,0,0,17476.0,26.0509,,S,United States,183,calderhead mr edward pennington,174760,True,False,False,True,[708],[],name_only
+184,1,2,"Caldwell, Master. Alden Gates",male,0.8333333333,0,2,248738.0,29.0,,S,Siam,184,caldwell master alden gates,2487380,True,False,False,True,[79],[],name_only
+185,1,2,"Caldwell, Mr. Albert Francis",male,26.0,1,1,248738.0,29.0,,S,Siam,185,caldwell mr albert francis,2487380,False,False,False,False,[],[],none
+186,1,2,"Caldwell, Mrs. Sylvia Mae",female,28.0,1,1,248738.0,29.0,,S,United States,186,caldwell mrs sylvia mae,2487380,False,False,False,False,[],[],none
+187,0,3,"Calic, Mr. Jovo",male,17.0,0,0,315093.0,8.1303,,S,Croatia (Modern),187,calic mr jovo,3150930,True,False,False,True,[164],[],name_only
+188,0,3,"Calic, Mr. Petar",male,17.0,0,0,315086.0,8.1303,,S,Croatia (Modern),188,calic mr petar,3150860,True,False,False,True,[501],[],name_only
+189,1,2,"Cameron, Miss. Clear Annie",female,35.0,0,0,13528.0,21.0,,S,England,189,cameron miss clear annie,135280,True,False,False,True,[212],[],name_only
+190,0,2,"Campbell, Mr. William Henry",male,21.0,0,0,239853.0,,,B,Northern Ireland,190,campbell mr william henry,2398530,False,False,False,False,[],[],none
+191,0,3,"Canavan, Miss. Mary",female,22.0,0,0,364846.0,7.15,,Q,Ireland,191,canavan miss mary,3648460,True,False,False,True,[502],[],name_only
+192,0,3,"Canavan, Mr. Patrick",male,21.0,0,0,364858.0,7.15,,Q,Ireland,192,canavan mr patrick,3648580,False,False,False,False,[],[],none
+193,1,1,"Candee, Mrs. Helen Churchill",female,52.0,0,0,17606.0,27.0811,,C,United States,193,candee mrs helen churchill,176060,False,False,False,False,[],[],none
+194,0,3,"Cann, Mr. Ernest",male,29.0,0,0,2152.0,8.01,,S,England,194,cann mr ernest,21520,False,False,False,False,[],[],none
+195,0,3,"Caram, Mr. Joseph",male,28.0,1,0,2689.0,14.0902,,C,Canada,195,caram mr joseph,26890,False,False,False,False,[],[],none
+196,0,3,"Caram, Mrs. Maria Elias",female,18.0,1,0,2689.0,14.0902,,C,Lebanon,196,caram mrs maria elias,26890,False,False,False,False,[],[],none
+197,0,2,"Carbines, Mr. William",male,19.0,0,0,28424.0,13.0,,S,England,197,carbines mr william,284240,True,False,False,True,[192],[],name_only
+198,1,1,"Cardeza, Mrs. Charlotte Wardle",female,58.0,0,1,17755.0,512.0607,,C,United States,198,cardeza mrs charlotte wardle,177550,False,False,False,False,[],[],none
+199,1,1,"Cardeza, Mr. Thomas Drake Martinez",male,36.0,0,1,17755.0,512.0607,,C,United States,199,cardeza mr thomas drake martinez,177550,True,False,False,True,[680],[],name_only
+200,0,3,"Carlsson, Mr. August Sigfrid",male,28.0,0,0,350042.0,7.1511,,S,Sweden,200,carlsson mr august sigfrid,3500420,True,False,False,True,[757],[],name_only
+201,0,3,"Carlsson, Mr. Carl Robert",male,24.0,0,0,350409.0,7.1701,,S,Sweden,201,carlsson mr carl robert,3504090,False,False,False,False,[],[],none
+202,0,1,"Carlsson, Mr. Frans Olof",male,33.0,0,0,695.0,5.0,,S,United States,202,carlsson mr frans olof,6950,True,False,False,True,[873],[],name_only
+203,0,1,"Carraú-Esteves, Mr. José Pedro",male,17.0,0,0,113059.0,47.02,,S,Uruguay,203,carrau esteves mr jose pedro,1130590,False,False,False,False,[],[],none
+204,0,1,"Carrau, Mr. Francisco Mauro Severiano",male,27.0,0,0,113059.0,47.02,,S,Uruguay,204,carrau mr francisco mauro severiano,1130590,False,False,False,False,[],[],none
+205,0,3,"Carr, Miss. Jane",female,45.0,0,0,368364.0,7.15,,Q,Ireland,205,carr miss jane,3683640,False,False,False,False,[],[],none
+206,0,2,"Carter, Fr. Ernest Courtenay",male,54.0,1,0,244252.0,26.0,,S,England,206,carter fr ernest courtenay,2442520,False,False,False,False,[],[],none
+207,1,1,"Carter, Master. William Thornton II",male,11.0,1,2,113760.0,120.0,,S,United States,207,carter master william thornton ii,1137600,True,False,False,True,[803],[],name_only
+208,1,1,"Carter, Miss. Lucile Polk",female,13.0,1,2,113760.0,120.0,,S,United States,208,carter miss lucile polk,1137600,True,False,False,True,[436],[],name_only
+209,0,2,"Carter, Mrs. Lilian",female,45.0,1,0,244252.0,26.0,,S,England,209,carter mrs lilian,2442520,False,False,False,False,[],[],none
+210,1,1,"Carter, Mrs. Lucile",female,36.0,1,2,113760.0,120.0,,S,United States,210,carter mrs lucile,1137600,False,False,False,False,[],[],none
+211,1,1,"Carter, Mr. William Ernest",male,36.0,1,2,113760.0,120.0,,S,United States,211,carter mr william ernest,1137600,True,False,False,True,[391],[],name_only
+212,0,3,"Carver, Mr. Alfred John",male,28.0,0,0,370160.0,7.05,,S,England,212,carver mr alfred john,3701600,False,False,False,False,[],[],none
+213,0,1,"Case, Mr. Howard Brown",male,49.0,0,0,19924.0,26.0,,S,United States,213,case mr howard brown,199240,False,False,False,False,[],[],none
+214,1,1,"Cassebeer, Mrs. Eleanor Genevieve",female,36.0,0,0,17770.0,27.1405,,C,United States,214,cassebeer mrs eleanor genevieve,177700,False,False,False,False,[],[],none
+215,1,1,"Cavendish, Mrs. Julia Florence",female,25.0,1,0,19877.0,78.17,,S,United States,215,cavendish mrs julia florence,198770,False,False,False,False,[],[],none
+216,0,1,"Cavendish, Mr. Tyrell William",male,36.0,1,0,19877.0,78.17,,S,England,216,cavendish mr tyrell william,198770,True,False,False,True,[742],[],name_only
+217,0,3,"Celotti, Mr. Francesco",male,24.0,0,0,343275.0,8.01,,S,,217,celotti mr francesco,3432750,True,False,False,True,[90],[],name_only
+218,0,1,"Chaffee, Mr. Herbert Fuller",male,46.0,1,0,5734.0,61.0306,,S,United States,218,chaffee mr herbert fuller,57340,True,False,False,True,[93],[],name_only
+219,1,1,"Chaffee, Mrs. Carrie Constance",female,47.0,1,0,5734.0,61.0306,,S,United States,219,chaffee mrs carrie constance,57340,False,False,False,False,[],[],none
+220,1,1,"Chambers, Mr. Norman Campbell",male,27.0,1,0,113806.0,53.02,,S,United States,220,chambers mr norman campbell,1138060,True,False,False,True,[725],[],name_only
+221,1,1,"Chambers, Mrs. Bertha",female,32.0,1,0,113806.0,53.02,,S,United States,221,chambers mrs bertha,1138060,False,False,False,False,[],[],none
+222,0,2,"Chapman, Mr. Charles Henry",male,52.0,0,0,248731.0,13.1,,S,United States,222,chapman mr charles henry,2487310,True,False,False,True,[696],[],name_only
+223,0,2,"Chapman, Mr. John Henry",male,37.0,1,0,29037.0,26.0,,S,England,223,chapman mr john henry,290370,True,False,False,True,[595],[],name_only
+224,0,2,"Chapman, Mrs. Sara Elizabeth",female,29.0,1,0,29037.0,26.0,,S,England,224,chapman mrs sara elizabeth,290370,False,False,False,False,[],[],none
+225,0,3,"Charters, Mr. David",male,20.0,0,0,13032.0,7.1408,,Q,Ireland,225,charters mr david,130320,True,False,False,True,[422],[],name_only
+226,1,1,"Chaudanson, Miss. Victorine",female,36.0,0,0,17608.0,262.0706,,C,,226,chaudanson miss victorine,176080,False,False,False,False,[],[],none
+227,1,1,"Cherry, Miss. Gladys",female,30.0,0,0,110152.0,86.1,,S,England,227,cherry miss gladys,1101520,True,False,False,True,[258],[],name_only
+228,1,1,"Chevré, Mr. Paul Romaine Marie Léonce",male,45.0,0,0,17594.0,29.14,,C,Belgium,228,chevre mr paul romaine marie leonce,175940,False,False,False,False,[],[],none
+229,1,1,"Chibnall, Mrs. Edith Martha Bowerman",female,48.0,0,1,113505.0,55.0,,S,England,229,chibnall mrs edith martha bowerman,1135050,True,False,False,True,[167],[],name_only
+230,1,3,"Chip, Mr. Chang",male,32.0,0,0,1601.0,56.0911,,S,,230,chip mr chang,16010,True,False,False,True,[839],[],name_only
+231,0,1,"Chisholm, Mr. Roderick Robert Crispin",male,43.0,0,0,112051.0,,,B,Scotland,231,chisholm mr roderick robert crispin,1120510,False,False,False,False,[],[],none
+232,0,3,"Christmann, Mr. Emil",male,29.0,0,0,343276.0,8.01,,S,England,232,christmann mr emil,3432760,True,False,False,True,[91],[],name_only
+233,1,2,"Christy, Miss. Rachel Juli Cohen",female,25.0,1,1,237789.0,30.0,,S,England,233,christy miss rachel juli cohen,2377890,False,False,False,False,[],[],none
+234,1,2,"Christy, Mrs. Alice Frances",female,52.0,0,2,237789.0,30.0,,S,England,234,christy mrs alice frances,2377890,False,False,False,False,[],[],none
+235,0,3,"Chronopoulos, Mr. Apostolos M.",male,26.0,1,0,2680.0,14.0901,,C,,235,chronopoulos mr apostolos m,26800,False,False,False,False,[],[],none
+236,0,3,"Chronopoulos, Mr. Dimitrios M.",male,21.0,1,0,2680.0,14.0901,,C,,236,chronopoulos mr dimitrios m,26800,False,False,False,False,[],[],none
+237,0,2,"Clarke, Mr. Charles Valentine",male,29.0,1,0,2003.0,26.0,,S,England,237,clarke mr charles valentine,20030,False,False,False,False,[],[],none
+238,0,2,"Clarke, Mr. John Frederick Preston",male,28.0,,,250654.0,,,S,England,238,clarke mr john frederick preston,2506540,False,False,False,False,[],[],none
+239,1,2,"Clarke, Mrs. Ada Maria",female,28.0,1,0,2003.0,27.0,,S,England,239,clarke mrs ada maria,20030,False,False,False,False,[],[],none
+240,1,1,"Clark, Mrs. Virginia Estelle",female,26.0,1,0,13508.0,136.1507,,C,United States,240,clark mrs virginia estelle,135080,False,False,False,False,[],[],none
+241,0,1,"Clark, Mr. Walter Miller",male,27.0,1,0,13508.0,136.1507,,C,United States,241,clark mr walter miller,135080,False,False,False,False,[],[],none
+242,1,1,"Cleaver, Miss. Alice Catherine",female,22.0,0,0,113781.0,151.16,,S,England,242,cleaver miss alice catherine,1137810,False,False,False,False,[],[],none
+243,0,1,"Clifford, Mr. George Quincy",male,40.0,0,0,110465.0,52.0,,S,United States,243,clifford mr george quincy,1104650,True,False,False,True,[476],[],name_only
+244,0,3,"Coelho, Mr. Domingos Fernandeo",male,20.0,0,0,3101307.0,7.01,,S,,244,coelho mr domingos fernandeo,31013070,True,False,False,True,[132],[],name_only
+245,1,3,"Cohen, Mr. Gurshon",male,18.0,0,0,3540.0,8.01,,S,England,245,cohen mr gurshon,35400,False,False,False,False,[],[],none
+246,0,3,"Colbert, Mr. Patrick",male,24.0,0,0,371109.0,7.05,,Q,Ireland,246,colbert mr patrick,3711090,False,False,False,False,[],[],none
+247,0,3,"Coleff, Mr. Satio",male,24.0,0,0,349209.0,7.1711,,S,Bulgaria,247,coleff mr satio,3492090,True,False,False,True,[515],[],name_only
+248,0,2,"Coleridge, Mr. Reginald Charles",male,29.0,0,0,14263.0,10.1,,S,England,248,coleridge mr reginald charles,142630,True,False,False,True,[243],[],name_only
+249,0,2,"Collander, Mr. Erik Gustaf",male,27.0,0,0,248740.0,13.0,,S,Finland,249,collander mr erik gustaf,2487400,True,False,False,True,[343],[],name_only
+250,1,2,"Collett, Mr. Sidney Clarence Stuart",male,25.0,0,0,28034.0,10.1,,S,England,250,collett mr sidney clarence stuart,280340,False,False,False,False,[],[],none
+251,0,1,"Colley, Mr. Edward Pomeroy",male,37.0,0,0,5727.0,25.1109,,S,Ireland,251,colley mr edward pomeroy,57270,True,False,False,True,[663],[],name_only
+252,1,2,"Collyer, Miss. Marjorie Lottie",female,8.0,0,2,31921.0,26.05,,S,England,252,collyer miss marjorie lottie,319210,True,False,False,True,[238],[],name_only
+253,0,2,"Collyer, Mr. Harvey",male,31.0,1,1,31921.0,26.05,,S,England,253,collyer mr harvey,319210,True,False,False,True,[638],[],name_only
+254,1,2,"Collyer, Mrs. Charlotte Caroline",female,30.0,1,1,31921.0,26.05,,S,England,254,collyer mrs charlotte caroline,319210,False,False,False,False,[],[],none
+255,0,3,"Coltcheff, Mr. Peju",male,36.0,0,0,349210.0,7.1711,,S,Bulgaria,255,coltcheff mr peju,3492100,False,False,False,False,[],[],none
+256,1,1,"Compton, Miss. Sara Rebecca",female,39.0,1,1,17756.0,83.0302,,C,United States,256,compton miss sara rebecca,177560,True,False,False,True,[836],[],name_only
+257,0,1,"Compton, Mr. Alexander Taylor jr",male,37.0,1,1,17756.0,83.0302,,C,United States,257,compton mr alexander taylor jr,177560,False,False,False,False,[],[],none
+258,1,1,"Compton, Mrs. Mary Eliza",female,64.0,0,2,17756.0,83.0302,,C,United States,258,compton mrs mary eliza,177560,False,False,False,False,[],[],none
+259,0,3,"Conlin, Mr. Thomas Henry",male,31.0,0,0,21332.0,7.1408,,Q,United States,259,conlin mr thomas henry,213320,False,False,False,False,[],[],none
+260,0,3,"Connaughton, Mr. Michael",male,40.0,0,0,335097.0,7.15,,Q,Ireland,260,connaughton mr michael,3350970,False,False,False,False,[],[],none
+261,1,3,"Connolly, Miss. Catherine",female,23.0,0,0,370373.0,7.15,,Q,Ireland,261,connolly miss catherine,3703730,False,False,False,False,[],[],none
+262,0,3,"Connolly, Miss. Kate",female,41.0,0,0,330972.0,7.1207,,Q,Ireland,262,connolly miss kate,3309720,True,False,False,True,[290],[],name_only
+263,0,3,"Connors, Mr. Patrick",male,66.0,0,0,370369.0,7.15,,Q,Ireland,263,connors mr patrick,3703690,True,False,False,True,[117],[],name_only
+264,0,3,"Cook, Mr. Jacob",male,43.0,0,0,3536.0,8.01,,S,,264,cook mr jacob,35360,True,False,False,True,[669],[],name_only
+265,1,2,"Cook, Mrs. Selena",female,22.0,0,0,14266.0,10.1,,S,England,265,cook mrs selena,142660,False,False,False,False,[],[],none
+266,0,2,"Corbett, Mrs. Irene",female,30.0,0,0,237249.0,13.0,,S,United States,266,corbett mrs irene,2372490,False,False,False,False,[],[],none
+267,0,2,"Corey, Mrs. Mary Emma",female,32.0,0,0,13534.0,21.0,,S,,267,corey mrs mary emma,135340,False,False,False,False,[],[],none
+268,0,3,"Cor, Mr. Bartol",male,35.0,0,0,349230.0,7.1711,,S,Croatia (Modern),268,cor mr bartol,3492300,False,False,False,False,[],[],none
+269,0,3,"Cor, Mr. Ivan",male,27.0,0,0,349229.0,7.1711,,S,Hungary,269,cor mr ivan,3492290,False,False,False,False,[],[],none
+270,0,3,"Cor, Mr. Liudevit",male,19.0,0,0,349231.0,7.1711,,S,Hungary,270,cor mr liudevit,3492310,True,False,False,True,[647],[],name_only
+271,0,3,"Cornblatt, Mr. Harris",male,30.0,0,0,392090.0,8.01,,S,Poland,271,cornblatt mr harris,3920900,False,False,False,False,[],[],none
+272,1,1,"Cornell, Mrs. Malvina Helen",female,55.0,2,0,11770.0,25.141,,S,United States,272,cornell mrs malvina helen,117700,False,False,False,False,[],[],none
+273,1,3,"Corr, Miss. Ellen",female,16.0,0,0,367231.0,7.15,,Q,Ireland,273,corr miss ellen,3672310,False,False,False,False,[],[],none
+274,0,2,"Cotterill, Mr. Henry",male,21.0,0,0,29107.0,11.1,,S,England,274,cotterill mr henry,291070,False,False,False,False,[],[],none
+275,1,3,"Coutts, Master. Neville Leslie",male,3.0,1,1,37671.0,15.18,,S,England,275,coutts master neville leslie,376710,False,False,False,False,[],[],none
+276,1,3,"Coutts, Master. William Loch",male,9.0,1,1,37671.0,15.18,,S,England,276,coutts master william loch,376710,False,False,False,False,[],[],none
+277,1,3,"Coutts, Mrs. Winnie",female,36.0,0,2,37671.0,15.18,,S,England,277,coutts mrs winnie,376710,False,False,False,False,[],[],none
+278,0,3,"Coxon, Mr. Daniel",male,58.0,0,0,364500.0,7.05,,S,England,278,coxon mr daniel,3645000,True,False,False,True,[95],[],name_only
+279,0,1,"Crafton, Mr. John Bertram",male,59.0,0,0,113791.0,26.11,,S,United States,279,crafton mr john bertram,1137910,False,False,False,False,[],[],none
+280,0,3,"Crease, Mr. Ernest James",male,20.0,0,0,3464.0,8.0302,,S,United States,280,crease mr ernest james,34640,True,False,False,True,[68],[],name_only
+281,1,3,"Cribb, Miss. Laura Mae",female,16.0,0,1,371362.0,16.02,,S,United States,281,cribb miss laura mae,3713620,False,False,False,False,[],[],none
+282,0,3,"Cribb, Mr. John Hatfield",male,43.0,0,1,371362.0,16.02,,S,Australia,282,cribb mr john hatfield,3713620,True,False,False,True,[161],[],name_only
+283,0,1,"Crosby, Captain. Edward Gifford",male,70.0,1,1,5735.0,71.0,,S,United States,283,crosby captain edward gifford,57350,False,False,False,False,[],[],none
+284,1,1,"Crosby, Miss. Harriette Rebecca",female,39.0,0,2,112901.0,26.11,,S,United States,284,crosby miss harriette rebecca,1129010,False,False,False,False,[],[],none
+285,1,1,"Crosby, Mrs. Catherine Elizabeth",female,64.0,1,1,5735.0,71.0,,S,United States,285,crosby mrs catherine elizabeth,57350,False,False,False,False,[],[],none
+286,0,3,"Culumovic, Mr. Jeso",male,17.0,0,0,315090.0,8.1303,,S,Croatia (Modern),286,culumovic mr jeso,3150900,True,False,False,True,[845],[],name_only
+287,0,1,"Cumings, Mr. John Bradley",male,39.0,1,0,17599.0,71.0508,,C,United States,287,cumings mr john bradley,175990,False,False,False,False,[],[],none
+288,1,1,"Cumings, Mrs. Florence Briggs",female,35.0,1,0,17599.0,71.0508,,C,Peru,288,cumings mrs florence briggs,175990,False,False,False,False,[],[],none
+289,0,2,"Cunningham, Mr. Alfred Fleming",male,22.0,0,0,239853.0,,,B,Northern Ireland,289,cunningham mr alfred fleming,2398530,True,False,False,True,[414],[],name_only
+290,0,3,"Daher, Mr. Tannous",male,28.0,0,0,2686.0,7.0407,,C,,290,daher mr tannous,26860,False,False,False,False,[],[],none
+291,0,3,"Dahlberg, Miss. Gerda Ulrika",female,22.0,0,0,7552.0,10.1004,,S,Sweden,291,dahlberg miss gerda ulrika,75520,True,False,False,True,[883],[],name_only
+292,1,3,"Dahl, Mr. Charles Edward",male,45.0,0,0,7598.0,8.01,,S,,292,dahl mr charles edward,75980,False,False,False,False,[],[],none
+293,0,3,"Dakic, Mr. Branko",male,19.0,0,0,349228.0,10.0305,,S,,293,dakic mr branko,3492280,True,False,False,True,[688],[],name_only
+294,1,3,"Daly, Miss. Margaret Marcella",female,33.0,0,0,382650.0,6.19,,Q,Ireland,294,daly miss margaret marcella,3826500,False,False,False,False,[],[],none
+295,1,3,"Daly, Mr. Eugene Patrick",male,29.0,0,0,382651.0,7.15,,Q,Ireland,295,daly mr eugene patrick,3826510,True,False,False,True,[511],[],name_only
+296,1,1,"Daly, Mr. Peter Dennis",male,51.0,0,0,113055.0,26.11,,S,England,296,daly mr peter dennis,1130550,False,False,False,False,[],[],none
+297,0,3,"Danbom, Master. Gilbert Sigvard Emanuel",male,0.3333333333,0,2,347080.0,14.08,,S,Sweden,297,danbom master gilbert sigvard emanuel,3470800,False,False,False,False,[],[],none
+298,0,3,"Danbom, Mr. Ernst Gilbert",male,34.0,1,1,347080.0,14.08,,S,Sweden,298,danbom mr ernst gilbert,3470800,True,False,False,True,[617],[],name_only
+299,0,3,"Danbom, Mrs. Anna Sigrid Maria",female,28.0,1,1,347080.0,14.08,,S,Sweden,299,danbom mrs anna sigrid maria,3470800,False,False,False,False,[],[],none
+300,1,1,"Daniel, Mr. Robert Williams",male,27.0,0,0,113804.0,30.1,,S,United States,300,daniel mr robert williams,1138040,True,False,False,True,[608],[],name_only
+301,1,1,"Daniels, Miss. Sarah Rebecca",female,36.0,0,0,113781.0,151.16,,S,England,301,daniels miss sarah rebecca,1137810,False,False,False,False,[],[],none
+302,0,3,"Danoff, Mr. Yoto",male,27.0,0,0,349219.0,7.1711,,S,,302,danoff mr yoto,3492190,True,False,False,True,[322],[],name_only
+303,1,1,"Davidson, Mrs. Orian",female,27.0,1,2,12750.0,52.0,,C,Canada,303,davidson mrs orian,127500,False,False,False,False,[],[],none
+304,0,1,"Davidson, Mr. Thornton",male,31.0,1,0,12750.0,52.0,,C,Canada,304,davidson mr thornton,127500,True,False,False,True,[672],[],name_only
+305,1,2,"Davies, Master. John Morgan jr",male,8.0,1,1,33112.0,36.15,,S,England,305,davies master john morgan jr,331120,True,False,False,True,[550],[],name_only
+306,0,3,"Davies, Mr. Alfred James",male,24.0,2,0,48871.0,24.03,,S,England,306,davies mr alfred james,488710,False,False,False,False,[],[],none
+307,0,2,"Davies, Mr. Charles Henry",male,19.0,0,0,14879.0,73.1,,S,England,307,davies mr charles henry,148790,True,False,False,True,[386],[],name_only
+308,0,3,"Davies, Mr. Evan Lewis",male,22.0,0,0,23568.0,8.01,,S,Wales,308,davies mr evan lewis,235680,False,False,False,False,[],[],none
+309,0,3,"Davies, Mr. John",male,22.0,2,0,48871.0,24.03,,S,England,309,davies mr john,488710,False,False,False,False,[],[],none
+310,0,3,"Davies, Mr. Joseph",male,17.0,2,0,48873.0,8.01,,S,England,310,davies mr joseph,488730,False,False,False,False,[],[],none
+311,1,2,"Davies, Mrs. Agnes",female,48.0,0,2,33112.0,36.15,,S,England,311,davies mrs agnes,331120,False,False,False,False,[],[],none
+312,1,2,"Davis, Miss. Mary Ann Charlotte",female,28.0,0,0,237668.0,13.0,,S,England,312,davis miss mary ann charlotte,2376680,False,False,False,False,[],[],none
+313,1,3,"Davison, Mrs. Mary Elizabeth",female,34.0,1,0,386525.0,16.02,,S,England,313,davison mrs mary elizabeth,3865250,False,False,False,False,[],[],none
+314,0,3,"Davison, Mr. Thomas Henry",male,32.0,1,0,386525.0,16.02,,S,England,314,davison mr thomas henry,3865250,False,False,False,False,[],[],none
+315,0,2,"Deacon, Mr. Percy William",male,18.0,0,0,14879.0,73.1,,S,England,315,deacon mr percy william,148790,False,False,False,False,[],[],none
+316,1,3,"Dean, Master. Bertram Vere",male,1.0,1,2,2315.0,20.1106,,S,England,316,dean master bertram vere,23150,True,False,False,True,[789],[],name_only
+317,1,3,"Dean, Miss. Elizabeth Gladys 'Millvina'",female,0.1666666667,1,2,2315.0,20.1106,,S,England,317,dean miss elizabeth gladys millvina,23150,False,False,False,False,[],[],none
+318,0,3,"Dean, Mr. Bertram Frank",male,25.0,1,2,2315.0,20.1106,,S,England,318,dean mr bertram frank,23150,True,False,False,True,[94],[],name_only
+319,1,3,"Dean, Mrs. Eva Georgetta",female,32.0,1,2,2315.0,20.1106,,S,England,319,dean mrs eva georgetta,23150,False,False,False,False,[],[],none
+320,0,3,"Delalic, Mr. Redjo",male,25.0,0,0,349250.0,7.1711,,S,Bosnia,320,delalic mr redjo,3492500,False,False,False,False,[],[],none
+321,1,2,"Del Carlo, Mrs. Argene",female,24.0,1,0,2167.0,27.1405,,C,Italy,321,del carlo mrs argene,21670,False,False,False,False,[],[],none
+322,0,2,"Del Carlo, Mr. Sebastiano",male,29.0,1,0,2167.0,27.1405,,C,Italy,322,del carlo mr sebastiano,21670,True,False,False,True,[362],[],name_only
+323,1,3,"De Messemaeker, Mr. Guillaume Joseph",male,36.0,1,0,345572.0,17.08,,S,United States,323,de messemaeker mr guillaume joseph,3455720,False,False,False,False,[],[],none
+324,1,3,"De Messemaeker, Mrs. Anna",female,36.0,1,0,345572.0,17.08,,S,United States,324,de messemaeker mrs anna,3455720,False,False,False,False,[],[],none
+325,1,3,"De Mulder, Mr. Theodoor",male,30.0,0,0,345774.0,9.1,,S,Belgium,325,de mulder mr theodoor,3457740,False,False,False,False,[],[],none
+326,0,2,"Denbuoy, Mr. Albert Joseph",male,25.0,0,0,31029.0,31.1,,S,Channel Islands,326,denbuoy mr albert joseph,310290,False,False,False,False,[],[],none
+327,0,3,"Denkoff, Mr. Mitto",male,30.0,0,0,349225.0,7.1711,,S,,327,denkoff mr mitto,3492250,True,False,False,True,[336],[],name_only
+328,0,3,"Dennis, Mr. Samuel",male,22.0,0,0,21172.0,7.05,,S,England,328,dennis mr samuel,211720,True,False,False,True,[321],[],name_only
+329,0,3,"Dennis, Mr. William",male,26.0,0,0,21175.0,7.05,,S,England,329,dennis mr william,211750,False,False,False,False,[],[],none
+330,0,3,"De Pelsmaeker, Mr. Alfons",male,16.0,0,0,345778.0,9.1,,S,Belgium,330,de pelsmaeker mr alfons,3457780,True,False,False,True,[283],[],name_only
+331,1,3,"Devaney, Miss. Margaret Delia",female,19.0,0,0,330958.0,7.1707,,Q,Ireland,331,devaney miss margaret delia,3309580,True,False,False,True,[45],[],name_only
+332,0,2,"Dibden, Mr. William",male,18.0,0,0,14879.0,73.1,,S,England,332,dibden mr william,148790,False,False,False,False,[],[],none
+333,1,1,"Dick, Mr. Albert Adrian",male,31.0,1,0,17474.0,57.0,,S,Canada,333,dick mr albert adrian,174740,True,False,False,True,[691],[],name_only
+334,1,1,"Dick, Mrs. Vera",female,17.0,1,0,17474.0,57.0,,S,United States,334,dick mrs vera,174740,False,False,False,False,[],[],none
+335,0,3,"Dika, Mr. Mirko",male,17.0,0,0,349232.0,7.1711,,S,Croatia (Modern),335,dika mr mirko,3492320,False,False,False,False,[],[],none
+336,0,3,"Dimic, Mr. Jovan",male,42.0,0,0,315088.0,8.1303,,S,Hungary,336,dimic mr jovan,3150880,True,False,False,True,[350],[],name_only
+337,0,3,"Dintcheff, Mr. Valtcho",male,43.0,0,0,349226.0,7.1711,,S,,337,dintcheff mr valtcho,3492260,False,False,False,False,[],[],none
+338,1,1,"Dodge, Dr. Washington",male,52.0,1,1,33638.0,81.1702,,S,United States,338,dodge dr washington,336380,False,False,False,False,[],[],none
+339,1,1,"Dodge, Master. Washington",male,4.0,0,2,33638.0,81.1702,,S,United States,339,dodge master washington,336380,True,False,False,True,[446],[],name_only
+340,1,1,"Dodge, Mrs. Ruth",female,34.0,1,1,33638.0,81.1702,,S,United States,340,dodge mrs ruth,336380,False,False,False,False,[],[],none
+341,1,2,"Doling, Miss. Elsie",female,18.0,0,1,231919.0,23.0,,S,England,341,doling miss elsie,2319190,True,False,False,True,[652],[],name_only
+342,1,2,"Doling, Mrs. Ada Julia Elizabeth",female,34.0,0,1,231919.0,23.0,,S,England,342,doling mrs ada julia elizabeth,2319190,False,False,False,False,[],[],none
+343,0,3,"Donohoe, Miss. Bridget",female,21.0,0,0,364856.0,7.15,,Q,Ireland,343,donohoe miss bridget,3648560,False,False,False,False,[],[],none
+344,0,3,"Dooly, Mr. Patrick",male,37.0,0,0,370376.0,7.15,,Q,Ireland,344,dooly mr patrick,3703760,False,False,False,False,[],[],none
+345,1,3,"Dorking, Mr. Edward Arthur",male,18.0,0,0,10482.0,8.01,,S,England,345,dorking mr edward arthur,104820,True,False,False,True,[284],[],name_only
+346,0,3,"Dougherty, Mr. William John",male,22.0,0,0,330877.0,8.0902,,Q,Ireland,346,dougherty mr william john,3308770,False,False,False,False,[],[],none
+347,1,1,"Douglas, Mrs. Mahala",female,48.0,1,0,17761.0,106.0806,,C,United States,347,douglas mrs mahala,177610,False,False,False,False,[],[],none
+348,1,1,"Douglas, Mrs. Mary Hélène",female,27.0,1,1,17558.0,247.1005,,C,Canada,348,douglas mrs mary helene,175580,False,False,False,False,[],[],none
+349,0,1,"Douglas, Mr. Walter Donald",male,50.0,1,0,17761.0,106.0806,,C,United States,349,douglas mr walter donald,177610,True,False,False,True,[545],[],name_only
+350,0,2,"Douton, Mr. William Joseph",male,55.0,0,0,28403.0,26.0,,S,England,350,douton mr william joseph,284030,False,False,False,False,[],[],none
+351,1,3,"Dowdell, Miss. Elizabeth",female,31.0,0,0,364516.0,12.0906,,S,United States,351,dowdell miss elizabeth,3645160,True,False,False,True,[80],[],name_only
+352,0,3,"Doyle, Miss. Elizabeth",female,28.0,0,0,368702.0,7.15,,Q,Ireland,352,doyle miss elizabeth,3687020,False,False,False,False,[],[],none
+353,0,3,"Drazenovic, Mr. Jozef",male,33.0,0,0,349241.0,7.1711,,C,Croatia (Modern),353,drazenovic mr jozef,3492410,False,False,False,False,[],[],none
+354,1,2,"Drew, Master. Marshall Brines",male,8.0,0,2,28220.0,32.1,,S,United States,354,drew master marshall brines,282200,False,False,False,False,[],[],none
+355,0,2,"Drew, Mr. James Vivian",male,42.0,1,1,28220.0,32.1,,S,England,355,drew mr james vivian,282200,False,False,False,False,[],[],none
+356,1,2,"Drew, Mrs. Maria Louisa Thorne",female,34.0,1,1,28220.0,32.1,,S,United States,356,drew mrs maria louisa thorne,282200,False,False,False,False,[],[],none
+357,1,3,"Driscoll, Miss. Bridget",female,27.0,0,0,14311.0,7.15,,Q,Ireland,357,driscoll miss bridget,143110,False,False,False,False,[],[],none
+358,1,3,"Dropkin, Miss. Jennie",female,24.0,0,0,392083.0,8.01,,S,England,358,dropkin miss jennie,3920830,False,False,False,False,[],[],none
+359,1,1,"Duff Gordon, Lucy Christiana, Lady",female,48.0,1,0,17485.0,56.1807,,C,England,359,duff gordon lucy christiana lady,174850,False,False,False,False,[],[],none
+360,1,1,"Duff Gordon, Sir. Cosmo Edmund",male,49.0,1,0,11755.0,39.12,,C,England,360,duff gordon sir cosmo edmund,117550,False,False,False,False,[],[],none
+361,0,1,"Dulles, Mr. William Crothers",male,39.0,0,0,17580.0,29.14,,C,United States,361,dulles mr william crothers,175800,False,False,False,False,[],[],none
+362,1,3,"Duquemin, Mr. Joseph Pierre",male,24.0,0,0,752.0,7.11,,S,Channel Islands,362,duquemin mr joseph pierre,7520,False,False,False,False,[],[],none
+363,1,2,"Durán i Moné, Sra. Asuncion",female,27.0,1,0,2149.0,13.1702,,C,Spain,363,duran i mone sra asuncion,21490,False,False,False,False,[],[],none
+364,1,2,"Durán i Moné, Sra. Florentina",female,30.0,1,0,2148.0,13.1702,,C,Spain,364,duran i mone sra florentina,21480,False,False,False,False,[],[],none
+365,0,3,"Dwan, Mr. Frank",male,65.0,0,0,336439.0,7.15,,Q,Ireland,365,dwan mr frank,3364390,False,False,False,False,[],[],none
+366,0,3,"Dyker, Mr. Adolf Fredrik",male,23.0,1,0,347072.0,13.18,,S,United States,366,dyker mr adolf fredrik,3470720,False,False,False,False,[],[],none
+367,1,3,"Dyker, Mrs. Anna Elisabeth Judith",female,22.0,1,0,347072.0,13.18,,S,United States,367,dyker mrs anna elisabeth judith,3470720,False,False,False,False,[],[],none
+368,1,1,"Earnshaw, Mrs. Olive",female,23.0,0,1,11767.0,83.0302,,C,United States,368,earnshaw mrs olive,117670,False,False,False,False,[],[],none
+369,0,3,"Edvardsson, Mr. Gustaf Hjalmar",male,18.0,0,0,349912.0,7.1506,,S,Sweden,369,edvardsson mr gustaf hjalmar,3499120,True,False,False,True,[676],[],name_only
+370,0,2,"Eitemiller, Mr. George Floyd",male,25.0,0,0,29751.0,13.0,,S,United States,370,eitemiller mr george floyd,297510,True,False,False,True,[659],[],name_only
+371,0,3,"Eklund, Mr. Hans Linus",male,16.0,0,0,347074.0,7.1506,,S,Sweden,371,eklund mr hans linus,3470740,True,False,False,True,[765],[],name_only
+372,0,3,"Ekström, Mr. Amandus",male,45.0,0,0,347061.0,6.1906,,S,Sweden,372,ekstrom mr amandus,3470610,False,False,False,False,[],[],none
+373,0,3,"Elias, Mr. Dibo",male,29.0,0,0,2674.0,7.0406,,C,,373,elias mr dibo,26740,True,False,False,True,[774],[],name_only
+374,0,3,"Elias, Mr. Joseph jr.",male,15.0,1,1,2690.0,7.0407,,C,Lebanon,374,elias mr joseph jr,26900,True,False,False,True,[533],[],name_only
+375,0,3,"Elias Nasrallah, Mr. Tannous",male,22.0,1,1,2695.0,7.0407,,C,Lebanon,375,elias nasrallah mr tannous,26950,False,False,False,False,[],[],none
+376,0,3,"Elsbury, Mr. William James",male,48.0,0,0,3902.0,7.05,,S,England,376,elsbury mr william james,39020,True,False,False,True,[593],[],name_only
+377,1,3,"Emanuel, Miss. Virginia Ethel",female,5.0,0,0,364516.0,12.0906,,S,United States,377,emanuel miss virginia ethel,3645160,True,False,False,True,[778],[],name_only
+378,0,2,"Enander, Mr. Ingvar",male,21.0,0,0,236854.0,13.0,,S,Sweden,378,enander mr ingvar,2368540,False,False,False,False,[],[],none
+379,1,1,"Endres, Miss. Caroline Louise",female,39.0,0,0,17757.0,247.1006,,C,United States,379,endres miss caroline louise,177570,True,False,False,True,[717],[],name_only
+380,0,3,"Estanislau, Mr. Manuel Gonçalves",male,37.0,0,0,3101306.0,7.01,,S,,380,estanislau mr manuel goncalves,31013060,False,False,False,False,[],[],none
+381,1,1,"Eustis, Miss. Elizabeth Mussey",female,54.0,1,0,36947.0,78.0504,,C,United States,381,eustis miss elizabeth mussey,369470,True,False,False,True,[497],[],name_only
+382,0,1,"Evans, Miss. Edith Corse",female,36.0,0,0,17531.0,31.1307,,C,United States,382,evans miss edith corse,175310,False,False,False,False,[],[],none
+383,0,3,"Everett, Mr. Thomas James",male,38.0,0,0,6212.0,15.02,,S,England,383,everett mr thomas james,62120,False,False,False,False,[],[],none
+384,0,2,"Fahlstrøm, Mr. Arne Joma",male,18.0,0,0,236171.0,13.0,,S,Norway,384,fahlstr m mr arne joma,2361710,False,False,False,False,[],[],none
+385,0,3,"Fardon, Mr. Charles Richard",male,46.0,0,0,3101314.0,7.05,,S,England,385,fardon mr charles richard,31013140,False,False,False,False,[],[],none
+386,0,3,"Farrell, Mr. James",male,26.0,0,0,367232.0,7.15,,Q,Ireland,386,farrell mr james,3672320,True,False,False,True,[526],[],name_only
+387,0,1,"Farthing, Mr. John",male,49.0,0,0,17483.0,221.1507,,S,England,387,farthing mr john,174830,True,False,False,True,[528],[],name_only
+388,0,2,"Faunthorpe, Mr. Harry Bartram",male,32.0,1,0,2926.0,26.0,,S,England,388,faunthorpe mr harry bartram,29260,False,False,False,False,[],[],none
+389,0,2,"Fillbrook, Mr. Joseph Charles",male,18.0,0,0,15185.0,10.1,,S,England,389,fillbrook mr joseph charles,151850,False,False,False,False,[],[],none
+390,1,3,"Finoli, Mr. Luigi",male,34.0,0,0,3101308.0,7.01,,S,,390,finoli mr luigi,31013080,False,False,False,False,[],[],none
+391,0,3,"Fischer, Mr. Eberhard Thelander",male,18.0,0,0,350036.0,7.1511,,S,Sweden,391,fischer mr eberhard thelander,3500360,True,False,False,True,[689],[],name_only
+392,1,1,"Flegenheim, Mrs. Antoinette",female,48.0,0,0,17598.0,31.1308,,C,United States,392,flegenheim mrs antoinette,175980,False,False,False,False,[],[],none
+393,0,3,"Fleming, Miss. Honor",female,22.0,0,0,364859.0,7.15,,Q,Ireland,393,fleming miss honor,3648590,False,False,False,False,[],[],none
+394,1,1,"Fleming, Miss. Margaret",female,42.0,0,0,17421.0,110.1708,,C,United States,394,fleming miss margaret,174210,True,False,False,True,[307],[],name_only
+395,0,3,"Flynn, Mr. James",male,28.0,0,0,364851.0,7.15,,Q,Ireland,395,flynn mr james,3648510,True,False,False,True,[429],[],name_only
+396,0,3,"Flynn, Mr. John",male,48.0,0,0,368323.0,6.19,,Q,Ireland,396,flynn mr john,3683230,True,False,False,True,[826],[],name_only
+397,1,1,"Flynn, Mr. John Irwin",male,36.0,0,0,14474.0,26.0509,,S,Canada,397,flynn mr john irwin,144740,False,False,False,False,[],[],none
+398,0,3,"Foley, Mr. Joseph",male,19.0,0,0,330910.0,7.1707,,Q,Ireland,398,foley mr joseph,3309100,False,False,False,False,[],[],none
+399,0,3,"Foley, Mr. William",male,20.0,0,0,365235.0,7.15,,Q,Ireland,399,foley mr william,3652350,False,False,False,False,[],[],none
+400,1,3,"Foo, Mr. Choong",male,32.0,0,0,1601.0,56.0911,,S,,400,foo mr choong,16010,True,False,False,True,[644],[],name_only
+401,0,3,"Ford, Miss. Dollina Margaret",female,20.0,2,2,6608.0,34.0706,,S,England,401,ford miss dollina margaret,66080,False,False,False,False,[],[],none
+402,0,3,"Ford, Miss. Robina Maggie",female,7.0,2,2,6608.0,34.0706,,S,England,402,ford miss robina maggie,66080,False,False,False,False,[],[],none
+403,0,3,"Ford, Mr. Arthur",male,23.0,0,0,1478.0,8.01,,S,England,403,ford mr arthur,14780,False,False,False,False,[],[],none
+404,0,3,"Ford, Mr. Edward Watson",male,18.0,2,2,6608.0,34.0706,,S,England,404,ford mr edward watson,66080,False,False,False,False,[],[],none
+405,0,3,"Ford, Mrs. Margaret Ann Watson",female,54.0,1,3,6608.0,34.0706,,S,Scotland,405,ford mrs margaret ann watson,66080,False,False,False,False,[],[],none
+406,0,3,"Ford, Mr. William Neal Thomas",male,14.0,1,3,6608.0,34.0706,,S,England,406,ford mr william neal thomas,66080,False,False,False,False,[],[],none
+407,0,1,"Foreman, Mr. Benjamin Laventall",male,30.0,0,0,113051.0,27.15,,S,United States,407,foreman mr benjamin laventall,1130510,True,False,False,True,[453],[],name_only
+408,1,1,"Fortune, Miss. Alice Elizabeth",female,24.0,3,2,19950.0,263.0,,S,Canada,408,fortune miss alice elizabeth,199500,True,False,False,True,[342],[],name_only
+409,1,1,"Fortune, Miss. Ethel Flora",female,28.0,3,2,19950.0,263.0,,S,Canada,409,fortune miss ethel flora,199500,False,False,False,False,[],[],none
+410,1,1,"Fortune, Miss. Mabel Helen",female,23.0,3,2,19950.0,263.0,,S,Canada,410,fortune miss mabel helen,199500,True,False,False,True,[89],[],name_only
+411,0,1,"Fortune, Mr. Charles Alexander",male,19.0,3,2,19950.0,263.0,,S,Canada,411,fortune mr charles alexander,199500,True,False,False,True,[28],[],name_only
+412,0,1,"Fortune, Mr. Mark",male,64.0,1,4,19950.0,263.0,,S,Canada,412,fortune mr mark,199500,True,False,False,True,[439],[],name_only
+413,1,1,"Fortune, Mrs. Mary",female,60.0,1,4,19950.0,263.0,,S,Canada,413,fortune mrs mary,199500,False,False,False,False,[],[],none
+414,0,3,"Fox, Mr. Patrick",male,28.0,0,0,368573.0,7.15,,Q,Ireland,414,fox mr patrick,3685730,False,False,False,False,[],[],none
+415,0,2,"Fox, Mr. Stanley Harrington",male,38.0,0,0,229236.0,13.0,,S,United States,415,fox mr stanley harrington,2292360,False,False,False,False,[],[],none
+416,1,1,"Francatelli, Miss. Laura Mabel",female,32.0,0,0,17485.0,56.1807,,C,England,416,francatelli miss laura mabel,174850,True,False,False,True,[310],[],name_only
+417,0,1,"Franklin, Mr. Thomas Parnham",male,37.0,0,0,113778.0,26.11,,S,England,417,franklin mr thomas parnham,1137780,False,False,False,False,[],[],none
+418,1,1,"Frauenthal, Dr. Henry William",male,49.0,2,0,17611.0,133.13,,S,United States,418,frauenthal dr henry william,176110,True,False,False,True,[661],[],name_only
+419,1,1,"Frauenthal, Mr. Isaac Gerald",male,43.0,1,0,17765.0,27.1405,,C,United States,419,frauenthal mr isaac gerald,177650,False,False,False,False,[],[],none
+420,1,1,"Frauenthal, Mrs. Clara",female,42.0,1,0,17611.0,133.13,,S,United States,420,frauenthal mrs clara,176110,False,False,False,False,[],[],none
+421,1,1,"Frölicher, Miss. Hedwig Margaritha",female,22.0,0,2,13568.0,49.1,,C,Switzerland,421,frolicher miss hedwig margaritha,135680,True,False,False,True,[540],[],name_only
+422,1,1,"Frölicher-Stehli, Mr. Maximilian Josef",male,60.0,1,1,13567.0,79.04,,C,Switzerland,422,frolicher stehli mr maximilian josef,135670,False,False,False,False,[],[],none
+423,1,1,"Frölicher-Stehli, Mrs. Margaretha Emerentia",female,48.0,1,1,13567.0,79.04,,C,Switzerland,423,frolicher stehli mrs margaretha emerentia,135670,False,False,False,False,[],[],none
+424,0,2,"Frost, Mr. Anthony Wood",male,39.0,0,0,239854.0,,,B,England,424,frost mr anthony wood,2398540,False,False,False,False,[],[],none
+425,0,1,"Fry, Mr. Richard",male,39.0,0,0,112058.0,,,S,England,425,fry mr richard,1120580,True,False,False,True,[816],[],name_only
+426,0,2,"Funk, Miss. Annie Clemmer",female,38.0,0,0,237671.0,13.0,,S,India,426,funk miss annie clemmer,2376710,True,False,False,True,[358],[],name_only
+427,0,1,"Futrelle, Mr. Jacques Heath",male,37.0,1,0,113803.0,53.02,,S,England,427,futrelle mr jacques heath,1138030,True,False,False,True,[138],[],name_only
+428,1,1,"Futrelle, Mrs. Lily May",female,35.0,1,0,113803.0,53.02,,S,England,428,futrelle mrs lily may,1138030,False,False,False,False,[],[],none
+429,0,2,"Fynney, Mr. Joseph J.",male,36.0,0,0,239865.0,26.0,,S,England,429,fynney mr joseph j,2398650,True,False,False,True,[21],[],name_only
+430,0,2,"Gale, Mr. Harry",male,38.0,1,0,28664.0,21.0,,S,England,430,gale mr harry,286640,False,False,False,False,[],[],none
+431,0,2,"Gale, Mr. Shadrach",male,33.0,1,0,28664.0,21.0,,S,England,431,gale mr shadrach,286640,True,False,False,True,[406],[],name_only
+432,0,3,"Gallagher, Mr. Martin",male,29.0,0,0,36864.0,7.141,,Q,Ireland,432,gallagher mr martin,368640,True,False,False,True,[704],[],name_only
+433,0,3,"Garfirth, Mr. John",male,23.0,0,0,358585.0,14.1,,S,England,433,garfirth mr john,3585850,True,False,False,True,[761],[],name_only
+434,1,2,"Garside, Miss. Ethel",female,39.0,0,0,243880.0,13.0,,S,England,434,garside miss ethel,2438800,True,False,False,True,[577],[],name_only
+435,0,2,"Gaskell, Mr. William Alfred",male,19.0,0,0,239865.0,26.0,,S,England,435,gaskell mr william alfred,2398650,False,False,False,False,[],[],none
+436,0,2,"Gavey, Mr. Laurence",male,26.0,0,0,31028.0,10.1,,S,Channel Islands,436,gavey mr laurence,310280,False,False,False,False,[],[],none
+437,0,1,"Gee, Mr. Arthur H.",male,47.0,0,0,111320.0,38.1,,S,England,437,gee mr arthur h,1113200,True,False,False,True,[463],[],name_only
+438,1,3,"George/Joseph, Mrs. Shawneene",female,38.0,0,0,2688.0,7.0407,,C,United States,438,george joseph mrs shawneene,26880,False,False,False,False,[],[],none
+439,0,3,"Gerios Thamah, Mr. Assaf",male,21.0,0,0,2692.0,7.0406,,C,Lebanon,439,gerios thamah mr assaf,26920,False,False,False,False,[],[],none
+440,0,3,"Gheorgheff, Mr. Stanio",male,,0,0,349254.0,7.1711,,C,Bulgaria,440,gheorgheff mr stanio,3492540,True,False,False,True,[421],[],name_only
+441,1,1,"Gibson, Miss. Dorothy Winifred",female,22.0,0,1,112378.0,59.08,,C,United States,441,gibson miss dorothy winifred,1123780,False,False,False,False,[],[],none
+442,1,1,"Gibson, Mrs. Pauline Caroline",female,44.0,0,1,112378.0,59.08,,C,United States,442,gibson mrs pauline caroline,1123780,False,False,False,False,[],[],none
+443,1,1,"Gieger, Miss. Amalie",female,35.0,0,0,113503.0,211.1,,S,,443,gieger miss amalie,1135030,False,False,False,False,[],[],none
+444,0,1,"Giglio, Mr. Victor Gaitan Andrea",male,23.0,0,0,17593.0,79.04,,C,,444,giglio mr victor gaitan andrea,175930,False,False,False,False,[],[],none
+445,0,2,"Gilbert, Mr. William",male,47.0,0,0,30769.0,10.1,,S,England,445,gilbert mr william,307690,False,False,False,False,[],[],none
+446,0,2,"Giles, Mr. Edgar",male,19.0,1,0,28133.0,11.1,,S,England,446,giles mr edgar,281330,False,False,False,False,[],[],none
+447,0,2,"Giles, Mr. Frederick Edward",male,21.0,1,0,28134.0,11.1,,S,England,447,giles mr frederick edward,281340,True,False,False,True,[862],[],name_only
+448,0,2,"Giles, Mr. Ralph",male,24.0,0,0,248726.0,13.1,,S,England,448,giles mr ralph,2487260,False,False,False,False,[],[],none
+449,0,3,"Gilinski, Mr. Eliezer",male,23.0,0,0,14973.0,8.01,,S,Wales,449,gilinski mr eliezer,149730,True,False,False,True,[589],[],name_only
+450,0,2,"Gillespie, Mr. William Henry",male,31.0,0,0,12233.0,13.0,,S,Ireland,450,gillespie mr william henry,122330,True,False,False,True,[723],[],name_only
+451,0,2,"Gill, Mr. John",male,24.0,0,0,233866.0,13.0,,S,England,451,gill mr john,2338660,False,False,False,False,[],[],none
+452,1,3,"Gilnagh, Miss. Katherine",female,17.0,0,0,35851.0,7.1408,,Q,Ireland,452,gilnagh miss katherine,358510,False,False,False,False,[],[],none
+453,0,2,"Givard, Mr. Hans Kristensen",male,30.0,0,0,250646.0,13.0,,S,Argentina,453,givard mr hans kristensen,2506460,True,False,False,True,[214],[],name_only
+454,1,3,"Glynn, Miss. Mary Agatha",female,18.0,0,0,335677.0,7.15,,Q,Ireland,454,glynn miss mary agatha,3356770,True,False,False,True,[33],[],name_only
+455,1,1,"Goldenberg, Mr. Samuel L.",male,47.0,1,0,17453.0,89.0201,,C,United States,455,goldenberg mr samuel l,174530,True,False,False,True,[454],[],name_only
+456,1,1,"Goldenberg, Mrs. Nella",female,40.0,1,0,17453.0,89.0201,,C,United States,456,goldenberg mrs nella,174530,False,False,False,False,[],[],none
+457,0,1,"Goldschmidt, Mr. George B.",male,71.0,0,0,17754.0,34.1301,,C,United States,457,goldschmidt mr george b,177540,True,False,False,True,[97],[],name_only
+458,1,3,"Goldsmith, Master. Frank John William",male,9.0,0,2,363291.0,20.1006,,S,England,458,goldsmith master frank john william,3632910,False,False,False,False,[],[],none
+459,0,3,"Goldsmith, Mr. Frank John",male,33.0,1,1,363291.0,20.1006,,S,England,459,goldsmith mr frank john,3632910,True,False,False,True,[549],[],name_only
+460,0,3,"Goldsmith, Mr. Nathan",male,41.0,0,0,3101263.0,7.17,,S,,460,goldsmith mr nathan,31012630,False,False,False,False,[],[],none
+461,1,3,"Goldsmith, Mrs. Emily Alice",female,31.0,1,1,363291.0,20.1006,,S,England,461,goldsmith mrs emily alice,3632910,False,False,False,False,[],[],none
+462,0,3,"Goodwin, Master. Harold Victor",male,9.0,5,2,2144.0,46.18,,S,England,462,goodwin master harold victor,21440,True,True,True,True,[481],[223],name_and_ticket
+463,0,3,"Goodwin, Master. Sidney Leslie",male,1.0,5,2,2144.0,46.18,,S,England,463,goodwin master sidney leslie,21440,False,True,False,True,[],[223],ticket_only
+464,0,3,"Goodwin, Master. William Frederick",male,11.0,5,2,2144.0,46.18,,S,England,464,goodwin master william frederick,21440,True,True,True,True,[60],[223],name_and_ticket
+465,0,3,"Goodwin, Miss. Jessie Allis",female,10.0,5,2,2144.0,46.18,,S,England,465,goodwin miss jessie allis,21440,False,True,False,True,[],[223],ticket_only
+466,0,3,"Goodwin, Miss. Lillian Amy",female,16.0,5,2,2144.0,46.18,,S,England,466,goodwin miss lillian amy,21440,True,True,True,True,[72],[223],name_and_ticket
+467,0,3,"Goodwin, Mr. Charles Edward",male,14.0,5,2,2144.0,46.18,,S,England,467,goodwin mr charles edward,21440,True,True,True,True,[684],[223],name_and_ticket
+468,0,3,"Goodwin, Mr. Frederick Joseph",male,42.0,1,6,2144.0,46.18,,S,England,468,goodwin mr frederick joseph,21440,False,True,False,True,[],[223],ticket_only
+469,0,3,"Goodwin, Mrs. Augusta",female,43.0,1,6,2144.0,46.18,,S,England,469,goodwin mrs augusta,21440,False,True,False,True,[],[223],ticket_only
+470,1,1,"Gracie, Colonel. Archibald",male,53.0,0,0,113780.0,28.1,,S,United States,470,gracie colonel archibald,1137800,False,False,False,False,[],[],none
+471,1,1,"Graham, Miss. Margaret Edith",female,19.0,0,0,17582.0,153.0903,,S,England,471,graham miss margaret edith,175820,True,False,False,True,[888],[],name_only
+472,0,1,"Graham, Mr. George Edward",male,38.0,0,1,112053.0,30.0,,S,Canada,472,graham mr george edward,1120530,True,False,False,True,[333],[],name_only
+473,1,1,"Graham, Mrs. Edith",female,59.0,0,1,17582.0,153.0903,,S,England,473,graham mrs edith,175820,False,False,False,False,[],[],none
+474,0,2,"Greenberg, Mr. Samuel",male,52.0,0,0,250647.0,13.0,,S,South Africa,474,greenberg mr samuel,2506470,True,False,False,True,[715],[],name_only
+475,1,1,"Greenfield, Mrs. Blanche",female,45.0,0,1,17759.0,63.0702,,C,United States,475,greenfield mrs blanche,177590,False,False,False,False,[],[],none
+476,1,1,"Greenfield, Mr. William Bertram",male,23.0,0,1,17759.0,63.0702,,C,United States,476,greenfield mr william bertram,177590,True,False,False,True,[98],[],name_only
+477,0,3,"Green, Mr. George",male,41.0,0,0,21440.0,8.01,,S,England,477,green mr george,214400,False,False,False,False,[],[],none
+478,0,3,"Grønnestad, Mr. Daniel Danielsen",male,32.0,0,0,8471.0,8.0615,,S,Norway,478,gr nnestad mr daniel danielsen,84710,False,False,False,False,[],[],none
+479,0,3,"Guest, Mr. Charles Robert",male,25.0,0,0,376563.0,8.01,,S,England,479,guest mr charles robert,3765630,False,False,False,False,[],[],none
+480,0,1,"Guggenheim, Mr. Benjamin",male,46.0,0,0,17593.0,79.04,,C,France,480,guggenheim mr benjamin,175930,True,False,False,True,[790],[],name_only
+481,0,3,"Gustafsson, Mr. Alfred Ossian",male,19.0,0,0,7534.0,9.1611,,S,Finland,481,gustafsson mr alfred ossian,75340,True,False,False,True,[877],[],name_only
+482,0,3,"Gustafsson, Mr. Anders Vilhelm",male,37.0,2,0,3101276.0,7.1806,,S,Finland,482,gustafsson mr anders vilhelm,31012760,True,False,False,True,[105],[],name_only
+483,0,3,"Gustafsson, Mr. Johan Birger",male,28.0,2,0,3101277.0,7.1806,,S,Finland,483,gustafsson mr johan birger,31012770,True,False,False,True,[393],[],name_only
+484,0,3,"Gustafsson, Mr. Karl Gideon",male,19.0,0,0,347069.0,7.1506,,S,Sweden,484,gustafsson mr karl gideon,3470690,True,False,False,True,[380],[],name_only
+485,0,3,"Haas, Miss. Aloisia",female,24.0,0,0,349236.0,8.17,,S,Switzerland,485,haas miss aloisia,3492360,True,False,False,True,[294],[],name_only
+486,0,3,"Hagland, Mr. Ingvald Olai Olsen",male,28.0,1,0,65303.0,6.1904,,S,Norway,486,hagland mr ingvald olai olsen,653030,True,False,False,True,[452],[],name_only
+487,0,3,"Hagland, Mr. Konrad Mathias Reiersen",male,19.0,1,0,65304.0,6.1904,,S,Norway,487,hagland mr konrad mathias reiersen,653040,True,False,False,True,[491],[],name_only
+488,0,3,"Hakkarainen, Mr. Pekka Pietari",male,28.0,1,0,3101279.0,15.17,,S,Finland,488,hakkarainen mr pekka pietari,31012790,True,False,False,True,[404],[],name_only
+489,1,3,"Hakkarainen, Mrs. Elin Matilda",female,24.0,1,0,3101279.0,15.17,,S,Finland,489,hakkarainen mrs elin matilda,31012790,False,False,False,False,[],[],none
+490,0,2,"Hale, Mr. Reginald",male,30.0,0,0,250653.0,13.0,,S,England,490,hale mr reginald,2506530,True,False,False,True,[179],[],name_only
+491,1,2,"Hämäläinen, Master. Viljo Unto Johannes",male,0.5833333333,1,1,250649.0,14.1,,S,United States,491,hamalainen master viljo unto johannes,2506490,False,False,False,False,[],[],none
+492,1,2,"Hämäläinen, Mrs. Anna",female,23.0,0,2,250649.0,14.1,,S,United States,492,hamalainen mrs anna,2506490,False,False,False,False,[],[],none
+493,0,3,"Hampe, Mr. Léon Jérome",male,19.0,0,0,345769.0,9.1,,S,Belgium,493,hampe mr leon jerome,3457690,False,False,False,False,[],[],none
+494,1,3,"Hannah, Mr. Borak",male,27.0,0,0,2663.0,7.0407,,C,Lebanon,494,hannah mr borak,26630,False,False,False,False,[],[],none
+495,0,3,"Hanna, Mr. Boulos",male,18.0,0,0,2664.0,7.0406,,C,Lebanon,495,hanna mr boulos,26640,False,False,False,False,[],[],none
+496,0,3,"Hanna, Mr. Mansour",male,35.0,0,0,2693.0,7.0407,,C,Lebanon,496,hanna mr mansour,26930,True,False,False,True,[297],[],name_only
+497,0,3,"Hansen, Mr. Claus Peter",male,41.0,2,0,350026.0,14.0202,,S,United States,497,hansen mr claus peter,3500260,True,False,False,True,[861],[],name_only
+498,0,3,"Hansen, Mr. Henrik Juul",male,26.0,1,0,350025.0,7.1701,,S,Denmark,498,hansen mr henrik juul,3500250,True,False,False,True,[705],[],name_only
+499,0,3,"Hansen, Mr. Henry Damsgaard",male,21.0,0,0,350029.0,7.1701,,S,Denmark,499,hansen mr henry damsgaard,3500290,True,False,False,True,[624],[],name_only
+500,1,3,"Hansen, Mrs. Jennie Louise",female,45.0,1,0,350026.0,14.0202,,S,United States,500,hansen mrs jennie louise,3500260,False,False,False,False,[],[],none
+501,0,2,"Harbeck, Mr. William H.",male,45.0,0,0,248746.0,13.0,,S,United States,501,harbeck mr william h,2487460,False,False,False,False,[],[],none
+502,1,1,"Harder, Mr. George Achilles",male,25.0,1,0,11765.0,55.081,,C,United States,502,harder mr george achilles,117650,True,False,False,True,[371],[],name_only
+503,1,1,"Harder, Mrs. Dorothy",female,21.0,1,0,11765.0,55.081,,C,United States,503,harder mrs dorothy,117650,False,False,False,False,[],[],none
+504,0,3,"Hargadon, Miss. Catherine",female,17.0,0,0,30631.0,7.1408,,Q,Ireland,504,hargadon miss catherine,306310,False,False,False,False,[],[],none
+505,0,3,"Harknett, Miss. Alice Phoebe",female,21.0,0,0,6609.0,7.11,,S,England,505,harknett miss alice phoebe,66090,True,False,False,True,[236],[],name_only
+506,1,2,"Harper, Miss. Annie Jessie",female,6.0,0,1,248727.0,33.0,,S,Scotland,506,harper miss annie jessie,2487270,False,False,False,False,[],[],none
+507,1,1,"Harper, Mr. Henry Sleeper",male,48.0,1,0,17572.0,76.1407,,C,United States,507,harper mr henry sleeper,175720,True,False,False,True,[646],[],name_only
+508,1,1,"Harper, Mrs. Myra Raymond",female,49.0,1,0,17572.0,76.1407,,C,United States,508,harper mrs myra raymond,175720,False,False,False,False,[],[],none
+509,0,2,"Harper, Rev. John",male,39.0,0,1,248727.0,33.0,,S,Scotland,509,harper rev john,2487270,True,False,False,True,[849],[],name_only
+510,0,1,"Harrington, Mr. Charles Henry",male,37.0,0,0,113796.0,42.08,,S,England,510,harrington mr charles henry,1137960,False,False,False,False,[],[],none
+511,1,2,"Harris, Mr. George",male,62.0,0,0,752.0,10.1,,S,England,511,harris mr george,7520,True,False,False,True,[571],[],name_only
+512,0,1,"Harris, Mr. Henry Birkhardt",male,45.0,1,0,36973.0,83.0906,,S,United States,512,harris mr henry birkhardt,369730,True,False,False,True,[63],[],name_only
+513,1,1,"Harris, Mrs. Irene",female,35.0,1,0,36973.0,83.0906,,S,United States,513,harris mrs irene,369730,False,False,False,False,[],[],none
+514,0,2,"Harris, Mr. Walter",male,45.0,0,0,14208.0,10.1,,S,England,514,harris mr walter,142080,True,False,False,True,[220],[],name_only
+515,0,1,"Harrison, Mr. William Henry",male,46.0,0,0,112059.0,,,S,England,515,harrison mr william henry,1120590,False,False,False,False,[],[],none
+516,0,2,"Hartley, Mr. Wallace Henry",male,33.0,,,250654.0,,,S,England,516,hartley mr wallace henry,2506540,False,False,False,False,[],[],none
+517,1,2,"Hart, Miss. Eva Miriam",female,7.0,0,2,13529.0,26.05,,S,England,517,hart miss eva miriam,135290,True,False,False,True,[536],[],name_only
+518,0,2,"Hart, Mr. Benjamin",male,47.0,1,1,13529.0,26.05,,S,England,518,hart mr benjamin,135290,True,False,False,True,[315],[],name_only
+519,0,3,"Hart, Mr. Henry",male,29.0,0,0,394140.0,6.1702,,Q,Ireland,519,hart mr henry,3941400,True,False,False,True,[412],[],name_only
+520,1,2,"Hart, Mrs. Esther Ada",female,48.0,1,1,13529.0,26.05,,S,England,520,hart mrs esther ada,135290,False,False,False,False,[],[],none
+521,1,1,"Hassab, Mr. Hammad",male,27.0,0,0,17572.0,76.1407,,C,Egypt,521,hassab mr hammad,175720,True,False,False,True,[682],[],name_only
+522,1,1,"Hawksford, Mr. Walter James",male,45.0,0,0,16988.0,30.0,,S,England,522,hawksford mr walter james,169880,True,False,False,True,[741],[],name_only
+523,1,1,"Hays, Miss. Margaret Bechstein",female,24.0,0,0,11767.0,83.0302,,C,United States,523,hays miss margaret bechstein,117670,True,False,False,True,[311],[],name_only
+524,0,1,"Hays, Mr. Charles Melville",male,55.0,1,1,12749.0,93.1,,S,Canada,524,hays mr charles melville,127490,False,False,False,False,[],[],none
+525,1,1,"Hays, Mrs. Clara Jennings",female,52.0,1,1,12749.0,93.1,,S,Canada,525,hays mrs clara jennings,127490,False,False,False,False,[],[],none
+526,0,1,"Head, Mr. Christopher",male,42.0,0,0,113038.0,42.1,,S,England,526,head mr christopher,1130380,False,False,False,False,[],[],none
+527,1,3,"Healy, Miss. Honor",female,33.0,0,0,370375.0,7.15,,Q,Ireland,527,healy miss honor,3703750,False,False,False,False,[],[],none
+528,1,3,"Hedman, Mr. Oskar Arvid",male,27.0,0,0,347089.0,6.1906,,S,Sweden,528,hedman mr oskar arvid,3470890,True,False,False,True,[805],[],name_only
+529,1,3,"Hee, Mr. Ling",male,24.0,0,0,1601.0,56.0911,,S,,529,hee mr ling,16010,False,False,False,False,[],[],none
+530,0,3,"Hegarty, Miss. Hanora",female,20.0,0,0,365226.0,6.15,,Q,Ireland,530,hegarty miss hanora,3652260,False,False,False,False,[],[],none
+531,1,3,"Heikkinen, Miss. Laina",female,16.0,0,0,3101282.0,7.1806,,S,Finland,531,heikkinen miss laina,31012820,True,False,False,True,[3],[],name_only
+532,0,3,"Heininen, Miss. Wendla Maria",female,23.0,0,0,3101290.0,7.1806,,S,Finland,532,heininen miss wendla maria,31012900,True,False,False,True,[817],[],name_only
+533,1,3,"Hellström, Miss. Hilda Maria",female,22.0,0,0,7548.0,8.1903,,S,Sweden,533,hellstrom miss hilda maria,75480,False,False,False,False,[],[],none
+534,0,3,"Hendekovic, Mr. Ignjac",male,30.0,0,0,349243.0,7.1711,,S,Hungary,534,hendekovic mr ignjac,3492430,True,False,False,True,[314],[],name_only
+535,0,3,"Henriksson, Miss. Jenny Lovisa",female,28.0,0,0,347086.0,7.1506,,S,Sweden,535,henriksson miss jenny lovisa,3470860,False,False,False,False,[],[],none
+536,0,3,"Henry, Miss. Bridget Delia",female,21.0,0,0,382649.0,7.15,,Q,Ireland,536,henry miss bridget delia,3826490,False,False,False,False,[],[],none
+537,1,2,"Herman, Miss. Alice",female,24.0,1,2,220845.0,65.0,,S,England,537,herman miss alice,2208450,True,False,False,True,[616],[],name_only
+538,1,2,"Herman, Miss. Kate",female,24.0,1,2,220845.0,65.0,,S,England,538,herman miss kate,2208450,False,False,False,False,[],[],none
+539,0,2,"Herman, Mr. Samuel",male,50.0,1,2,220845.0,65.0,,S,England,539,herman mr samuel,2208450,False,False,False,False,[],[],none
+540,1,2,"Herman, Mrs. Jane",female,50.0,1,2,220845.0,65.0,,S,India,540,herman mrs jane,2208450,False,False,False,False,[],[],none
+541,1,2,"Hewlett, Mrs. Mary Dunbar",female,56.0,0,0,248706.0,16.0,,S,India,541,hewlett mrs mary dunbar,2487060,False,False,False,False,[],[],none
+542,0,2,"Hickman, Mr. Leonard Mark",male,24.0,2,0,14879.0,73.1,,S,England,542,hickman mr leonard mark,148790,True,False,False,True,[656],[],name_only
+543,0,2,"Hickman, Mr. Lewis",male,30.0,2,0,14879.0,73.1,,S,England,543,hickman mr lewis,148790,True,False,False,True,[666],[],name_only
+544,0,2,"Hickman, Mr. Stanley George",male,21.0,2,0,14879.0,73.1,,S,England,544,hickman mr stanley george,148790,True,False,False,True,[121],[],name_only
+545,0,1,"Hilliard, Mr. Herbert Henry",male,44.0,0,0,17463.0,51.1703,,S,England,545,hilliard mr herbert henry,174630,False,False,False,False,[],[],none
+546,0,2,"Hiltunen, Miss. Marta",female,18.0,1,1,250650.0,13.0,,S,Finland,546,hiltunen miss marta,2506500,False,False,False,False,[],[],none
+547,0,1,"Hipkins, Mr. William Edward",male,55.0,0,0,680.0,50.0,,S,England,547,hipkins mr william edward,6800,False,False,False,False,[],[],none
+548,1,1,"Hippach, Miss. Jean Gertrude",female,17.0,0,1,111361.0,57.1907,,C,United States,548,hippach miss jean gertrude,1113610,True,False,False,True,[330],[],name_only
+549,1,1,"Hippach, Mrs. Ida Sophia",female,44.0,0,1,111361.0,57.1907,,C,United States,549,hippach mrs ida sophia,1113610,False,False,False,False,[],[],none
+550,1,3,"Hirvonen, Miss. Hildur Elisabeth",female,2.0,0,1,3101298.0,12.0509,,S,Finland,550,hirvonen miss hildur elisabeth,31012980,False,False,False,False,[],[],none
+551,1,3,"Hirvonen, Mrs. Helga Elisabeth Lindqvist",female,22.0,1,1,3101298.0,12.0509,,S,Finland,551,hirvonen mrs helga elisabeth lindqvist,31012980,False,False,False,False,[],[],none
+552,1,2,"Hocking, Miss. Ellen",female,20.0,2,1,29105.0,23.0,,S,England,552,hocking miss ellen,291050,False,False,False,False,[],[],none
+553,0,2,"Hocking, Mr. Richard George",male,24.0,2,1,29104.0,11.1,,S,England,553,hocking mr richard george,291040,True,False,False,True,[530],[],name_only
+554,0,2,"Hocking, Mr. Samuel James Metcalfe",male,36.0,0,0,242963.0,13.0,,S,England,554,hocking mr samuel james metcalfe,2429630,False,False,False,False,[],[],none
+555,1,2,"Hocking, Mrs. Eliza",female,54.0,1,3,29105.0,23.0,,S,England,555,hocking mrs eliza,291050,False,False,False,False,[],[],none
+556,0,2,"Hodges, Mr. Henry Price",male,50.0,0,0,250643.0,13.0,,S,England,556,hodges mr henry price,2506430,True,False,False,True,[724],[],name_only
+557,1,1,"Hogeboom, Mrs. Anna Louisa",female,51.0,1,0,13502.0,77.1902,,C,United States,557,hogeboom mrs anna louisa,135020,False,False,False,False,[],[],none
+558,1,2,"Hold, Mrs. Annie Margaret",female,29.0,1,0,26707.0,26.0,,S,England,558,hold mrs annie margaret,267070,False,False,False,False,[],[],none
+559,0,2,"Hold, Mr. Stephen",male,44.0,1,0,26707.0,26.0,,S,England,559,hold mr stephen,267070,True,False,False,True,[237],[],name_only
+560,0,3,"Holm, Mr. John Fredrik Alexander",male,43.0,0,0,7075.0,6.09,,S,Sweden,560,holm mr john fredrik alexander,70750,True,False,False,True,[819],[],name_only
+561,0,3,"Holthen, Mr. Johan Martin",male,18.0,0,0,4001.0,22.1006,,S,Norway,561,holthen mr johan martin,40010,False,False,False,False,[],[],none
+562,0,1,"Holverson, Mr. Alexander Oskar",male,42.0,1,0,113789.0,52.0,,S,United States,562,holverson mr alexander oskar,1137890,True,False,False,True,[36],[],name_only
+563,1,1,"Holverson, Mrs. Mary Aline",female,35.0,1,0,113789.0,52.0,,S,United States,563,holverson mrs mary aline,1137890,False,False,False,False,[],[],none
+564,1,1,"Homer, Mr. Harry",male,40.0,0,0,111426.0,26.11,,S,United States,564,homer mr harry,1114260,False,False,False,False,[],[],none
+565,1,3,"Honkanen, Miss. Eliina",female,27.0,0,0,3101283.0,7.1806,,S,Finland,565,honkanen miss eliina,31012830,True,False,False,True,[217],[],name_only
+566,0,2,"Hood, Mr. Ambrose Jr",male,21.0,0,0,14879.0,73.1,,S,England,566,hood mr ambrose jr,148790,True,False,False,True,[73],[],name_only
+567,0,3,"Horgan, Mr. John",male,22.0,0,0,370377.0,7.15,,Q,,567,horgan mr john,3703770,True,False,False,True,[614],[],name_only
+568,1,2,"Hosono, Mr. Masabumi",male,41.0,0,0,237798.0,13.0,,S,Japan,568,hosono mr masabumi,2377980,True,False,False,True,[289],[],name_only
+569,1,3,"Howard, Miss. May Elizabeth",female,26.0,0,0,39186.0,8.01,,S,England,569,howard miss may elizabeth,391860,False,False,False,False,[],[],none
+570,0,2,"Howard, Mr. Benjamin",male,63.0,1,0,24065.0,26.0,,S,England,570,howard mr benjamin,240650,False,False,False,False,[],[],none
+571,0,2,"Howard, Mrs. Ellen Truelove",female,61.0,1,0,24065.0,26.0,,S,England,571,howard mrs ellen truelove,240650,False,False,False,False,[],[],none
+572,1,1,"Hoyt, Mr. Frederick Maxfield",male,38.0,1,0,19943.0,100.0,,S,United States,572,hoyt mr frederick maxfield,199430,True,False,False,True,[225],[],name_only
+573,1,1,"Hoyt, Mrs. Jane Anne",female,31.0,1,0,19943.0,100.0,,S,United States,573,hoyt mrs jane anne,199430,False,False,False,False,[],[],none
+574,0,1,"Hoyt, Mr. William Fisher",male,43.0,0,0,17600.0,30.1311,,C,United States,574,hoyt mr william fisher,176000,True,False,False,True,[794],[],name_only
+575,0,3,"Humblen, Mr. Adolf Mathias Nicolai Olsen",male,42.0,0,0,348121.0,7.13,,S,Norway,575,humblen mr adolf mathias nicolai olsen,3481210,True,False,False,True,[700],[],name_only
+576,0,2,"Hume, Mr. John Law",male,21.0,,,250654.0,,,S,,576,hume mr john law,2506540,False,False,False,False,[],[],none
+577,0,2,"Hunt, Mr. George Henry",male,34.0,0,0,1585.0,12.0506,,S,England,577,hunt mr george henry,15850,True,False,False,True,[240],[],name_only
+578,1,3,"Hyman, Mr. Abraham Joseph",male,34.0,0,0,3470.0,7.1709,,S,England,578,hyman mr abraham joseph,34700,False,False,False,False,[],[],none
+579,0,3,"Ibrāhīm, Mr. Husayn Mahmūd Husayn",male,11.0,0,0,2699.0,18.1509,,C,,579,ibrahim mr husayn mahmud husayn,26990,False,False,False,False,[],[],none
+580,1,3,"Ibrāhīm, Mrs. Sāfiyah",female,18.0,0,0,2657.0,7.0407,,C,Syria,580,ibrahim mrs safiyah,26570,False,False,False,False,[],[],none
+581,0,3,"Ibrahim Shawah, Mr. Yousseff",male,33.0,0,0,2627.0,14.0902,,C,Lebanon,581,ibrahim shawah mr yousseff,26270,True,False,False,True,[799],[],name_only
+582,1,1,"Icard, Miss. Rose Amélie",female,39.0,0,0,113572.0,80.0,,S,,582,icard miss rose amelie,1135720,False,False,False,False,[],[],none
+583,1,2,"Ilett, Miss. Bertha",female,17.0,0,0,14885.0,10.1,,S,Channel Islands,583,ilett miss bertha,148850,True,False,False,True,[85],[],name_only
+584,0,3,"Ilieff, Mr. Ylio",male,32.0,0,0,349220.0,7.1711,,S,,584,ilieff mr ylio,3492200,False,False,False,False,[],[],none
+585,0,3,"Ilmakangas, Miss. Ida Livija",female,17.0,1,0,3101270.0,7.1806,,S,United States,585,ilmakangas miss ida livija,31012700,False,False,False,False,[],[],none
+586,0,3,"Ilmakangas, Miss. Pieta Sofia",female,25.0,1,0,3101271.0,7.1806,,S,Finland,586,ilmakangas miss pieta sofia,31012710,True,False,False,True,[730],[],name_only
+587,0,1,"Isham, Miss. Ann Elizabeth",female,50.0,0,0,17595.0,28.1403,,C,United States,587,isham miss ann elizabeth,175950,True,False,False,True,[178],[],name_only
+588,1,1,"Ismay, Mr. Joseph Bruce",male,49.0,0,0,112058.0,,,S,England,588,ismay mr joseph bruce,1120580,False,False,False,False,[],[],none
+589,0,3,"Ivanoff, Mr. Kanio",male,20.0,0,0,349201.0,7.1711,,S,Bulgaria,589,ivanoff mr kanio,3492010,True,False,False,True,[739],[],name_only
+590,0,3,"Jabbur (Zabour), Miss. Hileni",female,16.0,1,0,2665.0,14.0901,,C,,590,jabbur zabour miss hileni,26650,False,False,False,False,[],[],none
+591,0,3,"Jabbur (Zabour), Miss. Thamine",female,19.0,1,0,2665.0,14.0901,,C,,591,jabbur zabour miss thamine,26650,False,False,False,False,[],[],none
+592,1,2,"Jacobsohn, Mrs. Amy Frances Christy",female,24.0,2,1,243847.0,27.0,,S,England,592,jacobsohn mrs amy frances christy,2438470,False,False,False,False,[],[],none
+593,0,2,"Jacobsohn, Mr. Sidney Samuel",male,42.0,1,0,243847.0,27.0,,S,South Africa,593,jacobsohn mr sidney samuel,2438470,True,False,False,True,[218],[],name_only
+594,1,3,"Jalševac, Mr. Ivan",male,30.0,0,0,349240.0,7.1711,,C,Croatia (Modern),594,jalsevac mr ivan,3492400,True,False,False,True,[456],[],name_only
+595,1,3,"Jansson, Mr. Carl Olof",male,21.0,0,0,350034.0,7.1511,,S,Sweden,595,jansson mr carl olof,3500340,True,False,False,True,[392],[],name_only
+596,0,3,"Jardim, Mr. José Neto",male,21.0,0,0,3101305.0,7.01,,S,,596,jardim mr jose neto,31013050,False,False,False,False,[],[],none
+597,0,2,"Jarvis, Mr. Denzil John",male,46.0,0,0,237565.0,15.0,,S,Wales,597,jarvis mr denzil john,2375650,False,False,False,False,[],[],none
+598,0,2,"Jefferys, Mr. Clifford Thomas",male,24.0,2,0,31029.0,31.1,,S,England,598,jefferys mr clifford thomas,310290,False,False,False,False,[],[],none
+599,0,2,"Jefferys, Mr. Ernest Wilfred",male,21.0,2,0,31029.0,31.1,,S,England,599,jefferys mr ernest wilfred,310290,False,False,False,False,[],[],none
+600,0,2,"Jenkin, Mr. Stephen Curnow",male,32.0,0,0,33111.0,10.1,,S,England,600,jenkin mr stephen curnow,331110,True,False,False,True,[71],[],name_only
+601,0,3,"Jensen, Mr. Hans Peder",male,20.0,0,0,350050.0,7.1701,,S,Denmark,601,jensen mr hans peder,3500500,True,False,False,True,[641],[],name_only
+602,0,3,"Jensen, Mr. Niels Rasmus",male,48.0,0,0,350048.0,7.0101,,S,Denmark,602,jensen mr niels rasmus,3500480,False,False,False,False,[],[],none
+603,0,3,"Jensen, Mr. Svend Lauritz",male,17.0,1,0,350047.0,7.1701,,S,Denmark,603,jensen mr svend lauritz,3500470,True,False,False,True,[722],[],name_only
+604,1,3,"Jermyn, Miss. Annie Jane",female,26.0,0,0,14313.0,7.15,,Q,Ireland,604,jermyn miss annie jane,143130,False,False,False,False,[],[],none
+605,1,2,"Jerwan, Mrs. Marie Marthe",female,23.0,0,0,541.0,13.151,,C,United States,605,jerwan mrs marie marthe,5410,False,False,False,False,[],[],none
+606,1,3,"Johannesen, Mr. Bernt Johannes",male,29.0,0,0,65306.0,8.0203,,S,Norway,606,johannesen mr bernt johannes,653060,False,False,False,False,[],[],none
+607,0,3,"Johanson, Mr. Jakob Alfred",male,34.0,0,0,3101264.0,6.0911,,S,Finland,607,johanson mr jakob alfred,31012640,True,False,False,True,[203],[],name_only
+608,0,3,"Johansson, Mr. Erik",male,22.0,0,0,350052.0,7.1511,,S,Sweden,608,johansson mr erik,3500520,True,False,False,True,[396],[],name_only
+609,0,3,"Johansson, Mr. Gustaf Joel",male,33.0,0,0,7540.0,8.1301,,S,Sweden,609,johansson mr gustaf joel,75400,True,False,False,True,[104],[],name_only
+610,0,3,"Johansson, Mr. Karl Johan",male,31.0,0,0,347063.0,7.1506,,S,United States,610,johansson mr karl johan,3470630,True,False,False,True,[806],[],name_only
+611,0,3,"Johansson, Mr. Nils",male,29.0,0,0,347467.0,7.1701,,S,United States,611,johansson mr nils,3474670,False,False,False,False,[],[],none
+612,1,3,"Johansson Palmquist, Mr. Oskar Leander",male,26.0,0,0,347070.0,7.1506,,S,Sweden,612,johansson palmquist mr oskar leander,3470700,False,False,False,False,[],[],none
+613,1,3,"Johnson, Master. Harold Theodor",male,4.0,1,1,347742.0,11.0208,,S,,613,johnson master harold theodor,3477420,True,False,False,True,[870],[],name_only
+614,1,3,"Johnson, Miss. Eleanor Ileen",female,1.0,1,1,347742.0,11.0208,,S,,614,johnson miss eleanor ileen,3477420,True,False,False,True,[173],[],name_only
+615,0,3,"Johnson, Mr. August",male,49.0,,,370160.0,,,S,United States,615,johnson mr august,3701600,False,False,False,False,[],[],none
+616,0,3,"Johnson, Mr. Malkolm Joackim",male,33.0,0,0,347062.0,7.1506,,S,United States,616,johnson mr malkolm joackim,3470620,True,False,False,True,[720],[],name_only
+617,1,3,"Johnson, Mrs. Elisabeth Vilhelmina",female,26.0,0,2,347742.0,11.0208,,S,,617,johnson mrs elisabeth vilhelmina,3477420,False,False,False,False,[],[],none
+618,0,3,"Johnson, Mr. William Cahoone Jr.",male,19.0,0,0,370160.0,,,S,United States,618,johnson mr william cahoone jr,3701600,True,False,False,True,[303],[],name_only
+619,0,3,"Johnston, Master. William Andrew",male,8.0,1,2,6607.0,23.09,,S,England,619,johnston master william andrew,66070,False,False,False,False,[],[],none
+620,0,3,"Johnston, Miss. Catherine Nellie",female,7.0,1,2,6607.0,23.09,,S,England,620,johnston miss catherine nellie,66070,False,False,False,False,[],[],none
+621,0,3,"Johnston, Mr. Andrew Emslie",male,35.0,1,2,6607.0,23.09,,S,Scotland,621,johnston mr andrew emslie,66070,False,False,False,False,[],[],none
+622,0,3,"Johnston, Mrs. Eliza",female,36.0,1,2,6607.0,23.09,,S,Scotland,622,johnston mrs eliza,66070,False,False,False,False,[],[],none
+623,0,1,"Jones, Mr. Charles Cresson",male,46.0,0,0,694.0,26.0,,S,United States,623,jones mr charles cresson,6940,False,False,False,False,[],[],none
+624,0,3,"Jonkoff, Mr. Lalio",male,23.0,0,0,349204.0,7.1711,,S,Bulgaria,624,jonkoff mr lalio,3492040,True,False,False,True,[754],[],name_only
+625,1,3,"Jonsson, Mr. Carl",male,25.0,0,0,350417.0,7.1701,,S,Sweden,625,jonsson mr carl,3504170,True,False,False,True,[570],[],name_only
+626,0,3,"Jönsson, Mr. Nils Hilding",male,27.0,0,0,350408.0,7.1701,,S,Sweden,626,jonsson mr nils hilding,3504080,False,False,False,False,[],[],none
+627,0,3,"Joseph (Shahin), Mr. Elias",male,39.0,0,2,2675.0,7.0407,,C,Lebanon,627,joseph shahin mr elias,26750,False,False,False,False,[],[],none
+628,0,1,"Julian, Mr. Henry Forbes",male,50.0,0,0,113044.0,26.0,,S,England,628,julian mr henry forbes,1130440,False,False,False,False,[],[],none
+629,0,3,"Jussila, Miss. Katriina",female,20.0,1,0,4136.0,9.161,,S,Finland,629,jussila miss katriina,41360,True,False,False,True,[114],[],name_only
+630,0,3,"Jussila, Miss. Mari Aina",female,21.0,1,0,4137.0,9.161,,S,Finland,630,jussila miss mari aina,41370,True,False,False,True,[403],[],name_only
+631,1,3,"Jussila, Mr. Eiriik",male,32.0,0,0,3101286.0,7.1806,,S,Finland,631,jussila mr eiriik,31012860,True,False,False,True,[580],[],name_only
+632,0,3,"Kallio, Mr. Nikolai Erland",male,17.0,0,0,3101274.0,7.0206,,S,Finland,632,kallio mr nikolai erland,31012740,True,False,False,True,[434],[],name_only
+633,0,3,"Kalvik, Mr. Johannes Halvorsen",male,21.0,0,0,8475.0,8.0808,,S,Norway,633,kalvik mr johannes halvorsen,84750,True,False,False,True,[653],[],name_only
+634,0,2,"Kantor, Mr. Sinai",male,34.0,1,0,244367.0,26.0,,S,Russia,634,kantor mr sinai,2443670,True,False,False,True,[100],[],name_only
+635,1,2,"Kantor, Mrs. Miriam",female,24.0,1,0,244367.0,26.0,,S,Russia,635,kantor mrs miriam,2443670,False,False,False,False,[],[],none
+636,0,3,"Karajic, Mr. Milan",male,30.0,0,0,349246.0,7.1711,,S,Hungary,636,karajic mr milan,3492460,False,False,False,False,[],[],none
+637,1,3,"Karlsson, Mr. Einar Gervasius",male,21.0,0,0,350053.0,7.1511,,S,Sweden,637,karlsson mr einar gervasius,3500530,False,False,False,False,[],[],none
+638,0,3,"Karlsson, Mr. Julius Konrad Eugen",male,33.0,0,0,347465.0,7.1701,,S,Sweden,638,karlsson mr julius konrad eugen,3474650,False,False,False,False,[],[],none
+639,0,3,"Karlsson, Mr. Nils August",male,22.0,0,0,350060.0,7.1005,,S,Sweden,639,karlsson mr nils august,3500600,True,False,False,True,[479],[],name_only
+640,0,2,"Karnes, Mrs. Claire",female,22.0,0,0,13534.0,21.0,,S,United States,640,karnes mrs claire,135340,False,False,False,False,[],[],none
+641,1,3,"Karun, Miss. Manca",female,5.0,0,1,349256.0,13.0804,,C,Slovenia,641,karun miss manca,3492560,True,False,False,True,[692],[],name_only
+642,1,3,"Karun, Mr. Franz",male,39.0,0,1,349256.0,13.0804,,C,United States,642,karun mr franz,3492560,False,False,False,False,[],[],none
+643,0,3,"Katavelos, Mr. Vasilios G.",male,19.0,0,0,2682.0,7.0407,,C,Greece,643,katavelos mr vasilios g,26820,False,False,False,False,[],[],none
+644,1,2,"Keane, Miss. Nora Agnes",female,46.0,0,0,226593.0,12.07,,Q,Ireland,644,keane miss nora agnes,2265930,False,False,False,False,[],[],none
+645,0,3,"Keane, Mr. Andrew",male,23.0,0,0,12460.0,7.15,,Q,Ireland,645,keane mr andrew,124600,False,False,False,False,[],[],none
+646,0,2,"Keane, Mr. Daniel",male,35.0,0,0,233734.0,12.07,,Q,Ireland,646,keane mr daniel,2337340,False,False,False,False,[],[],none
+647,0,3,"Keefe, Mr. Arthur",male,39.0,0,0,323592.0,7.05,,S,United States,647,keefe mr arthur,3235920,True,False,False,True,[471],[],name_only
+648,0,1,"Keeping, Mr. Edwin Herbert",male,33.0,0,0,113503.0,211.1,,S,England,648,keeping mr edwin herbert,1135030,False,False,False,False,[],[],none
+649,1,3,"Kelly, Miss. Anna Katherine",female,20.0,0,0,9234.0,7.15,,Q,Ireland,649,kelly miss anna katherine,92340,False,False,False,False,[],[],none
+650,1,3,"Kelly, Miss. Mary",female,22.0,0,0,14312.0,7.15,,Q,Ireland,650,kelly miss mary,143120,True,False,False,True,[574],[],name_only
+651,0,3,"Kelly, Mr. James",male,19.0,0,0,363592.0,8.01,,S,Scotland,651,kelly mr james,3635920,True,False,False,True,[697],[],name_only
+652,0,3,"Kelly, Mr. James",male,44.0,0,0,330911.0,7.1607,,Q,Ireland,652,kelly mr james,3309110,True,False,False,True,[697],[],name_only
+653,1,2,"Kelly, Mrs. Fanny Maria",female,49.0,0,0,223596.0,13.1,,S,England,653,kelly mrs fanny maria,2235960,False,False,False,False,[],[],none
+654,1,3,"Kennedy, Mr. John",male,24.0,0,0,368783.0,7.15,,Q,Ireland,654,kennedy mr john,3687830,False,False,False,False,[],[],none
+655,0,1,"Kent, Mr. Edward Austin",male,58.0,0,0,11771.0,29.14,,C,United States,655,kent mr edward austin,117710,True,False,False,True,[488],[],name_only
+656,0,1,"Kenyon, Mr. Frederick Roland",male,41.0,1,0,17464.0,51.1703,,S,United States,656,kenyon mr frederick roland,174640,False,False,False,False,[],[],none
+657,1,1,"Kenyon, Mrs. Marion Estelle",female,40.0,1,0,17464.0,51.1703,,S,United States,657,kenyon mrs marion estelle,174640,False,False,False,False,[],[],none
+658,0,3,"Khalil, Mr. Betros",male,25.0,1,0,2660.0,14.0901,,C,Lebanon,658,khalil mr betros,26600,False,False,False,False,[],[],none
+659,0,3,"Khalil, Mrs. Zahie",female,20.0,1,0,2660.0,14.0901,,C,Lebanon,659,khalil mrs zahie,26600,False,False,False,False,[],[],none
+660,0,3,"Kiernan, Mr. John Joseph",male,25.0,1,0,367227.0,7.15,,Q,Ireland,660,kiernan mr john joseph,3672270,False,False,False,False,[],[],none
+661,0,3,"Kiernan, Mr. Philip",male,22.0,1,0,367229.0,7.15,,Q,Ireland,661,kiernan mr philip,3672290,True,False,False,True,[215],[],name_only
+662,0,3,"Kilgannon, Mr. Thomas",male,22.0,0,0,36865.0,7.1409,,Q,Ireland,662,kilgannon mr thomas,368650,False,False,False,False,[],[],none
+663,1,1,"Kimball, Mr. Edwin Nelson Jr.",male,42.0,1,0,11753.0,52.1101,,S,United States,663,kimball mr edwin nelson jr,117530,True,False,False,True,[622],[],name_only
+664,1,1,"Kimball, Mrs. Susan Gertrude",female,45.0,1,0,11753.0,52.1101,,S,United States,664,kimball mrs susan gertrude,117530,False,False,False,False,[],[],none
+665,1,3,"Kink-Heilmann, Miss. Luise Gretchen",female,4.0,0,2,315153.0,22.0,,S,Switzerland,665,kink heilmann miss luise gretchen,3151530,True,False,False,True,[185],[],name_only
+666,1,3,"Kink-Heilmann, Mrs. Luise",female,26.0,1,1,315153.0,22.0,,S,Switzerland,666,kink heilmann mrs luise,3151530,False,False,False,False,[],[],none
+667,0,3,"Kink, Miss. Maria",female,23.0,2,0,315152.0,8.1303,,S,Switzerland,667,kink miss maria,3151520,False,False,False,False,[],[],none
+668,1,3,"Kink, Mr. Anton",male,29.0,3,1,315153.0,22.0,,S,Switzerland,668,kink mr anton,3151530,False,False,False,False,[],[],none
+669,0,3,"Kink, Mr. Vincenz",male,26.0,2,0,315151.0,8.1303,,S,Switzerland,669,kink mr vincenz,3151510,True,False,False,True,[70],[],name_only
+670,0,2,"Kirkland, Fr. Charles Leonard",male,52.0,0,0,219533.0,12.07,,Q,United States,670,kirkland fr charles leonard,2195330,False,False,False,False,[],[],none
+671,0,1,"Klaber, Mr. Herman",male,41.0,0,0,113028.0,26.11,,S,United States,671,klaber mr herman,1130280,True,False,False,True,[712],[],name_only
+672,0,3,"Klasén, Miss. Gertrud Emilia",female,1.0,1,1,350405.0,12.0308,,S,Sweden,672,klasen miss gertrud emilia,3504050,False,False,False,False,[],[],none
+673,0,3,"Klasén, Mr. Klas Albin",male,18.0,1,1,350404.0,7.1701,,S,Sweden,673,klasen mr klas albin,3504040,True,False,False,True,[176],[],name_only
+674,0,3,"Klasén, Mrs. Hulda Kristina Eugenia",female,36.0,0,2,350405.0,12.0308,,S,Sweden,674,klasen mrs hulda kristina eugenia,3504050,False,False,False,False,[],[],none
+675,0,2,"Knight, Mr. Robert",male,41.0,0,0,239855.0,,,B,Northern Ireland,675,knight mr robert,2398550,False,False,False,False,[],[],none
+676,0,3,"Kraeff, Mr. Theodor",male,,0,0,349253.0,7.1711,,C,Bulgaria,676,kraeff mr theodor,3492530,True,False,False,True,[43],[],name_only
+677,1,3,"Krekorian, Mr. Neshan",male,25.0,0,0,2654.0,7.0407,,C,Turkey,677,krekorian mr neshan,26540,False,False,False,False,[],[],none
+678,1,1,"Kreuchen, Miss. Emilie",female,29.0,0,0,24160.0,211.0609,,S,,678,kreuchen miss emilie,241600,False,False,False,False,[],[],none
+679,0,2,"Krins, Mr. Georges Alexandre",male,23.0,,,250654.0,,,S,England,679,krins mr georges alexandre,2506540,False,False,False,False,[],[],none
+680,0,3,"Kutscher (Lithman), Mr. Simon",male,26.0,0,0,251.0,7.11,,S,Scotland,680,kutscher lithman mr simon,2510,False,False,False,False,[],[],none
+681,0,2,"Kvillner, Mr. Johan Henrik Johannesson",male,31.0,0,0,18723.0,10.1,,S,Sweden,681,kvillner mr johan henrik johannesson,187230,True,False,False,True,[440],[],name_only
+682,0,3,"Lahhūd Ishaq Mu'awwad, Mr. Sarkīs",male,35.0,0,0,2624.0,7.0406,,C,Lebanon,682,lahhud ishaq mu awwad mr sarkis,26240,False,False,False,False,[],[],none
+683,0,2,"Lahtinen, Fr. William",male,35.0,1,1,250651.0,26.0,,S,United States,683,lahtinen fr william,2506510,False,False,False,False,[],[],none
+684,0,2,"Lahtinen, Mrs. Anna Amelia",female,34.0,1,1,250651.0,26.0,,S,United States,684,lahtinen mrs anna amelia,2506510,False,False,False,False,[],[],none
+685,0,3,"Laitinen, Miss. Kristina Sofia",female,37.0,0,0,4135.0,9.1109,,S,Finland,685,laitinen miss kristina sofia,41350,True,False,False,True,[504],[],name_only
+686,0,2,"Lamb, Mr. John J.",male,31.0,0,0,240261.0,10.1402,,Q,Ireland,686,lamb mr john j,2402610,False,False,False,False,[],[],none
+687,1,3,"Lam, Mr. Ali",male,38.0,0,0,1601.0,56.0911,,S,China/Hong Kong,687,lam mr ali,16010,True,False,False,True,[693],[],name_only
+688,0,3,"Lam, Mr. Len",male,23.0,0,0,1601.0,56.0911,,S,,688,lam mr len,16010,True,False,False,True,[827],[],name_only
+689,1,3,"Landergren, Miss. Aurora Adelia",female,22.0,0,0,7077.0,7.05,,S,Sweden,689,landergren miss aurora adelia,70770,True,False,False,True,[377],[],name_only
+690,0,3,"Lane, Mr. Patrick",male,17.0,0,0,7935.0,7.15,,Q,Ireland,690,lane mr patrick,79350,False,False,False,False,[],[],none
+691,1,3,"Lang, Mr. Fang",male,32.0,0,0,1601.0,56.0911,,S,,691,lang mr fang,16010,True,False,False,True,[510],[],name_only
+692,1,2,"Laroche, Miss. Louise",female,1.0,1,2,2123.0,41.1107,,C,France,692,laroche miss louise,21230,False,False,False,False,[],[],none
+693,1,2,"Laroche, Miss. Simonne Marie Anne Andrée",female,3.0,1,2,2123.0,41.1107,,C,France,693,laroche miss simonne marie anne andree,21230,True,False,False,True,[44],[],name_only
+694,0,2,"Laroche, Mr. Joseph Philippe Lemercier",male,25.0,1,2,2123.0,41.1107,,C,France,694,laroche mr joseph philippe lemercier,21230,True,False,False,True,[686],[],name_only
+695,1,2,"Laroche, Mrs. Juliette Marie Louise",female,22.0,1,2,2123.0,41.1107,,C,France,695,laroche mrs juliette marie louise,21230,False,False,False,False,[],[],none
+696,0,3,"Larsson, Mr. August Viktor",male,29.0,0,0,7545.0,9.0908,,S,United States,696,larsson mr august viktor,75450,True,False,False,True,[714],[],name_only
+697,0,3,"Larsson, Mr. Bengt Edvin",male,29.0,0,0,347067.0,7.1506,,S,Sweden,697,larsson mr bengt edvin,3470670,True,False,False,True,[232],[],name_only
+698,0,3,"Larsson, Mr. Edvard",male,22.0,0,0,347065.0,7.1506,,S,Sweden,698,larsson mr edvard,3470650,False,False,False,False,[],[],none
+699,1,1,"Leader, Dr. Alice May",female,49.0,0,0,17465.0,25.1807,,S,United States,699,leader dr alice may,174650,False,False,False,False,[],[],none
+700,0,3,"Lefebvre, Master. Henry",male,5.0,3,1,4133.0,25.0904,,S,,700,lefebvre master henry,41330,False,False,False,False,[],[],none
+701,0,3,"Lefebvre, Miss. Ida",female,3.0,3,1,4133.0,25.0904,,S,,701,lefebvre miss ida,41330,False,False,False,False,[],[],none
+702,0,3,"Lefebvre, Miss. Jeannie",female,8.0,3,1,4133.0,25.0904,,S,,702,lefebvre miss jeannie,41330,False,False,False,False,[],[],none
+703,0,3,"Lefebvre, Miss. Mathilde",female,12.0,3,1,4133.0,25.0904,,S,,703,lefebvre miss mathilde,41330,False,False,False,False,[],[],none
+704,0,3,"Lefebvre, Mrs. Frances Marie",female,40.0,0,4,4133.0,25.0904,,S,,704,lefebvre mrs frances marie,41330,False,False,False,False,[],[],none
+705,1,2,"Lehmann, Miss. Bertha",female,17.0,0,0,1748.0,12.0,,C,Switzerland,705,lehmann miss bertha,17480,True,False,False,True,[390],[],name_only
+706,0,3,"Leinonen, Mr. Antti Gustaf",male,32.0,0,0,3101292.0,7.1806,,S,Finland,706,leinonen mr antti gustaf,31012920,True,False,False,True,[637],[],name_only
+707,1,2,"Leitch, Miss. Jessie Wills",female,31.0,0,0,248727.0,33.0,,S,Scotland,707,leitch miss jessie wills,2487270,True,False,False,True,[597],[],name_only
+708,1,2,"Lemore, Mrs. Amelia",female,39.0,0,0,34260.0,10.1,,S,England,708,lemore mrs amelia,342600,False,False,False,False,[],[],none
+709,0,3,"Lennon, Miss. Mary",female,18.0,1,0,370371.0,15.1,,Q,Ireland,709,lennon miss mary,3703710,False,False,False,False,[],[],none
+710,0,3,"Lennon, Mr. Denis",male,20.0,1,0,370371.0,15.1,,Q,Ireland,710,lennon mr denis,3703710,True,False,False,True,[47],[],name_only
+711,1,1,"Leroy, Miss. Berthe",female,27.0,0,0,17761.0,106.0806,,C,France,711,leroy miss berthe,177610,False,False,False,False,[],[],none
+712,0,3,"Lester, Mr. James",male,41.0,0,0,48871.0,24.03,,S,England,712,lester mr james,488710,True,False,False,True,[812],[],name_only
+713,1,1,"Lesueur, Mr. Gustave J.",male,35.0,0,0,17755.0,512.0607,,C,,713,lesueur mr gustave j,177550,False,False,False,False,[],[],none
+714,0,2,"Lévy, Mr. René Jacques",male,37.0,0,0,2163.0,12.1706,,S,Canada,714,levy mr rene jacques,21630,True,False,False,True,[293],[],name_only
+715,0,1,"Lewy, Mr. Ervin G.",male,30.0,0,0,17612.0,27.1405,,C,United States,715,lewy mr ervin g,176120,True,False,False,True,[296],[],name_only
+716,0,2,"Leyson, Mr. Robert William Norman",male,25.0,0,0,29566.0,10.1,,S,England,716,leyson mr robert william norman,295660,True,False,False,True,[235],[],name_only
+717,0,3,"Lievens, Mr. René Aimé",male,24.0,0,0,345781.0,9.1,,S,Belgium,717,lievens mr rene aime,3457810,True,False,False,True,[771],[],name_only
+718,0,3,"Lindahl, Miss. Agda Thorilda Viktoria",female,25.0,0,0,347071.0,7.1506,,S,Sweden,718,lindahl miss agda thorilda viktoria,3470710,True,False,False,True,[247],[],name_only
+719,0,3,"Lindblom, Miss. Augusta Charlotta",female,45.0,0,0,347073.0,7.15,,S,England,719,lindblom miss augusta charlotta,3470730,True,False,False,True,[277],[],name_only
+720,0,1,"Lindeberg-Lind, Mr. Erik Gustaf",male,42.0,0,0,17475.0,26.11,,S,Sweden,720,lindeberg lind mr erik gustaf,174750,False,False,False,False,[],[],none
+721,0,3,"Lindell, Mr. Edvard Bengtsson",male,36.0,1,0,349910.0,15.11,,S,Sweden,721,lindell mr edvard bengtsson,3499100,True,False,False,True,[606],[],name_only
+722,0,3,"Lindell, Mrs. Elin Gerda",female,30.0,1,0,349910.0,15.11,,S,Sweden,722,lindell mrs elin gerda,3499100,False,False,False,False,[],[],none
+723,1,3,"Lindqvist, Mr. Eino William",male,20.0,1,0,3101285.0,7.1806,,S,Finland,723,lindqvist mr eino william,31012850,True,False,False,True,[665],[],name_only
+724,1,1,"Lindström, Mrs. Sigrid",female,55.0,0,0,112377.0,27.1405,,C,Sweden,724,lindstrom mrs sigrid,1123770,False,False,False,False,[],[],none
+725,0,3,"Linehan, Mr. Michael",male,21.0,0,0,330971.0,7.1707,,Q,Ireland,725,linehan mr michael,3309710,False,False,False,False,[],[],none
+726,1,1,"Lines, Miss. Mary Conover",female,16.0,0,1,17592.0,39.08,,C,France,726,lines miss mary conover,175920,True,False,False,True,[854],[],name_only
+727,1,1,"Lines, Mrs. Elizabeth Lindsey",female,50.0,0,1,17592.0,39.08,,C,United States,727,lines mrs elizabeth lindsey,175920,False,False,False,False,[],[],none
+728,0,2,"Lingane, Mr. John",male,61.0,0,0,235509.0,12.07,,Q,Ireland,728,lingane mr john,2355090,False,False,False,False,[],[],none
+729,0,3,"Ling, Mr. Lee",male,28.0,0,0,1601.0,56.0911,,S,,729,ling mr lee,16010,True,False,False,True,[170],[],name_only
+730,0,3,"Linhart, Mr. Wenzel",male,27.0,0,0,345775.0,9.1,,S,Austria,730,linhart mr wenzel,3457750,False,False,False,False,[],[],none
+731,0,3,"Livshin, Mr. David",male,25.0,0,0,374887.0,7.05,,S,Latvia,731,livshin mr david,3748870,False,False,False,False,[],[],none
+732,0,3,"Lobb, Mrs. Cordelia",female,34.0,1,0,3336.0,16.02,,S,England,732,lobb mrs cordelia,33360,False,False,False,False,[],[],none
+733,0,3,"Lobb, Mr. William Arthur",male,31.0,1,0,3336.0,16.02,,S,England,733,lobb mr william arthur,33360,True,False,False,True,[254],[],name_only
+734,0,3,"Lockyer, Mr. Edward Thomas",male,19.0,0,0,1222.0,7.1707,,S,England,734,lockyer mr edward thomas,12220,False,False,False,False,[],[],none
+735,1,1,"Longley, Miss. Gretchen Fiske",female,21.0,0,0,13502.0,77.1902,,C,United States,735,longley miss gretchen fiske,135020,True,False,False,True,[628],[],name_only
+736,0,1,"Long, Mr. Milton Clyde",male,29.0,0,0,113501.0,30.0,,S,United States,736,long mr milton clyde,1135010,True,False,False,True,[783],[],name_only
+737,0,1,"Loring, Mr. Joseph Holland",male,30.0,0,0,113801.0,45.1,,S,United States,737,loring mr joseph holland,1138010,False,False,False,False,[],[],none
+738,0,2,"Louch, Mr. Charles",male,50.0,1,0,3085.0,26.0,,S,England,738,louch mr charles,30850,False,False,False,False,[],[],none
+739,1,2,"Louch, Mrs. Alice Adelaide",female,43.0,1,0,3085.0,26.0,,S,England,739,louch mrs alice adelaide,30850,False,False,False,False,[],[],none
+740,0,3,"Lovell, Mr. John Hall",male,20.0,0,0,21173.0,7.05,,S,England,740,lovell mr john hall,211730,False,False,False,False,[],[],none
+741,1,3,"Lulic, Mr. Nikola",male,29.0,0,0,315098.0,8.1303,,S,Croatia (Modern),741,lulic mr nikola,3150980,True,False,False,True,[822],[],name_only
+742,0,3,"Lundahl, Mr. Johan Svensson",male,50.0,0,0,347743.0,7.0101,,S,Sweden,742,lundahl mr johan svensson,3477430,True,False,False,True,[632],[],name_only
+743,1,3,"Lundin, Miss. Olga Elida",female,23.0,0,0,347469.0,7.1701,,S,United States,743,lundin miss olga elida,3474690,False,False,False,False,[],[],none
+744,1,3,"Lundström, Mr. Thure Edvin",male,32.0,0,0,350403.0,7.1107,,S,Sweden,744,lundstrom mr thure edvin,3504030,False,False,False,False,[],[],none
+745,1,1,"Lurette, Miss. Eugénie Elise",female,59.0,0,0,17569.0,146.1005,,C,France,745,lurette miss eugenie elise,175690,False,False,False,False,[],[],none
+746,0,3,"Lymperopoulus, Mr. Panagiotis K.",male,30.0,0,0,2683.0,6.0809,,C,Greece,746,lymperopoulus mr panagiotis k,26830,False,False,False,False,[],[],none
+747,0,3,"Lyntakoff, Mr. Stanko",male,44.0,0,0,349235.0,7.1711,,S,,747,lyntakoff mr stanko,3492350,False,False,False,False,[],[],none
+748,0,3,"MacKay, Mr. George William",male,20.0,0,0,42795.0,7.11,,S,Scotland,748,mackay mr george william,427950,False,False,False,False,[],[],none
+749,0,2,"Mack, Mrs. Mary",female,57.0,0,0,3.0,10.1,,S,England,749,mack mrs mary,30,True,False,False,True,[773],[],name_only
+750,1,3,"Madigan, Miss. Margaret",female,21.0,0,0,370370.0,7.15,,Q,Ireland,750,madigan miss margaret,3703700,False,False,False,False,[],[],none
+751,1,1,"Madill, Miss. Georgette Alexandra",female,16.0,0,1,24160.0,211.0609,,S,United States,751,madill miss georgette alexandra,241600,True,False,False,True,[690],[],name_only
+752,1,3,"Madsen, Mr. Fridtjof Arne",male,24.0,0,0,17369.0,7.021,,S,Norway,752,madsen mr fridtjof arne,173690,True,False,False,True,[128],[],name_only
+753,0,3,"Mäenpää, Mr. Matti Alexanteri",male,22.0,0,0,3101275.0,7.0206,,S,Finland,753,maenpaa mr matti alexanteri,31012750,True,False,False,True,[244],[],name_only
+754,0,1,"Maguire, Mr. John Edward",male,30.0,0,0,110469.0,26.0,,S,United States,754,maguire mr john edward,1104690,False,False,False,False,[],[],none
+755,0,3,"Mahon, Miss. Bridget Delia",female,20.0,0,0,330924.0,7.1707,,Q,Ireland,755,mahon miss bridget delia,3309240,False,False,False,False,[],[],none
+756,1,1,"Maioni, Miss. Roberta Elizabeth Mary",female,20.0,0,0,110152.0,86.1,,S,England,756,maioni miss roberta elizabeth mary,1101520,False,False,False,False,[],[],none
+757,0,3,"Maisner, Mr. Simon",male,34.0,0,0,2816.0,8.01,,S,England,757,maisner mr simon,28160,True,False,False,True,[465],[],name_only
+758,0,3,"Mäkinen, Mr. Kalle Edvard",male,29.0,0,0,3101268.0,7.1806,,S,Finland,758,makinen mr kalle edvard,31012680,False,False,False,False,[],[],none
+759,0,2,"Malachard, Mr. Jean-Noël",male,25.0,0,0,237735.0,15.0,,C,France,759,malachard mr jean noel,2377350,False,False,False,False,[],[],none
+760,1,2,"Mallet, Master. André Clement",male,1.0,0,2,2079.0,37.0,,C,France,760,mallet master andre clement,20790,False,False,False,False,[],[],none
+761,0,2,"Mallet, Mr. Albert Denis Pierre",male,45.0,1,1,2079.0,37.0,,C,France,761,mallet mr albert denis pierre,20790,False,False,False,False,[],[],none
+762,1,2,"Mallet, Mrs. Antonine Marie",female,24.0,1,1,2079.0,37.0,,C,France,762,mallet mrs antonine marie,20790,False,False,False,False,[],[],none
+763,1,3,"Māmā, Mr. Hannā Mikā'īl",male,18.0,0,0,2677.0,7.0407,,C,Lebanon,763,mama mr hanna mika il,26770,False,False,False,False,[],[],none
+764,0,3,"Mangan, Miss. Mary",female,32.0,0,0,364850.0,7.15,,Q,Ireland,764,mangan miss mary,3648500,True,False,False,True,[768],[],name_only
+765,0,2,"Mangiavacchi, Mr. Serafino Emilio",male,30.0,0,0,32861.0,15.1107,,C,United States,765,mangiavacchi mr serafino emilio,328610,False,False,False,False,[],[],none
+766,1,3,"Mannion, Miss. Margaret",female,28.0,0,0,36866.0,7.1409,,Q,Ireland,766,mannion miss margaret,368660,False,False,False,False,[],[],none
+767,0,3,"Mardirosian, Mr. Sarkis",male,25.0,0,0,2655.0,7.0407,,C,Turkey,767,mardirosian mr sarkis,26550,False,False,False,False,[],[],none
+768,1,1,"Maréchal, Mr. Pierre",male,29.0,0,0,11774.0,29.14,,C,France,768,marechal mr pierre,117740,True,False,False,True,[840],[],name_only
+769,0,3,"Marinko, Mr. Dmitri",male,23.0,0,0,349238.0,7.1711,,S,Yugoslavia,769,marinko mr dmitri,3492380,False,False,False,False,[],[],none
+770,0,3,"Markoff, Mr. Marin",male,35.0,0,0,349213.0,7.1711,,S,Bulgaria,770,markoff mr marin,3492130,True,False,False,True,[848],[],name_only
+771,0,3,"Markun, Mr. Johann",male,33.0,0,0,349257.0,7.1711,,C,Slovenia,771,markun mr johann,3492570,True,False,False,True,[882],[],name_only
+772,0,1,"Marvin, Mr. Daniel Warner",male,18.0,1,0,113773.0,53.02,,S,United States,772,marvin mr daniel warner,1137730,True,False,False,True,[749],[],name_only
+773,1,1,"Marvin, Mrs. Mary Graham Carmichael",female,18.0,1,0,113773.0,53.02,,S,Scotland,773,marvin mrs mary graham carmichael,1137730,False,False,False,False,[],[],none
+774,0,3,"Matinoff, Mr. Nicola",male,30.0,0,0,349255.0,7.1711,,C,Bulgaria,774,matinoff mr nicola,3492550,False,False,False,False,[],[],none
+775,0,2,"Matthews, Mr. William John",male,23.0,0,0,28228.0,13.0,,S,England,775,matthews mr william john,282280,True,False,False,True,[419],[],name_only
+776,0,2,"Maybery, Mr. Frank Hubert",male,36.0,0,0,239059.0,16.0,,S,England,776,maybery mr frank hubert,2390590,False,False,False,False,[],[],none
+777,1,1,"Mayné, Mlle. Berthe Antonine",female,24.0,0,0,17482.0,49.1001,,C,Belgium,777,mayne mlle berthe antonine,174820,False,False,False,False,[],[],none
+778,0,1,"McCaffry, Mr. Thomas Francis",male,46.0,0,0,13050.0,75.041,,S,Canada,778,mccaffry mr thomas francis,130500,False,False,False,False,[],[],none
+779,1,3,"McCarthy, Miss. Catherine",female,25.0,0,0,383123.0,7.15,,Q,Ireland,779,mccarthy miss catherine,3831230,False,False,False,False,[],[],none
+780,0,1,"McCarthy, Mr. Timothy J.",male,55.0,0,0,17463.0,51.1703,,S,United States,780,mccarthy mr timothy j,174630,True,False,False,True,[7],[],name_only
+781,1,3,"McCormack, Mr. Thomas Joseph",male,19.0,0,0,367228.0,7.15,,Q,United States,781,mccormack mr thomas joseph,3672280,True,False,False,True,[829],[],name_only
+782,1,3,"McCoy, Miss. Agnes",female,29.0,2,0,367226.0,23.05,,Q,Ireland,782,mccoy miss agnes,3672260,True,False,False,True,[331],[],name_only
+783,1,3,"McCoy, Miss. Alice",female,26.0,2,0,367226.0,23.05,,Q,Ireland,783,mccoy miss alice,3672260,False,False,False,False,[],[],none
+784,1,3,"McCoy, Mr. Bernard",male,24.0,2,0,367226.0,23.05,,Q,Ireland,784,mccoy mr bernard,3672260,True,False,False,True,[302],[],name_only
+785,0,2,"McCrae, Mr. Arthur Gordon",male,32.0,0,0,237216.0,13.1,,S,Australia,785,mccrae mr arthur gordon,2372160,False,False,False,False,[],[],none
+786,0,2,"McCrie, Mr. James Matthew",male,32.0,0,0,233478.0,13.0,,S,Canada,786,mccrie mr james matthew,2334780,False,False,False,False,[],[],none
+787,1,3,"McDermott, Miss. Bridget Delia",female,31.0,0,0,330932.0,7.1508,,Q,Ireland,787,mcdermott miss bridget delia,3309320,False,False,False,False,[],[],none
+788,0,3,"McEvoy, Mr. Michael",male,20.0,0,0,36568.0,15.1,,Q,Ireland,788,mcevoy mr michael,365680,True,False,False,True,[719],[],name_only
+789,1,1,"McGough, Mr. James Robert",male,35.0,0,0,17473.0,26.0509,,S,Ireland,789,mcgough mr james robert,174730,True,False,False,True,[513],[],name_only
+790,1,3,"McGovern, Ms. Mary",female,22.0,0,0,330931.0,7.1707,,Q,Ireland,790,mcgovern ms mary,3309310,False,False,False,False,[],[],none
+791,1,3,"McGowan, Miss. Anna Louise",female,17.0,0,0,330923.0,8.0,,Q,United States,791,mcgowan miss anna louise,3309230,False,False,False,False,[],[],none
+792,0,3,"McGowan, Miss. Catherine",female,42.0,0,0,9232.0,7.15,,Q,Ireland,792,mcgowan miss catherine,92320,False,False,False,False,[],[],none
+793,0,2,"McKane, Mr. Peter Daniel",male,46.0,0,0,28403.0,26.0,,S,Channel Islands,793,mckane mr peter daniel,284030,False,False,False,False,[],[],none
+794,0,3,"McMahon, Mr. Martin",male,19.0,0,0,370372.0,7.15,,Q,Ireland,794,mcmahon mr martin,3703720,True,False,False,True,[127],[],name_only
+795,0,3,"McNamee, Mr. Neal",male,27.0,1,0,376566.0,16.02,,S,England,795,mcnamee mr neal,3765660,True,False,False,True,[744],[],name_only
+796,0,3,"McNamee, Mrs. Eileen",female,19.0,1,0,376566.0,16.02,,S,England,796,mcnamee mrs eileen,3765660,False,False,False,False,[],[],none
+797,0,3,"McNeill, Miss. Bridget",female,32.0,0,0,370368.0,7.15,,Q,Ireland,797,mcneill miss bridget,3703680,False,False,False,False,[],[],none
+798,0,3,"Meanwell, Mrs. Marian",female,62.0,0,0,392087.0,8.01,,S,England,798,meanwell mrs marian,3920870,False,False,False,False,[],[],none
+799,0,3,"Meehan, Mr. John",male,22.0,0,0,3130.0,7.15,,Q,Ireland,799,meehan mr john,31300,False,False,False,False,[],[],none
+800,0,3,"Meek, Mrs. Annie Louisa",female,32.0,0,0,343095.0,8.01,,S,England,800,meek mrs annie louisa,3430950,False,False,False,False,[],[],none
+801,1,2,"Mellinger, Miss. Violet Madeline",female,13.0,0,1,250644.0,19.1,,S,England,801,mellinger miss violet madeline,2506440,False,False,False,False,[],[],none
+802,1,2,"Mellinger, Mrs. Elizabeth Anne",female,42.0,0,1,250644.0,19.1,,S,England,802,mellinger mrs elizabeth anne,2506440,False,False,False,False,[],[],none
+803,1,2,"Mellors, Mr. William John",male,19.0,0,0,751.0,10.1,,S,England,803,mellors mr william john,7510,True,False,False,True,[227],[],name_only
+804,0,3,"Meo (Martino), Mr. Alfonzo",male,48.0,0,0,11206.0,8.01,,S,Italy,804,meo martino mr alfonzo,112060,False,False,False,False,[],[],none
+805,0,3,"Mernagh, Mr. Robert",male,28.0,0,0,368703.0,7.15,,Q,Ireland,805,mernagh mr robert,3687030,True,False,False,True,[197],[],name_only
+806,0,2,"Meyer, Mr. August",male,31.0,0,0,248723.0,13.0,,S,England,806,meyer mr august,2487230,True,False,False,True,[809],[],name_only
+807,0,1,"Meyer, Mr. Edgar Joseph",male,28.0,1,0,17604.0,82.0305,,C,United States,807,meyer mr edgar joseph,176040,True,False,False,True,[35],[],name_only
+808,1,1,"Meyer, Mrs. Leila",female,25.0,1,0,17604.0,82.0305,,C,United States,808,meyer mrs leila,176040,False,False,False,False,[],[],none
+809,1,3,"Midtsjø, Mr. Karl Albert",male,21.0,0,0,345501.0,7.1506,,S,Norway,809,midtsj mr karl albert,3455010,False,False,False,False,[],[],none
+810,0,3,"Mihoff, Mr. Stoytcho",male,28.0,0,0,349207.0,7.1711,,S,Bulgaria,810,mihoff mr stoytcho,3492070,False,False,False,False,[],[],none
+811,0,3,"Miles, Mr. Frank",male,23.0,0,0,359306.0,8.01,,S,England,811,miles mr frank,3593060,False,False,False,False,[],[],none
+812,0,1,"Millet, Mr. Francis Davis",male,65.0,0,0,13509.0,26.11,,C,United States,812,millet mr francis davis,135090,True,False,False,True,[457],[],name_only
+813,0,2,"Milling, Mr. Jacob Christian",male,48.0,0,0,234360.0,13.0,,S,Denmark,813,milling mr jacob christian,2343600,True,False,False,True,[464],[],name_only
+814,0,1,"Minahan, Dr. William Edward",male,44.0,2,0,19928.0,90.0,,Q,United States,814,minahan dr william edward,199280,True,False,False,True,[246],[],name_only
+815,1,1,"Minahan, Miss. Daisy E.",female,33.0,1,0,19928.0,90.0,,Q,United States,815,minahan miss daisy e,199280,True,False,False,True,[413],[],name_only
+816,1,1,"Minahan, Mrs. Lillian E.",female,37.0,1,0,19928.0,90.0,,Q,United States,816,minahan mrs lillian e,199280,False,False,False,False,[],[],none
+817,0,3,"Mineff, Mr. Ivan",male,24.0,0,0,349233.0,7.1711,,S,,817,mineff mr ivan,3492330,True,False,False,True,[295],[],name_only
+818,0,3,"Minkoff, Mr. Lazar",male,21.0,0,0,349211.0,7.1711,,S,Bulgaria,818,minkoff mr lazar,3492110,False,False,False,False,[],[],none
+819,0,2,"Mitchell, Mr. Henry Michael",male,72.0,0,0,24580.0,10.1,,S,England,819,mitchell mr henry michael,245800,True,False,False,True,[673],[],name_only
+820,0,3,"Mitkoff, Mr. Mito",male,23.0,0,0,349221.0,7.1711,,S,,820,mitkoff mr mito,3492210,True,False,False,True,[651],[],name_only
+821,1,3,"Mockler, Miss. Ellen Mary",female,23.0,0,0,330980.0,7.1707,,Q,Ireland,821,mockler miss ellen mary,3309800,False,False,False,False,[],[],none
+822,1,1,"Mock, Mr. Philipp Edmund",male,30.0,1,0,13236.0,57.15,,C,United States,822,mock mr philipp edmund,132360,False,False,False,False,[],[],none
+823,0,3,"Moen, Mr. Sigurd Hansen",male,27.0,0,0,348123.0,7.13,,S,Norway,823,moen mr sigurd hansen,3481230,True,False,False,True,[76],[],name_only
+824,0,1,"Molson, Mr. Harry Markland",male,55.0,0,0,113787.0,30.1,,S,Canada,824,molson mr harry markland,1137870,True,False,False,True,[493],[],name_only
+825,0,2,"Montvila, Fr. Juozas",male,27.0,0,0,211536.0,13.0,,S,England,825,montvila fr juozas,2115360,False,False,False,False,[],[],none
+826,0,1,"Moore, Mr. Clarence Bloomfield",male,47.0,0,0,113796.0,42.08,,S,United States,826,moore mr clarence bloomfield,1137960,False,False,False,False,[],[],none
+827,0,3,"Moore, Mr. Leonard Charles",male,19.0,0,0,54510.0,8.01,,S,England,827,moore mr leonard charles,545100,True,False,False,True,[122],[],name_only
+828,1,3,"Moor, Master. Meier",male,7.0,0,1,392096.0,12.0906,,S,,828,moor master meier,3920960,True,False,False,True,[752],[],name_only
+829,1,3,"Moor, Mrs. Beila",female,29.0,0,1,392096.0,12.0906,,S,,829,moor mrs beila,3920960,True,False,False,True,[824],[],name_only
+830,1,3,"Moran, Miss. Bridget",female,28.0,1,0,371110.0,24.03,,Q,Ireland,830,moran miss bridget,3711100,False,False,False,False,[],[],none
+831,0,3,"Moran, Mr. Daniel J.",male,28.0,1,0,371110.0,24.03,,Q,Ireland,831,moran mr daniel j,3711100,True,False,False,True,[769],[],name_only
+832,0,2,"Moraweck, Dr. Ernest",male,54.0,0,0,29011.0,14.0,,S,United States,832,moraweck dr ernest,290110,True,False,False,True,[318],[],name_only
+833,0,2,"Morley, Mr. Henry Samuel",male,38.0,0,0,250655.0,26.0,,S,England,833,morley mr henry samuel,2506550,False,False,False,False,[],[],none
+834,0,3,"Morley, Mr. William",male,34.0,0,0,364506.0,8.01,,S,England,834,morley mr william,3645060,True,False,False,True,[462],[],name_only
+835,0,3,"Morrow, Mr. Thomas Rowan",male,30.0,0,0,372622.0,7.15,,Q,Ireland,835,morrow mr thomas rowan,3726220,True,False,False,True,[561],[],name_only
+836,1,3,"Moss, Mr. Albert Johan",male,29.0,0,0,312991.0,7.1506,,S,Norway,836,moss mr albert johan,3129910,True,False,False,True,[108],[],name_only
+837,1,3,"Moussa, Mrs. Mantoura Boulos",female,35.0,0,0,2626.0,7.0407,,C,Lebanon,837,moussa mrs mantoura boulos,26260,True,False,False,True,[368],[],name_only
+838,0,3,"Moutal, Mr. Rahamin Haim",male,28.0,0,0,374746.0,8.01,,S,England,838,moutal mr rahamin haim,3747460,True,False,False,True,[78],[],name_only
+839,1,3,"Mubārik, Master. Halīm",male,4.0,1,1,2661.0,15.0411,,C,Lebanon,839,mubarik master halim,26610,False,False,False,False,[],[],none
+840,1,3,"Mubārik, Master. Jirjis",male,7.0,1,1,2661.0,15.0411,,C,Lebanon,840,mubarik master jirjis,26610,False,False,False,False,[],[],none
+841,1,3,"Mubārik, Mrs. Amīnah",female,25.0,0,2,2661.0,15.0411,,C,Lebanon,841,mubarik mrs aminah,26610,False,False,False,False,[],[],none
+842,0,2,"Mudd, Mr. Thomas Cupper",male,17.0,0,0,3.0,10.1,,S,England,842,mudd mr thomas cupper,30,False,False,False,False,[],[],none
+843,1,3,"Mullin, Miss. Catherine",female,21.0,0,0,35852.0,7.1408,,Q,Ireland,843,mullin miss catherine,358520,False,False,False,False,[],[],none
+844,1,3,"Mulvihill, Miss. Bridget Elizabeth",female,25.0,0,0,382653.0,7.15,,Q,Ireland,844,mulvihill miss bridget elizabeth,3826530,False,False,False,False,[],[],none
+845,0,3,"Murdlin, Mr. Joseph",male,22.0,0,0,3235.0,8.01,,S,England,845,murdlin mr joseph,32350,True,False,False,True,[590],[],name_only
+846,1,3,"Murphy, Miss. Catherine",female,18.0,1,0,367230.0,15.1,,Q,Ireland,846,murphy miss catherine,3672300,False,False,False,False,[],[],none
+847,1,3,"Murphy, Miss. Margaret Jane",female,25.0,1,0,367230.0,15.1,,Q,Ireland,847,murphy miss margaret jane,3672300,True,False,False,True,[613],[],name_only
+848,1,3,"Murphy, Miss. Nora",female,31.0,0,0,36568.0,15.1,,Q,Ireland,848,murphy miss nora,365680,False,False,False,False,[],[],none
+849,1,3,"Muslamānī, Mrs. Fatīmah Muhammad",female,22.0,0,0,2649.0,7.0406,,C,Lebanon,849,muslamani mrs fatimah muhammad,26490,False,False,False,False,[],[],none
+850,0,3,"Myhrman, Mr. Pehr Fabian Oliver Malkolm",male,18.0,0,0,347078.0,7.15,,S,Sweden,850,myhrman mr pehr fabian oliver malkolm,3470780,True,False,False,True,[776],[],name_only
+851,0,2,"Myles, Mr. Thomas Francis",male,63.0,0,0,240276.0,9.1309,,Q,Ireland,851,myles mr thomas francis,2402760,False,False,False,False,[],[],none
+852,0,3,"Naidenoff, Mr. Penko",male,22.0,0,0,349206.0,7.1711,,S,Bulgaria,852,naidenoff mr penko,3492060,True,False,False,True,[288],[],name_only
+853,1,3,"Najib Kiamie, Miss. Adele",female,15.0,0,0,2667.0,7.0406,,C,Lebanon,853,najib kiamie miss adele,26670,False,False,False,False,[],[],none
+854,0,3,"Nakhli, Mr. Toufik",male,17.0,0,0,2641.0,7.0407,,C,Lebanon,854,nakhli mr toufik,26410,False,False,False,False,[],[],none
+855,1,3,"Nakid, Miss. Maria",female,1.0,0,2,2653.0,15.141,,C,Lebanon,855,nakid miss maria,26530,False,False,False,False,[],[],none
+856,1,3,"Nakid, Mr. Sahid",male,21.0,1,1,2653.0,15.141,,C,Lebanon,856,nakid mr sahid,26530,True,False,False,True,[623],[],name_only
+857,1,3,"Nakid, Mrs. Waika",female,19.0,1,1,2653.0,15.141,,C,Lebanon,857,nakid mrs waika,26530,False,False,False,False,[],[],none
+858,0,3,"Nancarrow, Mr. William Henry",male,36.0,0,0,3338.0,8.01,,S,England,858,nancarrow mr william henry,33380,False,False,False,False,[],[],none
+859,0,3,"Nankoff, Mr. Minko",male,32.0,0,0,349218.0,7.1711,,S,,859,nankoff mr minko,3492180,True,False,False,True,[740],[],name_only
+860,0,3,"Nasr 'Almā, Mr. Mustafà",male,20.0,0,0,2652.0,7.0407,,C,Lebanon,860,nasr alma mr mustafa,26520,False,False,False,False,[],[],none
+861,0,2,"Nasser, Mr. Nicholas",male,28.0,1,0,237736.0,30.0105,,C,United States,861,nasser mr nicholas,2377360,True,False,False,True,[123],[],name_only
+862,1,2,"Nasser, Mrs. Adele",female,14.0,1,0,237736.0,30.0105,,C,Lebanon,862,nasser mrs adele,2377360,False,False,False,False,[],[],none
+863,0,3,"Nassr Rizq, Mr. Saade",male,20.0,0,0,2676.0,7.0406,,C,Lebanon,863,nassr rizq mr saade,26760,False,False,False,False,[],[],none
+864,0,1,"Natsch, Mr. Charles",male,36.0,0,1,17596.0,29.14,,C,United States,864,natsch mr charles,175960,False,False,False,False,[],[],none
+865,0,3,"Naughton, Miss. Hannah",female,21.0,0,0,365237.0,7.15,,Q,Ireland,865,naughton miss hannah,3652370,False,False,False,False,[],[],none
+866,1,2,"Navratil, Master. Edmond Roger",male,2.0,1,1,230080.0,26.0,,S,France,866,navratil master edmond roger,2300800,True,False,False,True,[341],[],name_only
+867,1,2,"Navratil, Master. Michel Marcel",male,3.0,1,1,230080.0,26.0,,S,France,867,navratil master michel marcel,2300800,False,False,False,False,[],[],none
+868,0,2,"Navratil, Mr. Michel",male,32.0,0,2,230080.0,26.0,,S,Slovakia (Modern day),868,navratil mr michel,2300800,False,False,False,False,[],[],none
+869,0,3,"Nenkov, Mr. Hristo",male,22.0,0,0,349234.0,7.1711,,S,,869,nenkov mr hristo,3492340,False,False,False,False,[],[],none
+870,0,2,"Nesson, Mr. Israel",male,26.0,0,0,244368.0,13.0,,S,England,870,nesson mr israel,2443680,False,False,False,False,[],[],none
+871,1,1,"Newell, Miss. Madeleine",female,31.0,1,0,35273.0,113.0506,,C,United States,871,newell miss madeleine,352730,True,False,False,True,[216],[],name_only
+872,1,1,"Newell, Miss. Marjorie Anne",female,23.0,1,0,35273.0,113.0506,,C,United States,872,newell miss marjorie anne,352730,False,False,False,False,[],[],none
+873,0,1,"Newell, Mr. Arthur Webster",male,58.0,0,2,35273.0,113.0506,,C,United States,873,newell mr arthur webster,352730,True,False,False,True,[660],[],name_only
+874,1,1,"Newsom, Miss. Helen Monypeny",female,19.0,0,2,11752.0,26.0508,,S,United States,874,newsom miss helen monypeny,117520,True,False,False,True,[137],[],name_only
+875,0,2,"Nicholls, Mr. Joseph Charles",male,19.0,1,1,33112.0,36.15,,S,England,875,nicholls mr joseph charles,331120,True,False,False,True,[146],[],name_only
+876,0,1,"Nicholson, Mr. Arthur Ernest",male,60.0,0,0,693.0,26.0,,S,England,876,nicholson mr arthur ernest,6930,True,False,False,True,[546],[],name_only
+877,0,3,"Nieminen, Miss. Manta Josefina",female,29.0,0,0,3101297.0,7.1806,,S,Finland,877,nieminen miss manta josefina,31012970,False,False,False,False,[],[],none
+878,0,3,"Niklasson, Mr. Samuel",male,28.0,0,0,363611.0,8.01,,S,Sweden,878,niklasson mr samuel,3636110,False,False,False,False,[],[],none
+879,1,3,"Nilsson, Miss. Berta Olivia",female,18.0,0,0,347066.0,7.1506,,S,Sweden,879,nilsson miss berta olivia,3470660,False,False,False,False,[],[],none
+880,1,3,"Nilsson, Miss. Helmina Josefina",female,26.0,0,0,347470.0,7.1701,,S,Sweden,880,nilsson miss helmina josefina,3474700,True,False,False,True,[316],[],name_only
+881,0,3,"Nilsson, Mr. August Ferdinand",male,21.0,0,0,350410.0,7.1701,,S,Sweden,881,nilsson mr august ferdinand,3504100,False,False,False,False,[],[],none
+882,1,3,"Nīqūla Yārid, Master. Ilyās",male,11.0,1,0,2651.0,11.041,,C,Lebanon,882,niqula yarid master ilyas,26510,False,False,False,False,[],[],none
+883,1,3,"Nīqūla Yārid, Miss. Jamilah",female,14.0,1,0,2651.0,11.041,,C,Lebanon,883,niqula yarid miss jamilah,26510,False,False,False,False,[],[],none
+884,0,3,"Nirva, Mr. Iisakki Antino Äijö",male,41.0,0,0,3101272.0,7.0206,,S,Finland,884,nirva mr iisakki antino aijo,31012720,True,False,False,True,[762],[],name_only
+885,1,3,"Niskänen, Mr. Juha",male,39.0,0,0,3101289.0,7.1806,,S,United States,885,niskanen mr juha,31012890,True,False,False,True,[401],[],name_only
+886,0,3,"Nofal, Mr. Mansouer",male,20.0,0,0,2697.0,7.0407,,C,Lebanon,886,nofal mr mansouer,26970,False,False,False,False,[],[],none
+887,0,2,"Norman, Mr. Robert Douglas",male,27.0,0,0,218629.0,13.1,,S,Scotland,887,norman mr robert douglas,2186290,True,False,False,True,[563],[],name_only
+888,0,3,"Nosworthy, Mr. Richard Cater",male,21.0,0,0,39886.0,7.16,,S,England,888,nosworthy mr richard cater,398860,True,False,False,True,[52],[],name_only
+889,1,1,"Nourney, Mr. Alfred",male,20.0,0,0,2166.0,13.1703,,C,Germany,889,nourney mr alfred,21660,False,False,False,False,[],[],none
+890,1,2,"Nye, Mrs. Elizabeth",female,29.0,0,0,29395.0,10.1,,S,United States,890,nye mrs elizabeth,293950,False,False,False,False,[],[],none
+891,1,3,"Nysten, Miss. Anna Sofia",female,22.0,0,0,347081.0,7.15,,S,Sweden,891,nysten miss anna sofia,3470810,True,False,False,True,[142],[],name_only
+892,0,3,"Nysveen, Mr. Johan Hansen",male,60.0,0,0,345364.0,6.0409,,S,Norway,892,nysveen mr johan hansen,3453640,True,False,False,True,[327],[],name_only
+893,0,3,"O'Brien, Mr. Denis",male,21.0,0,0,330979.0,7.1607,,Q,Ireland,893,o brien mr denis,3309790,False,False,False,False,[],[],none
+894,1,3,"O'Brien, Mrs. Johanna",female,26.0,1,0,370365.0,15.1,,Q,Ireland,894,o brien mrs johanna,3703650,False,False,False,False,[],[],none
+895,0,3,"O'Brien, Mr. Thomas",male,27.0,1,0,370365.0,15.1,,Q,Ireland,895,o brien mr thomas,3703650,True,False,False,True,[365],[],name_only
+896,0,3,"O'Connell, Mr. Patrick Denis",male,18.0,0,0,334912.0,7.1408,,Q,Ireland,896,o connell mr patrick denis,3349120,False,False,False,False,[],[],none
+897,0,3,"O'Connor, Mr. Maurice",male,17.0,0,0,371060.0,7.15,,Q,Ireland,897,o connor mr maurice,3710600,True,False,False,True,[460],[],name_only
+898,0,3,"O'Connor, Mr. Patrick",male,23.0,0,0,366713.0,7.15,,Q,Ireland,898,o connor mr patrick,3667130,False,False,False,False,[],[],none
+899,0,3,"Ödahl, Mr. Nils Martin",male,23.0,0,0,7267.0,9.0406,,S,Sweden,899,odahl mr nils martin,72670,True,False,False,True,[351],[],name_only
+900,1,3,"O'Dwyer, Miss. Ellen",female,24.0,0,0,330959.0,7.1707,,Q,Ireland,900,o dwyer miss ellen,3309590,False,False,False,False,[],[],none
+901,1,3,"Öhman, Miss. Velin",female,22.0,0,0,347085.0,7.1506,,S,Sweden,901,ohman miss velin,3470850,True,False,False,True,[555],[],name_only
+902,1,3,"O'Keefe, Mr. Patrick",male,21.0,0,0,368402.0,7.15,,Q,Ireland,902,o keefe mr patrick,3684020,False,False,False,False,[],[],none
+903,1,3,"O'Leary, Miss. Hanora",female,16.0,0,0,330919.0,7.1607,,Q,Ireland,903,o leary miss hanora,3309190,False,False,False,False,[],[],none
+904,1,1,"Oliva y Ocana, Doña. Fermina",female,39.0,0,0,17758.0,108.18,,C,Spain,904,oliva y ocana dona fermina,177580,False,False,False,False,[],[],none
+905,1,3,"Olsen, Master. Artur Karl",male,9.0,0,1,17368.0,3.0305,,S,Norway,905,olsen master artur karl,173680,False,False,False,False,[],[],none
+906,0,3,"Olsen, Mr. Henry Margido",male,28.0,0,0,4001.0,22.1006,,S,Norway,906,olsen mr henry margido,40010,True,False,False,True,[509],[],name_only
+907,0,3,"Olsen, Mr. Karl Siegwart Andreas",male,42.0,0,1,4579.0,8.0801,,S,United States,907,olsen mr karl siegwart andreas,45790,True,False,False,True,[198],[],name_only
+908,0,3,"Olsen, Mr. Ole Martin",male,27.0,0,0,265302.0,7.0603,,S,Norway,908,olsen mr ole martin,2653020,True,False,False,True,[155],[],name_only
+909,0,3,"Olsson, Miss. Elina",female,31.0,0,0,350407.0,7.1701,,S,Sweden,909,olsson miss elina,3504070,True,False,False,True,[397],[],name_only
+910,0,3,"Olsson, Mr. Nils Johan Göransson",male,28.0,0,0,347464.0,7.1701,,S,Sweden,910,olsson mr nils johan goransson,3474640,True,False,False,True,[282],[],name_only
+911,1,3,"Olsson, Mr. Oscar Wilhelm",male,32.0,0,0,347079.0,7.1506,,S,Sweden,911,olsson mr oscar wilhelm,3470790,False,False,False,False,[],[],none
+912,0,3,"Olsvigen, Mr. Thor Anderson",male,20.0,0,0,6563.0,9.0406,,S,Norway,912,olsvigen mr thor anderson,65630,True,False,False,True,[683],[],name_only
+913,1,1,"Omont, Mr. Alfred Fernand",male,29.0,0,0,12998.0,25.141,,C,France,913,omont mr alfred fernand,129980,False,False,False,False,[],[],none
+914,0,3,"Oreskovic, Miss. Jelka",female,23.0,0,0,315085.0,8.1303,,S,Croatia,914,oreskovic miss jelka,3150850,False,False,False,False,[],[],none
+915,0,3,"Oreskovic, Miss. Marija",female,20.0,0,0,315096.0,8.1303,,S,Croatia,915,oreskovic miss marija,3150960,True,False,False,True,[405],[],name_only
+916,0,3,"Oreskovic, Mr. Luka",male,20.0,0,0,315094.0,8.1303,,S,Croatia,916,oreskovic mr luka,3150940,True,False,False,True,[726],[],name_only
+917,0,3,"Osén, Mr. Olaf Elon",male,16.0,0,0,7534.0,9.0404,,S,Sweden,917,osen mr olaf elon,75340,True,False,False,True,[139],[],name_only
+918,1,1,"Østby, Miss. Helen Ragnhild",female,22.0,0,1,113509.0,61.1907,,S,United States,918,stby miss helen ragnhild,1135090,False,False,False,False,[],[],none
+919,0,1,"Ostby, Mr. Engelhart Cornelius",male,64.0,0,1,113509.0,61.1907,,S,United States,919,ostby mr engelhart cornelius,1135090,True,False,False,True,[55],[],name_only
+920,0,3,"O'Sullivan, Miss. Bridget Mary",female,21.0,0,0,330909.0,7.1207,,Q,Ireland,920,o sullivan miss bridget mary,3309090,True,False,False,True,[503],[],name_only
+921,0,2,"Otter, Mr. Richard",male,38.0,0,0,28213.0,13.0,,S,United States,921,otter mr richard,282130,True,False,False,True,[796],[],name_only
+922,0,1,"Oviés y Rodríguez, Mr. Servando José Florentino",male,36.0,0,0,17562.0,27.1405,,C,Cuba,922,ovies y rodriguez mr servando jose florentino,175620,False,False,False,False,[],[],none
+923,1,2,"Oxenham, Mr. Percy Thomas",male,22.0,0,0,14260.0,10.1,,S,England,923,oxenham mr percy thomas,142600,False,False,False,False,[],[],none
+924,1,2,"Padron Manent, Mr. Julian",male,27.0,0,0,2146.0,13.1703,,C,Spain,924,padron manent mr julian,21460,False,False,False,False,[],[],none
+925,0,2,"Pain, Dr. Alfred",male,23.0,0,0,244278.0,10.1,,S,Canada,925,pain dr alfred,2442780,True,False,False,True,[399],[],name_only
+926,1,2,"Pallàs i Castelló, Sr. Emili",male,29.0,0,0,2147.0,13.1702,,C,Spain,926,pallas i castello sr emili,21470,False,False,False,False,[],[],none
+927,0,3,"Pålsson, Master. Gösta Leonard",male,2.0,3,1,349909.0,21.0106,,S,Sweden,927,palsson master gosta leonard,3499090,True,False,False,True,[8],[],name_only
+928,0,3,"Pålsson, Master. Paul Folke",male,6.0,3,1,349909.0,21.0106,,S,Sweden,928,palsson master paul folke,3499090,False,False,False,False,[],[],none
+929,0,3,"Pålsson, Miss. Stina Viola",female,3.0,3,1,349909.0,21.0106,,S,Sweden,929,palsson miss stina viola,3499090,True,False,False,True,[375],[],name_only
+930,0,3,"Pålsson, Miss. Torborg Danira",female,8.0,3,1,349909.0,21.0106,,S,Sweden,930,palsson miss torborg danira,3499090,True,False,False,True,[25],[],name_only
+931,0,3,"Pålsson, Mrs. Alma Cornelia",female,29.0,0,4,349909.0,21.0106,,S,Sweden,931,palsson mrs alma cornelia,3499090,False,False,False,False,[],[],none
+932,0,3,"Panula, Master. Eino Viljam",male,1.0,4,1,3101295.0,39.1309,,S,Finland,932,panula master eino viljam,31012950,False,False,False,False,[],[],none
+933,0,3,"Panula, Master. Jaako Arnold",male,15.0,4,1,3101295.0,39.1309,,S,United States,933,panula master jaako arnold,31012950,False,False,False,False,[],[],none
+934,0,3,"Panula, Master. Juha Niilo",male,7.0,4,1,3101295.0,39.1309,,S,Finland,934,panula master juha niilo,31012950,True,False,False,True,[51],[],name_only
+935,0,3,"Panula, Master. Urho Abraham",male,2.0,4,1,3101295.0,39.1309,,S,Finland,935,panula master urho abraham,31012950,True,False,False,True,[825],[],name_only
+936,0,3,"Panula, Mr. Ernesti Arvid",male,16.0,4,1,3101295.0,39.1309,,S,Finland,936,panula mr ernesti arvid,31012950,True,False,False,True,[267],[],name_only
+937,0,3,"Panula, Mrs. Maija Emelia Abrahamintytar",female,41.0,0,5,3101295.0,39.1309,,S,Finland,937,panula mrs maija emelia abrahamintytar,31012950,False,False,False,False,[],[],none
+938,0,2,"Parker, Mr. Clifford Richard",male,17.0,0,0,14888.0,10.1,,S,Channel Islands,938,parker mr clifford richard,148880,False,False,False,False,[],[],none
+939,0,2,"Parkes, Mr. Francis",male,21.0,0,0,239853.0,,,B,Northern Ireland,939,parkes mr francis,2398530,False,False,False,False,[],[],none
+940,1,2,"Parrish, Mrs. Lutie Davis",female,59.0,0,1,230433.0,26.0,,S,United States,940,parrish mrs lutie davis,2304330,True,False,False,True,[260],[],name_only
+941,0,1,"Parr, Mr. William Henry Marsh",male,30.0,0,0,112052.0,,,B,England,941,parr mr william henry marsh,1120520,True,False,False,True,[634],[],name_only
+942,0,1,"Partner, Mr. Austin",male,40.0,0,0,113043.0,28.1,,S,England,942,partner mr austin,1130430,False,False,False,False,[],[],none
+943,0,3,"Pasic, Mr. Jakob",male,21.0,0,0,315097.0,8.1303,,S,Slovenia,943,pasic mr jakob,3150970,True,False,False,True,[837],[],name_only
+944,0,3,"Patchett, Mr. George",male,20.0,0,0,358585.0,14.1,,S,England,944,patchett mr george,3585850,True,False,False,True,[576],[],name_only
+945,0,3,"Pavlovic, Mr. Stefo",male,32.0,0,0,349242.0,7.1711,,S,Croatia,945,pavlovic mr stefo,3492420,True,False,False,True,[520],[],name_only
+946,0,1,"Payne, Mr. Vivian Ponsonby",male,23.0,0,0,12749.0,93.1,,S,Canada,946,payne mr vivian ponsonby,127490,False,False,False,False,[],[],none
+947,0,3,"Peacock, Master. Albert Edward",male,0.5833333333,1,1,3101315.0,13.1506,,S,England,947,peacock master albert edward,31013150,False,False,False,False,[],[],none
+948,0,3,"Peacock, Miss. Treasteall",female,4.0,1,1,3101315.0,13.1506,,S,England,948,peacock miss treasteall,31013150,False,False,False,False,[],[],none
+949,0,3,"Peacock, Mrs. Edith",female,26.0,0,2,3101315.0,13.1506,,S,England,949,peacock mrs edith,31013150,False,False,False,False,[],[],none
+950,0,3,"Pearce, Mr. Ernest",male,32.0,0,0,343271.0,7.0,,S,England,950,pearce mr ernest,3432710,False,False,False,False,[],[],none
+951,1,1,"Pears, Mrs. Edith",female,22.0,1,0,113776.0,66.12,,S,England,951,pears mrs edith,1137760,False,False,False,False,[],[],none
+952,0,1,"Pears, Mr. Thomas Clinton",male,29.0,1,0,113776.0,66.12,,S,England,952,pears mr thomas clinton,1137760,True,False,False,True,[337],[],name_only
+953,0,3,"Pedersen, Mr. Olaf",male,28.0,0,0,345498.0,7.1506,,S,Norway,953,pedersen mr olaf,3454980,False,False,False,False,[],[],none
+954,0,3,"Peduzzi, Mr. Giuseppe",male,24.0,0,0,2817.0,8.01,,S,England,954,peduzzi mr giuseppe,28170,False,False,False,False,[],[],none
+955,0,3,"Pekoniemi, Mr. Edvard",male,21.0,0,0,3101294.0,7.1806,,S,Finland,955,pekoniemi mr edvard,31012940,True,False,False,True,[116],[],name_only
+956,0,3,"Peltomäki, Mr. Nikolai Johannes",male,25.0,0,0,3101291.0,7.1806,,S,Finland,956,peltomaki mr nikolai johannes,31012910,False,False,False,False,[],[],none
+957,1,1,"Peñasco y Castellana, Mrs. Maria Josefa Perezde Soto y Vallejo",female,22.0,1,0,17758.0,108.18,,C,Spain,957,penasco y castellana mrs maria josefa perezde soto y vallejo,177580,False,False,False,False,[],[],none
+958,0,1,"Peñasco y Castellana, Mr. Victor",male,24.0,1,0,17758.0,108.18,,C,Spain,958,penasco y castellana mr victor,177580,False,False,False,False,[],[],none
+959,0,2,"Pengelly, Mr. Frederick William",male,19.0,0,0,28665.0,10.1,,S,England,959,pengelly mr frederick william,286650,True,False,False,True,[239],[],name_only
+960,0,3,"Perkin, Mr. John Henry",male,24.0,0,0,21174.0,7.05,,S,England,960,perkin mr john henry,211740,True,False,False,True,[213],[],name_only
+961,0,2,"Pernot, Mr. René",male,39.0,0,0,2131.0,15.01,,C,France,961,pernot mr rene,21310,True,False,False,True,[182],[],name_only
+962,1,1,"Perreault, Miss. Mary Anne",female,33.0,0,0,12749.0,93.1,,S,Canada,962,perreault miss mary anne,127490,False,False,False,False,[],[],none
+963,1,3,"Persson, Mr. Ernst Ulrik",male,25.0,1,0,347083.0,7.1506,,S,Sweden,963,persson mr ernst ulrik,3470830,True,False,False,True,[268],[],name_only
+964,0,2,"Peruschitz, Fr. Josef",male,41.0,0,0,237393.0,13.0,,S,Germany,964,peruschitz fr josef,2373930,False,False,False,False,[],[],none
+965,0,3,"Peteranec, Miss. Mathilda",female,28.0,0,0,349245.0,7.1711,,S,Croatia,965,peteranec miss mathilda,3492450,False,False,False,False,[],[],none
+966,1,3,"Peter / Joseph, Master. Michael J.",male,4.0,1,1,2668.0,22.0702,,C,Lebanon,966,peter joseph master michael j,26680,False,False,False,False,[],[],none
+967,1,3,"Peter / Joseph, Miss. Anna",female,2.0,1,1,2668.0,22.0702,,C,Lebanon,967,peter joseph miss anna,26680,False,False,False,False,[],[],none
+968,0,3,"Petersen, Mr. Marius",male,24.0,0,0,342441.0,8.01,,S,England,968,petersen mr marius,3424410,False,False,False,False,[],[],none
+969,0,3,"Peters, Miss. Catherine",female,28.0,0,0,330935.0,8.0209,,Q,Ireland,969,peters miss catherine,3309350,False,False,False,False,[],[],none
+970,0,3,"Petroff, Mr. Nedialco",male,19.0,0,0,349212.0,7.1711,,S,Bulgaria,970,petroff mr nedialco,3492120,False,False,False,False,[],[],none
+971,0,3,"Petroff, Mr. Pastcho",male,29.0,0,0,349215.0,7.1711,,S,Bulgaria,971,petroff mr pastcho,3492150,False,False,False,False,[],[],none
+972,0,3,"Pettersson, Miss. Elin Natalia",female,18.0,0,0,347087.0,7.1506,,S,Sweden,972,pettersson miss elin natalia,3470870,False,False,False,False,[],[],none
+973,0,3,"Pettersson, Mr. Johan Emil",male,25.0,1,0,347076.0,7.1506,,S,Sweden,973,pettersson mr johan emil,3470760,False,False,False,False,[],[],none
+974,1,1,"Peuchen, Major. Arthur Godfrey",male,52.0,0,0,113786.0,30.1,,S,Canada,974,peuchen major arthur godfrey,1137860,True,False,False,True,[450],[],name_only
+975,1,2,"Phillips, Miss. Alice Frances Louisa",female,21.0,0,1,2.0,21.0,,S,England,975,phillips miss alice frances louisa,20,False,False,False,False,[],[],none
+976,1,2,"Phillips, Miss. Kate Florence",female,19.0,0,0,250655.0,26.0,,S,England,976,phillips miss kate florence,2506550,False,False,False,False,[],[],none
+977,0,2,"Phillips, Mr. Escott Robert",male,43.0,0,1,2.0,21.0,,S,England,977,phillips mr escott robert,20,False,False,False,False,[],[],none
+978,1,3,"Picard, Mr. Benoît",male,33.0,0,0,392078.0,8.01,,S,Poland,978,picard mr benoit,3920780,False,False,False,False,[],[],none
+979,1,2,"Pinsky, Mrs. Rosa",female,32.0,0,0,234604.0,13.0,,S,Poland,979,pinsky mrs rosa,2346040,True,False,False,True,[191],[],name_only
+980,0,3,"Plotcharsky, Mr. Vasil",male,27.0,0,0,349227.0,7.1711,,S,,980,plotcharsky mr vasil,3492270,True,False,False,True,[385],[],name_only
+981,0,3,"Pokrnic, Mr. Mate",male,17.0,0,0,315095.0,8.1303,,S,Croatia,981,pokrnic mr mate,3150950,False,False,False,False,[],[],none
+982,0,3,"Pokrnic, Mr. Tome",male,24.0,0,0,315092.0,8.1303,,S,Croatia,982,pokrnic mr tome,3150920,False,False,False,False,[],[],none
+983,0,2,"Ponesell, Mr. Martin",male,24.0,0,0,250647.0,13.0,,S,England,983,ponesell mr martin,2506470,True,False,False,True,[801],[],name_only
+984,1,2,"Portaluppi, Mr. Emilio Ilario Giuseppe",male,30.0,0,0,34644.0,12.1409,,C,United States,984,portaluppi mr emilio ilario giuseppe,346440,False,False,False,False,[],[],none
+985,0,1,"Porter, Mr. Walter Chamberlain",male,46.0,0,0,110465.0,52.0,,S,United States,985,porter mr walter chamberlain,1104650,True,False,False,True,[111],[],name_only
+986,1,1,"Potter, Mrs. Lily Alexenia",female,56.0,0,1,11767.0,83.0302,,C,United States,986,potter mrs lily alexenia,117670,False,False,False,False,[],[],none
+987,0,2,"Pulbaum, Mr. Franz",male,27.0,0,0,2168.0,15.0,,C,United States,987,pulbaum mr franz,21680,False,False,False,False,[],[],none
+988,0,3,"Pulner, Mr. Uscher",male,16.0,0,0,3411.0,8.1403,,C,,988,pulner mr uscher,34110,False,False,False,False,[],[],none
+989,1,2,"Quick, Miss. Phyllis May",female,2.0,1,1,26360.0,26.0,,S,,989,quick miss phyllis may,263600,True,False,False,True,[531],[],name_only
+990,1,2,"Quick, Miss. Winifred Vera",female,8.0,1,1,26360.0,26.0,,S,,990,quick miss winifred vera,263600,False,False,False,False,[],[],none
+991,1,2,"Quick, Mrs. Jane",female,33.0,0,2,26360.0,26.0,,S,,991,quick mrs jane,263600,False,False,False,False,[],[],none
+992,0,3,"Radeff, Mr. Alexander",male,27.0,0,0,349223.0,7.1711,,S,,992,radeff mr alexander,3492230,True,False,False,True,[657],[],name_only
+993,0,3,"Rafūl-Būlus, Mr. Bākhūs",male,21.0,0,0,2679.0,7.0406,,C,Lebanon,993,raful bulus mr bakhus,26790,False,False,False,False,[],[],none
+994,0,3,"Rasmussen, Mrs. Lena Jakobsen",female,63.0,0,0,65305.0,8.0203,,S,Norway,994,rasmussen mrs lena jakobsen,653050,False,False,False,False,[],[],none
+995,0,3,"Razi, Mr. Raihed",male,30.0,0,0,2629.0,7.0407,,C,Lebanon,995,razi mr raihed,26290,True,False,False,True,[860],[],name_only
+996,0,3,"Reed, Mr. James George",male,18.0,0,0,362316.0,7.05,,S,Wales,996,reed mr james george,3623160,True,False,False,True,[251],[],name_only
+997,0,2,"Reeves, Mr. David",male,36.0,0,0,17248.0,10.1,,S,England,997,reeves mr david,172480,True,False,False,True,[266],[],name_only
+998,0,3,"Rekic, Mr. Tido",male,38.0,0,0,349249.0,7.1711,,S,Bosnia,998,rekic mr tido,3492490,True,False,False,True,[109],[],name_only
+999,0,2,"Renouf, Mr. Peter Henry",male,33.0,1,0,31027.0,21.0,,S,Channel Islands,999,renouf mr peter henry,310270,True,False,False,True,[477],[],name_only
+1000,1,2,"Renouf, Mrs. Lillian",female,30.0,3,0,31027.0,21.0,,S,Channel Islands,1000,renouf mrs lillian,310270,False,False,False,False,[],[],none
+1001,0,1,"Reuchlin, Mr. Jonkheer Johan George",male,37.0,0,0,19972.0,,,C,Netherlands,1001,reuchlin mr jonkheer johan george,199720,False,False,False,False,[],[],none
+1002,1,2,"Reynalds, Sra. Encarnación",female,29.0,0,0,230434.0,13.0,,S,Spain,1002,reynalds sra encarnacion,2304340,False,False,False,False,[],[],none
+1003,0,3,"Reynolds, Mr. Harold",male,21.0,0,0,342684.0,8.01,,S,England,1003,reynolds mr harold,3426840,False,False,False,False,[],[],none
+1004,1,1,"Rheims, Mr. George Alexander Lucien",male,33.0,0,0,17607.0,39.12,,C,United States,1004,rheims mr george alexander lucien,176070,False,False,False,False,[],[],none
+1005,0,3,"Rice, Master. Albert",male,10.0,4,1,382652.0,29.0206,,Q,Ireland,1005,rice master albert,3826520,False,False,False,False,[],[],none
+1006,0,3,"Rice, Master. Arthur",male,4.0,4,1,382652.0,29.0206,,Q,Ireland,1006,rice master arthur,3826520,True,False,False,True,[172],[],name_only
+1007,0,3,"Rice, Master. Eric",male,7.0,4,1,382652.0,29.0206,,Q,Ireland,1007,rice master eric,3826520,True,False,False,True,[279],[],name_only
+1008,0,3,"Rice, Master. Eugene Francis",male,2.0,4,1,382652.0,29.0206,,Q,Ireland,1008,rice master eugene francis,3826520,False,False,False,False,[],[],none
+1009,0,3,"Rice, Master. George Hugh",male,8.0,4,1,382652.0,29.0206,,Q,Ireland,1009,rice master george hugh,3826520,True,False,False,True,[788],[],name_only
+1010,0,3,"Rice, Mrs. Margaret",female,39.0,0,5,382652.0,29.0206,,Q,Ireland,1010,rice mrs margaret,3826520,False,False,False,False,[],[],none
+1011,0,2,"Richard, Mr. Emile Phillippe",male,23.0,0,0,2133.0,15.0,,C,,1011,richard mr emile phillippe,21330,False,False,False,False,[],[],none
+1012,1,2,"Richards, Master. Sibley George",male,0.75,1,1,29106.0,18.15,,S,England,1012,richards master sibley george,291060,False,False,False,False,[],[],none
+1013,1,2,"Richards, Master. William Rowe",male,3.0,1,1,29106.0,18.15,,S,England,1013,richards master william rowe,291060,True,False,False,True,[408],[],name_only
+1014,1,2,"Richards, Mrs. Emily",female,24.0,2,3,29106.0,18.15,,S,England,1014,richards mrs emily,291060,False,False,False,False,[],[],none
+1015,1,2,"Ridsdale, Miss. Lucy",female,58.0,0,0,14258.0,10.1,,S,England,1015,ridsdale miss lucy,142580,True,False,False,True,[527],[],name_only
+1016,0,1,"Righini, Mr. Sante",male,22.0,0,0,17760.0,135.1208,,C,,1016,righini mr sante,177600,False,False,False,False,[],[],none
+1017,0,3,"Riihivuori, Miss. Susanna Juhantytär",female,22.0,0,0,3101295.0,39.1309,,S,Finland,1017,riihivuori miss susanna juhantytar,31012950,False,False,False,False,[],[],none
+1018,0,3,"Rintamäki, Mr. Matti",male,35.0,0,0,3101273.0,7.0206,,S,Finland,1018,rintamaki mr matti,31012730,True,False,False,True,[591],[],name_only
+1019,1,3,"Riordan, Miss. Hannah",female,22.0,0,0,334915.0,7.1405,,Q,Ireland,1019,riordan miss hannah,3349150,False,False,False,False,[],[],none
+1020,0,3,"Risien, Mr. Samuel Beard",male,69.0,0,0,364498.0,14.1,,S,England,1020,risien mr samuel beard,3644980,True,False,False,True,[539],[],name_only
+1021,0,3,"Risien, Mrs. Emma Jane",female,64.0,0,0,364498.0,14.1,,S,England,1021,risien mrs emma jane,3644980,False,False,False,False,[],[],none
+1022,1,1,"Robert, Mrs. Elisabeth Walton",female,43.0,0,1,24160.0,211.0609,,S,United States,1022,robert mrs elisabeth walton,241600,False,False,False,False,[],[],none
+1023,0,3,"Robins, Mr. Alexander A.",male,50.0,1,0,3337.0,14.1,,S,England,1023,robins mr alexander a,33370,False,False,False,False,[],[],none
+1024,0,3,"Robins, Mrs. Charity",female,48.0,1,0,3337.0,14.1,,S,England,1024,robins mrs charity,33370,False,False,False,False,[],[],none
+1025,0,1,"Robins, Mr. Victor",male,45.0,0,0,17757.0,247.1006,,C,England,1025,robins mr victor,177570,False,False,False,False,[],[],none
+1026,0,1,"Roebling, Mr. Washington Augustus II",male,31.0,0,0,17590.0,50.0911,,S,United States,1026,roebling mr washington augustus ii,175900,True,False,False,True,[868],[],name_only
+1027,0,2,"Rogers, Mr. Reginald Harry",male,18.0,0,0,28004.0,10.1,,S,England,1027,rogers mr reginald harry,280040,False,False,False,False,[],[],none
+1028,0,3,"Rogers, Mr. William John",male,30.0,0,0,23567.0,8.01,,S,Wales,1028,rogers mr william john,235670,True,False,False,True,[46],[],name_only
+1029,1,1,"Romaine, Mr. Charles Hallace",male,45.0,0,0,111428.0,26.11,,S,United States,1029,romaine mr charles hallace,1114280,False,False,False,False,[],[],none
+1030,0,3,"Rommetvedt, Mr. Knud Paust",male,49.0,0,0,312993.0,7.1506,,S,Norway,1030,rommetvedt mr knud paust,3129930,True,False,False,True,[668],[],name_only
+1031,0,1,"Rood, Mr. Hugh Roscoe",male,39.0,0,0,113767.0,50.0,,S,United States,1031,rood mr hugh roscoe,1137670,True,False,False,True,[186],[],name_only
+1032,0,3,"Rosblom, Miss. Salli Helena",female,2.0,1,1,370129.0,20.0403,,S,Finland,1032,rosblom miss salli helena,3701290,False,False,False,False,[],[],none
+1033,0,3,"Rosblom, Mrs. Helena Wilhelmina",female,41.0,0,2,370129.0,20.0403,,S,Finland,1033,rosblom mrs helena wilhelmina,3701290,False,False,False,False,[],[],none
+1034,0,3,"Rosblom, Mr. Viktor Richard",male,18.0,1,1,370129.0,20.0403,,S,Finland,1034,rosblom mr viktor richard,3701290,True,False,False,True,[425],[],name_only
+1035,1,1,"Rosenbaum, Miss. Edith Louise",female,33.0,0,0,17613.0,27.1405,,C,France,1035,rosenbaum miss edith louise,176130,False,False,False,False,[],[],none
+1036,0,1,"Rosenshine, Mr. George",male,46.0,0,0,17585.0,79.0,,C,United States,1036,rosenshine mr george,175850,False,False,False,False,[],[],none
+1037,0,1,"Ross, Mr. John Hugo",male,36.0,0,0,13049.0,40.0206,,S,Canada,1037,ross mr john hugo,130490,True,False,False,True,[584],[],name_only
+1038,1,1,"Rothes, Lucy Noël Martha, Countess of",female,33.0,0,0,110152.0,86.1,,S,England,1038,rothes lucy noel martha countess of,1101520,False,False,False,False,[],[],none
+1039,1,3,"Roth, Miss. Sarah",female,26.0,0,0,342712.0,8.01,,S,Austria,1039,roth miss sarah,3427120,False,False,False,False,[],[],none
+1040,0,1,"Rothschild, Mr. Martin",male,46.0,1,0,17603.0,59.08,,C,United States,1040,rothschild mr martin,176030,False,False,False,False,[],[],none
+1041,1,1,"Rothschild, Mrs. Elizabeth Jane Anne",female,54.0,1,0,17603.0,59.08,,C,United States,1041,rothschild mrs elizabeth jane anne,176030,False,False,False,False,[],[],none
+1042,0,3,"Rouse, Mr. Richard Henry",male,55.0,0,0,3594.0,8.01,,S,England,1042,rouse mr richard henry,35940,True,False,False,True,[483],[],name_only
+1043,0,1,"Rowe, Mr. Alfred G.",male,59.0,0,0,113790.0,26.11,,S,Peru,1043,rowe mr alfred g,1137900,False,False,False,False,[],[],none
+1044,1,2,"Rugg, Miss. Emily",female,22.0,0,0,31026.0,10.1,,S,Channel Islands,1044,rugg miss emily,310260,True,False,False,True,[57],[],name_only
+1045,0,3,"Rush, Mr. Alfred George John",male,17.0,0,0,20589.0,8.01,,S,England,1045,rush mr alfred george john,205890,True,False,False,True,[575],[],name_only
+1046,1,3,"Ryan, Mr. Edward",male,24.0,0,0,383162.0,7.15,,Q,Ireland,1046,ryan mr edward,3831620,False,False,False,False,[],[],none
+1047,0,3,"Ryan, Mr. Patrick",male,30.0,0,0,371110.0,24.03,,Q,Ireland,1047,ryan mr patrick,3711100,True,False,False,True,[518],[],name_only
+1048,1,1,"Ryerson, Master. John Borie",male,13.0,2,2,17608.0,262.0706,,C,United States,1048,ryerson master john borie,176080,False,False,False,False,[],[],none
+1049,1,1,"Ryerson, Miss. Emily Borie",female,18.0,2,2,17608.0,262.0706,,C,United States,1049,ryerson miss emily borie,176080,True,False,False,True,[312],[],name_only
+1050,1,1,"Ryerson, Miss. Susan Parker Suzette",female,21.0,2,2,17608.0,262.0706,,C,United States,1050,ryerson miss susan parker suzette,176080,True,False,False,True,[743],[],name_only
+1051,0,1,"Ryerson, Mr. Arthur Larned",male,61.0,1,3,17608.0,262.0706,,C,United States,1051,ryerson mr arthur larned,176080,False,False,False,False,[],[],none
+1052,1,1,"Ryerson, Mrs. Emily Maria",female,48.0,1,3,17608.0,262.0706,,C,United States,1052,ryerson mrs emily maria,176080,False,False,False,False,[],[],none
+1053,0,3,"Saad, Mr. Amin",male,30.0,0,0,2671.0,7.0407,,C,Lebanon,1053,saad mr amin,26710,True,False,False,True,[833],[],name_only
+1054,0,3,"Saad, Mr. Khalil",male,27.0,0,0,2672.0,7.0406,,C,Lebanon,1054,saad mr khalil,26720,True,False,False,True,[694],[],name_only
+1055,1,1,"Saalfeld, Mr. Adolphe",male,47.0,0,0,19988.0,30.1,,S,England,1055,saalfeld mr adolphe,199880,True,False,False,True,[299],[],name_only
+1056,0,3,"Sadlier, Mr. Matthew",male,19.0,0,0,367655.0,7.1407,,Q,Ireland,1056,sadlier mr matthew,3676550,True,False,False,True,[389],[],name_only
+1057,0,3,"Sadowitz, Mr. Henry",male,17.0,0,0,1855.0,7.111,,S,England,1057,sadowitz mr henry,18550,False,False,False,False,[],[],none
+1058,0,3,"Sæther, Mr. Simon Sivertsen",male,43.0,0,0,3101262.0,7.05,,S,Norway,1058,s ther mr simon sivertsen,31012620,False,False,False,False,[],[],none
+1059,0,3,"Sage, Master. Anthony William",male,13.0,8,2,2343.0,69.11,,S,England,1059,sage master anthony william,23430,False,False,False,False,[],[],none
+1060,0,3,"Sage, Master. Thomas Henry",male,5.0,8,2,2343.0,69.11,,S,England,1060,sage master thomas henry,23430,True,False,False,True,[160],[],name_only
+1061,0,3,"Sage, Miss. Constance Gladys",female,8.0,8,2,2343.0,69.11,,S,England,1061,sage miss constance gladys,23430,True,False,False,True,[181],[],name_only
+1062,0,3,"Sage, Miss. Dorothy",female,14.0,8,2,2343.0,69.11,,S,England,1062,sage miss dorothy,23430,False,False,False,False,[],[],none
+1063,0,3,"Sage, Miss. Elizabeth Ada",female,10.0,8,2,2343.0,69.11,,S,England,1063,sage miss elizabeth ada,23430,False,False,False,False,[],[],none
+1064,0,3,"Sage, Miss. Stella Anne",female,21.0,8,2,2343.0,69.11,,S,England,1064,sage miss stella anne,23430,False,False,False,False,[],[],none
+1065,0,3,"Sage, Mr. Douglas Bullen",male,18.0,8,2,2343.0,69.11,,S,England,1065,sage mr douglas bullen,23430,True,False,False,True,[847],[],name_only
+1066,0,3,"Sage, Mr. Frederick",male,17.0,8,2,2343.0,69.11,,S,England,1066,sage mr frederick,23430,True,False,False,True,[202],[],name_only
+1067,0,3,"Sage, Mr. George John",male,20.0,8,2,2343.0,69.11,,S,England,1067,sage mr george john,23430,False,False,False,False,[],[],none
+1068,0,3,"Sage, Mr. John George",male,45.0,1,9,2343.0,69.11,,S,England,1068,sage mr john george,23430,False,False,False,False,[],[],none
+1069,0,3,"Sage, Mrs. Annie Elizabeth",female,45.0,1,9,2343.0,69.11,,S,England,1069,sage mrs annie elizabeth,23430,False,False,False,False,[],[],none
+1070,1,1,"Sägesser, Mlle. Emma",female,24.0,0,0,17477.0,69.06,,C,,1070,sagesser mlle emma,174770,True,False,False,True,[642],[],name_only
+1071,0,3,"Salander, Mr. Karl Johan",male,24.0,0,0,7266.0,9.0606,,S,Sweden,1071,salander mr karl johan,72660,False,False,False,False,[],[],none
+1072,1,3,"Salkjelsvik, Miss. Anna Kristine",female,21.0,0,0,343120.0,7.13,,S,Norway,1072,salkjelsvik miss anna kristine,3431200,True,False,False,True,[107],[],name_only
+1073,1,1,"Salomon, Mr. Abraham Lincoln",male,43.0,0,0,111163.0,26.0,,S,United States,1073,salomon mr abraham lincoln,1111630,False,False,False,False,[],[],none
+1074,0,3,"Salonen, Mr. Johan Werner",male,29.0,0,0,3101296.0,7.1806,,S,United States,1074,salonen mr johan werner,31012960,True,False,False,True,[529],[],name_only
+1075,0,3,"Samaan, Mr. Elias",male,17.0,2,0,2662.0,21.1307,,C,Lebanon,1075,samaan mr elias,26620,False,False,False,False,[],[],none
+1076,0,3,"Samaan, Mr. Hanna Elias",male,40.0,2,0,2662.0,21.1307,,C,Lebanon,1076,samaan mr hanna elias,26620,False,False,False,False,[],[],none
+1077,0,3,"Samaan, Mr. Youssef",male,16.0,2,0,2662.0,21.1307,,C,Lebanon,1077,samaan mr youssef,26620,True,False,False,True,[49],[],name_only
+1078,1,3,"Sandström, Miss. Beatrice Irene",female,1.0,1,1,9549.0,16.14,,S,Sweden,1078,sandstrom miss beatrice irene,95490,False,False,False,False,[],[],none
+1079,1,3,"Sandström, Miss. Marguerite Rut",female,4.0,1,1,9549.0,16.14,,S,Sweden,1079,sandstrom miss marguerite rut,95490,True,False,False,True,[11],[],name_only
+1080,1,3,"Sandström, Mrs. Agnes Charlotta",female,24.0,0,2,9549.0,16.14,,S,Sweden,1080,sandstrom mrs agnes charlotta,95490,False,False,False,False,[],[],none
+1081,1,3,"Sap, Mr. Julius",male,21.0,0,0,345768.0,9.1,,S,Belgium,1081,sap mr julius,3457680,False,False,False,False,[],[],none
+1082,0,3,"Saundercock, Mr. William Henry",male,19.0,0,0,2151.0,8.01,,S,England,1082,saundercock mr william henry,21510,True,False,False,True,[13],[],name_only
+1083,0,3,"Sawyer, Mr. Frederick Charles",male,24.0,0,0,342826.0,8.01,,S,England,1083,sawyer mr frederick charles,3428260,True,False,False,True,[677],[],name_only
+1084,0,3,"Scanlan, Mr. James",male,22.0,0,0,36209.0,7.1406,,Q,Ireland,1084,scanlan mr james,362090,True,False,False,True,[469],[],name_only
+1085,1,1,"Schabert, Mrs. Emma",female,35.0,1,0,13236.0,57.15,,C,Germany,1085,schabert mrs emma,132360,False,False,False,False,[],[],none
+1086,1,3,"Scheerlinck, Mr. Jean",male,29.0,0,0,345779.0,9.1,,S,Belgium,1086,scheerlinck mr jean,3457790,False,False,False,False,[],[],none
+1087,0,2,"Schmidt, Mr. Augustus",male,22.0,0,0,248659.0,13.0,,S,England,1087,schmidt mr augustus,2486590,False,False,False,False,[],[],none
+1088,0,3,"Sdycoff, Mr. Todor",male,42.0,0,0,349222.0,7.1711,,S,,1088,sdycoff mr todor,3492220,True,False,False,True,[411],[],name_only
+1089,0,2,"Sedgwick, Mr. Charles Frederick Waddington",male,28.0,0,0,244361.0,13.0,,S,England,1089,sedgwick mr charles frederick waddington,2443610,True,False,False,True,[344],[],name_only
+1090,0,3,"Seman, Master. Betros",male,10.0,0,0,2622.0,4.0,,C,Lebanon,1090,seman master betros,26220,False,False,False,False,[],[],none
+1091,1,1,"Serreplan, Miss. Auguste",female,30.0,0,0,113798.0,31.0,,S,,1091,serreplan miss auguste,1137980,False,False,False,False,[],[],none
+1092,1,1,"Seward, Mr. Frederic Kimber",male,34.0,0,0,113794.0,26.11,,S,United States,1092,seward mr frederic kimber,1137940,True,False,False,True,[448],[],name_only
+1093,0,3,"Shannon, Mr. Andrew John",male,35.0,,,370160.0,,,S,Ireland,1093,shannon mr andrew john,3701600,False,False,False,False,[],[],none
+1094,0,2,"Sharp, Mr. Percival",male,29.0,0,0,244358.0,26.0,,S,England,1094,sharp mr percival,2443580,False,False,False,False,[],[],none
+1095,0,3,"Shaughnessy, Mr. Patrick",male,27.0,0,0,370374.0,7.15,,Q,Ireland,1095,shaughnessy mr patrick,3703740,False,False,False,False,[],[],none
+1096,0,3,"Shedid, Mr. Daher",male,19.0,0,0,2698.0,7.0406,,C,,1096,shedid mr daher,26980,False,False,False,False,[],[],none
+1097,0,3,"Shellard, Mr. Frederick William Blainey",male,55.0,0,0,6212.0,15.02,,S,England,1097,shellard mr frederick william blainey,62120,False,False,False,False,[],[],none
+1098,1,2,"Shelley, Mrs. Imanita Parrish",female,25.0,0,1,230433.0,26.0,,S,United States,1098,shelley mrs imanita parrish,2304330,False,False,False,False,[],[],none
+1099,0,3,"Shihāb, Mr. Al-Amīr Fāris",male,26.0,0,0,2631.0,7.0406,,C,Lebanon,1099,shihab mr al amir faris,26310,False,False,False,False,[],[],none
+1100,1,3,"Shine, Miss. Ellen",female,20.0,0,0,330968.0,7.1607,,Q,Ireland,1100,shine miss ellen,3309680,False,False,False,False,[],[],none
+1101,0,3,"Shorney, Mr. Charles Joseph",male,22.0,0,0,374910.0,8.01,,S,England,1101,shorney mr charles joseph,3749100,True,False,False,True,[96],[],name_only
+1102,1,1,"Shutes, Miss. Elizabeth Weed",female,40.0,0,0,17582.0,153.0903,,S,United States,1102,shutes miss elizabeth weed,175820,False,False,False,False,[],[],none
+1103,1,2,"Silvén, Miss. Lyyli Karoliina",female,17.0,0,2,250652.0,13.0,,S,Finland,1103,silven miss lyyli karoliina,2506520,True,False,False,True,[418],[],name_only
+1104,1,1,"Silverthorne, Mr. Spencer Victor",male,35.0,0,0,17475.0,26.0509,,S,United States,1104,silverthorne mr spencer victor,174750,True,False,False,True,[702],[],name_only
+1105,1,1,"Silvey, Mrs. Alice Gray",female,39.0,1,0,13507.0,55.18,,C,United States,1105,silvey mrs alice gray,135070,False,False,False,False,[],[],none
+1106,0,1,"Silvey, Mr. William Baird",male,51.0,1,0,13507.0,55.18,,C,United States,1106,silvey mr william baird,135070,True,False,False,True,[435],[],name_only
+1107,0,3,"Simmons, Mr. John",male,40.0,0,0,392082.0,8.01,,S,England,1107,simmons mr john,3920820,True,False,False,True,[564],[],name_only
+1108,1,1,"Simonius-Blumer, Mr. Colonel (Oberst) Alfons",male,56.0,0,0,13213.0,35.1,,S,Switzerland,1108,simonius blumer mr colonel oberst alfons,132130,False,False,False,False,[],[],none
+1109,1,2,"Sincock, Miss. Maude",female,20.0,0,0,33112.0,36.15,,S,England,1109,sincock miss maude,331120,False,False,False,False,[],[],none
+1110,1,2,"Sinkkonen, Miss. Anna",female,30.0,0,0,250648.0,13.0,,S,Finland,1110,sinkkonen miss anna,2506480,True,False,False,True,[748],[],name_only
+1111,0,3,"Sirayanian, Mr. Orsen",male,22.0,0,0,2669.0,7.0407,,C,Turkey,1111,sirayanian mr orsen,26690,True,False,False,True,[61],[],name_only
+1112,0,3,"Sirota, Mr. Morris",male,20.0,0,0,392092.0,8.01,,S,England,1112,sirota mr morris,3920920,False,False,False,False,[],[],none
+1113,0,3,"Sivic, Mr. Husein",male,40.0,0,0,349251.0,7.1711,,S,Bosnia,1113,sivic mr husein,3492510,True,False,False,True,[562],[],name_only
+1114,0,3,"Sivola, Mr. Antti Wilhelm",male,21.0,0,0,3101280.0,7.1806,,S,United States,1114,sivola mr antti wilhelm,31012800,True,False,False,True,[174],[],name_only
+1115,1,3,"Sjöblom, Miss. Anna Sofia",female,18.0,0,0,3101265.0,6.0911,,S,Finland,1115,sjoblom miss anna sofia,31012650,True,False,False,True,[787],[],name_only
+1116,0,2,"Sjöstedt, Mr. Ernst Adolf",male,59.0,0,0,237442.0,13.1,,S,Sweden,1116,sjostedt mr ernst adolf,2374420,True,False,False,True,[233],[],name_only
+1117,0,3,"Skoog, Master. Harald",male,5.0,3,2,347088.0,27.18,,S,United States,1117,skoog master harald,3470880,True,False,False,True,[64],[],name_only
+1118,0,3,"Skoog, Master. Karl Thorsten",male,11.0,3,2,347088.0,27.18,,S,United States,1118,skoog master karl thorsten,3470880,True,False,False,True,[820],[],name_only
+1119,0,3,"Skoog, Miss. Mabel",female,9.0,3,2,347088.0,27.18,,S,United States,1119,skoog miss mabel,3470880,True,False,False,True,[635],[],name_only
+1120,0,3,"Skoog, Miss. Margit Elizabeth",female,2.0,3,2,347088.0,27.18,,S,United States,1120,skoog miss margit elizabeth,3470880,True,False,False,True,[643],[],name_only
+1121,0,3,"Skoog, Mrs. Anna Bernhardina",female,43.0,1,4,347088.0,27.18,,S,Sweden,1121,skoog mrs anna bernhardina,3470880,False,False,False,False,[],[],none
+1122,0,3,"Skoog, Mr. Wilhelm Johansson",male,40.0,1,4,347088.0,27.18,,S,Sweden,1122,skoog mr wilhelm johansson,3470880,False,False,False,False,[],[],none
+1123,0,3,"Slabenoff, Mr. Petco",male,42.0,0,0,349214.0,7.1711,,S,,1123,slabenoff mr petco,3492140,True,False,False,True,[602],[],name_only
+1124,1,2,"Slayter, Miss. Hilda Mary",female,30.0,0,0,234818.0,12.07,,Q,Canada,1124,slayter miss hilda mary,2348180,True,False,False,True,[323],[],name_only
+1125,0,2,"Slemen, Mr. Richard James",male,35.0,0,0,28206.0,10.1,,S,England,1125,slemen mr richard james,282060,True,False,False,True,[813],[],name_only
+1126,0,3,"Slocovski, Mr. Selman Francis",male,20.0,0,0,392086.0,8.01,,S,England,1126,slocovski mr selman francis,3920860,True,False,False,True,[88],[],name_only
+1127,1,1,"Sloper, Mr. William Thompson",male,28.0,0,0,113788.0,35.1,,S,United States,1127,sloper mr william thompson,1137880,True,False,False,True,[24],[],name_only
+1128,0,1,"Smart, Mr. John Montgomery",male,56.0,0,0,113792.0,26.11,,S,England,1128,smart mr john montgomery,1137920,True,False,False,True,[468],[],name_only
+1129,0,3,"Smiljanic, Mr. Mile",male,37.0,0,0,315037.0,8.1303,,S,Croatia,1129,smiljanic mr mile,3150370,True,False,False,True,[159],[],name_only
+1130,1,2,"Smith, Miss. Marion Elsie",female,49.0,0,0,31418.0,13.0,,S,England,1130,smith miss marion elsie,314180,True,False,False,True,[347],[],name_only
+1131,0,1,"Smith, Mr. James Clinch",male,56.0,0,0,17764.0,30.1311,,C,France,1131,smith mr james clinch,177640,True,False,False,True,[175],[],name_only
+1132,0,1,"Smith, Mr. Lucian Philip",male,24.0,1,0,13695.0,60.0,,C,United States,1132,smith mr lucian philip,136950,False,False,False,False,[],[],none
+1133,0,1,"Smith, Mr. Richard William",male,57.0,0,0,113056.0,26.0,,S,England,1133,smith mr richard william,1130560,True,False,False,True,[285],[],name_only
+1134,1,1,"Smith, Mrs. Mary Eloise",female,18.0,1,0,13695.0,60.0,,C,United States,1134,smith mrs mary eloise,136950,False,False,False,False,[],[],none
+1135,1,3,"Smyth, Miss. Julia",female,18.0,0,0,335432.0,7.1408,,Q,Ireland,1135,smyth miss julia,3354320,False,False,False,False,[],[],none
+1136,0,3,"Smyth, Mr. Thomas",male,27.0,0,0,384461.0,7.15,,Q,Ireland,1136,smyth mr thomas,3844610,False,False,False,False,[],[],none
+1137,1,1,"Snyder, Mr. John Pillsbury",male,24.0,1,0,21228.0,82.0504,,S,United States,1137,snyder mr john pillsbury,212280,False,False,False,False,[],[],none
+1138,1,1,"Snyder, Mrs. Nelle",female,23.0,1,0,21228.0,82.0504,,S,United States,1138,snyder mrs nelle,212280,False,False,False,False,[],[],none
+1139,0,2,"Sobey, Mr. Samuel James Hayden",male,25.0,0,0,29178.0,13.0,,S,England,1139,sobey mr samuel james hayden,291780,True,False,False,True,[135],[],name_only
+1140,0,3,"Søholt, Mr. Peter Andreas Lauritz Andersen",male,19.0,0,0,348124.0,7.13,,S,Norway,1140,s holt mr peter andreas lauritz andersen,3481240,False,False,False,False,[],[],none
+1141,0,3,"Somerton, Mr. Francis William",male,31.0,0,0,18509.0,8.01,,S,England,1141,somerton mr francis william,185090,True,False,False,True,[489],[],name_only
+1142,0,3,"Spector, Mr. Woolf",male,23.0,0,0,3236.0,8.01,,S,England,1142,spector mr woolf,32360,False,False,False,False,[],[],none
+1143,1,1,"Spedden, Master. Robert Douglas",male,6.0,0,2,16966.0,134.1,,C,United States,1143,spedden master robert douglas,169660,False,False,False,False,[],[],none
+1144,1,1,"Spedden, Mr. Frederic Oakley",male,45.0,1,1,16966.0,134.1,,C,United States,1144,spedden mr frederic oakley,169660,False,False,False,False,[],[],none
+1145,1,1,"Spedden, Mrs. Margaretta Corning",female,39.0,1,1,16966.0,134.1,,C,United States,1145,spedden mrs margaretta corning,169660,False,False,False,False,[],[],none
+1146,1,1,"Spencer, Mrs. Marie Eugenie",female,48.0,1,0,17569.0,146.1005,,C,United States,1146,spencer mrs marie eugenie,175690,False,False,False,False,[],[],none
+1147,0,1,"Spencer, Mr. William Augustus",male,57.0,1,0,17569.0,146.1005,,C,United States,1147,spencer mr william augustus,175690,False,False,False,False,[],[],none
+1148,0,3,"Spinner, Mr. Henry John",male,31.0,0,0,369943.0,8.01,,S,England,1148,spinner mr henry john,3699430,False,False,False,False,[],[],none
+1149,1,1,"Stähelin-Maeglin, Dr. Max",male,32.0,0,0,13214.0,30.1,,S,Switzerland,1149,stahelin maeglin dr max,132140,True,False,False,True,[633],[],name_only
+1150,0,3,"Staneff, Mr. Ivan",male,23.0,0,0,349208.0,7.1711,,S,Bulgaria,1150,staneff mr ivan,3492080,True,False,False,True,[77],[],name_only
+1151,0,3,"Stankovic, Mr. Ivan",male,33.0,0,0,349239.0,8.1309,,C,Croatia,1151,stankovic mr ivan,3492390,True,False,False,True,[286],[],name_only
+1152,1,3,"Stanley, Miss. Amy Zillah Elsie",female,24.0,0,0,2314.0,7.11,,S,England,1152,stanley miss amy zillah elsie,23140,True,False,False,True,[650],[],name_only
+1153,0,3,"Stanley, Mr. Rowland Edwin",male,22.0,0,0,45380.0,8.01,,S,England,1153,stanley mr rowland edwin,453800,False,False,False,False,[],[],none
+1154,0,2,"Stanton, Mr. Samuel Ward",male,42.0,0,0,237734.0,15.0,,C,United States,1154,stanton mr samuel ward,2377340,False,False,False,False,[],[],none
+1155,0,1,"Stead, Mr. William Thomas",male,62.0,0,0,113514.0,26.11,,S,England,1155,stead mr william thomas,1135140,True,False,False,True,[253],[],name_only
+1156,1,1,"Stengel, Mr. Charles Emil Henry",male,54.0,1,0,11778.0,55.081,,C,United States,1156,stengel mr charles emil henry,117780,False,False,False,False,[],[],none
+1157,1,1,"Stengel, Mrs. Annie May",female,43.0,1,0,11778.0,55.081,,C,Ireland,1157,stengel mrs annie may,117780,False,False,False,False,[],[],none
+1158,1,1,"Stephenson, Mrs. Martha",female,52.0,1,0,36947.0,78.0504,,C,United States,1158,stephenson mrs martha,369470,False,False,False,False,[],[],none
+1159,0,1,"Stewart, Mr. Albert Ankeny",male,64.0,0,0,17605.0,27.1405,,C,United States,1159,stewart mr albert ankeny,176050,False,False,False,False,[],[],none
+1160,0,2,"Stokes, Mr. Philip Joseph",male,24.0,0,0,13540.0,10.1,,S,England,1160,stokes mr philip joseph,135400,False,False,False,False,[],[],none
+1161,1,1,"Stone, Mrs. Martha Evelyn",female,61.0,0,0,113572.0,80.0,,S,United States,1161,stone mrs martha evelyn,1135720,False,False,False,False,[],[],none
+1162,0,3,"Storey, Mr. Thomas",male,59.0,0,0,370160.0,,,S,England,1162,storey mr thomas,3701600,False,False,False,False,[],[],none
+1163,0,3,"Stoytcheff, Mr. Ilia",male,19.0,0,0,349205.0,7.1711,,S,Bulgaria,1163,stoytcheff mr ilia,3492050,True,False,False,True,[567],[],name_only
+1164,0,3,"Strandberg, Miss. Ida Sofia",female,22.0,0,0,7553.0,9.1609,,S,Finland,1164,strandberg miss ida sofia,75530,True,False,False,True,[475],[],name_only
+1165,1,3,"Strandén, Mr. Juho Niilosson",male,30.0,0,0,3101288.0,7.1806,,S,Finland,1165,stranden mr juho niilosson,31012880,False,False,False,False,[],[],none
+1166,0,1,"Straus, Mr. Isidor",male,67.0,1,0,17483.0,221.1507,,S,United States,1166,straus mr isidor,174830,False,False,False,False,[],[],none
+1167,0,1,"Straus, Mrs. Rosalie Ida",female,63.0,1,0,17483.0,221.1507,,S,Germany,1167,straus mrs rosalie ida,174830,False,False,False,False,[],[],none
+1168,0,3,"Strilic, Mr. Ivan",male,27.0,0,0,315083.0,8.1303,,S,Croatia,1168,strilic mr ivan,3150830,False,False,False,False,[],[],none
+1169,0,3,"Ström, Miss. Telma Matilda",female,2.0,0,1,347054.0,10.0903,,S,United States,1169,strom miss telma matilda,3470540,True,False,False,True,[206],[],name_only
+1170,0,3,"Ström, Mrs. Elna Matilda",female,29.0,1,1,347054.0,10.0903,,S,Sweden,1170,strom mrs elna matilda,3470540,False,False,False,False,[],[],none
+1171,1,3,"Sunderland, Mr. Victor Francis",male,20.0,0,0,392089.0,8.01,,S,England,1171,sunderland mr victor francis,3920890,True,False,False,True,[221],[],name_only
+1172,1,3,"Sundman, Mr. Johan Julian",male,44.0,0,0,3101269.0,7.1806,,S,Finland,1172,sundman mr johan julian,31012690,True,False,False,True,[415],[],name_only
+1173,0,3,"Sutehall, Mr. Henry Jr",male,25.0,0,0,392076.0,7.01,,S,England,1173,sutehall mr henry jr,3920760,True,False,False,True,[885],[],name_only
+1174,0,1,"Sutton, Mr. Frederick",male,61.0,0,0,36963.0,32.0605,,S,England,1174,sutton mr frederick,369630,True,False,False,True,[626],[],name_only
+1175,0,3,"Svensson, Mr. Johan",male,74.0,0,0,347060.0,7.1506,,S,Sweden,1175,svensson mr johan,3470600,True,False,False,True,[852],[],name_only
+1176,1,3,"Svensson, Mr. Johan Cervin",male,14.0,0,0,7538.0,9.0406,,S,Sweden,1176,svensson mr johan cervin,75380,False,False,False,False,[],[],none
+1177,0,3,"Svensson, Mr. Olof",male,24.0,0,0,350035.0,7.1511,,S,Sweden,1177,svensson mr olof,3500350,True,False,False,True,[500],[],name_only
+1178,0,2,"Swane, Mr. George",male,19.0,0,0,248734.0,13.0,,S,England,1178,swane mr george,2487340,False,False,False,False,[],[],none
+1179,0,2,"Sweet, Mr. George Frederick",male,14.0,0,0,220845.0,65.0,,S,England,1179,sweet mr george frederick,2208450,False,False,False,False,[],[],none
+1180,1,1,"Swift, Mrs. Margaret Welles",female,46.0,0,0,17466.0,25.1807,,S,United States,1180,swift mrs margaret welles,174660,False,False,False,False,[],[],none
+1181,1,3,"Tannūs, Master. As'ad",male,0.4166666667,0,1,2625.0,8.1004,,C,Lebanon,1181,tannus master as ad,26250,False,False,False,False,[],[],none
+1182,0,3,"Tannūs, Mr. Bashīr",male,30.0,1,0,2621.0,6.0809,,C,Lebanon,1182,tannus mr bashir,26210,False,False,False,False,[],[],none
+1183,1,3,"Tannūs, Mrs. Thamīn",female,16.0,1,1,2625.0,8.1004,,C,Lebanon,1183,tannus mrs thamin,26250,False,False,False,False,[],[],none
+1184,1,1,"Taussig, Miss. Ruth",female,18.0,0,2,110413.0,79.13,,S,United States,1184,taussig miss ruth,1104130,True,False,False,True,[586],[],name_only
+1185,0,1,"Taussig, Mr. Emil",male,52.0,1,1,110413.0,79.13,,S,United States,1185,taussig mr emil,1104130,True,False,False,True,[263],[],name_only
+1186,1,1,"Taussig, Mrs. Tillie",female,39.0,1,1,110413.0,79.13,,S,United States,1186,taussig mrs tillie,1104130,False,False,False,False,[],[],none
+1187,1,1,"Taylor, Mr. Elmer Zebley",male,48.0,1,0,19996.0,52.0,,S,United States,1187,taylor mr elmer zebley,199960,True,False,False,True,[713],[],name_only
+1188,0,2,"Taylor, Mr. Percy Cornelius",male,40.0,,,250654.0,,,S,England,1188,taylor mr percy cornelius,2506540,False,False,False,False,[],[],none
+1189,1,1,"Taylor, Mrs. Juliet Cummins",female,49.0,1,0,19996.0,52.0,,S,United States,1189,taylor mrs juliet cummins,199960,False,False,False,False,[],[],none
+1190,1,3,"Tenglin, Mr. Gunnar Isidor",male,25.0,0,0,350033.0,7.1511,,S,Sweden,1190,tenglin mr gunnar isidor,3500330,False,False,False,False,[],[],none
+1191,0,1,"Thayer, Mr. John Borland",male,49.0,1,1,17421.0,110.1708,,C,United States,1191,thayer mr john borland,174210,True,False,False,True,[699],[],name_only
+1192,1,1,"Thayer, Mr. John Borland jr",male,17.0,0,2,17421.0,110.1708,,C,United States,1192,thayer mr john borland jr,174210,True,False,False,True,[551],[],name_only
+1193,1,1,"Thayer, Mrs. Marian Longstreth",female,39.0,1,1,17421.0,110.1708,,C,United States,1193,thayer mrs marian longstreth,174210,False,False,False,False,[],[],none
+1194,0,3,"Theobald, Mr. Thomas Leonard",male,34.0,0,0,363294.0,8.01,,S,England,1194,theobald mr thomas leonard,3632940,True,False,False,True,[759],[],name_only
+1195,0,3,"Thomas/Tannous, Mr. John",male,34.0,0,0,2681.0,6.0809,,C,,1195,thomas tannous mr john,26810,False,False,False,False,[],[],none
+1196,0,3,"Thomas/Tannous, Mr. Tannous",male,16.0,0,0,2684.0,7.0406,,C,,1196,thomas tannous mr tannous,26840,False,False,False,False,[],[],none
+1197,0,3,"Thompson, Mr. Alexander Mellis",male,37.0,0,0,32302.0,8.01,,S,Scotland,1197,thompson mr alexander mellis,323020,False,False,False,False,[],[],none
+1198,1,1,"Thorne, Miss. Gertrude Maybelle",female,38.0,0,0,17585.0,80.0,,C,United States,1198,thorne miss gertrude maybelle,175850,False,False,False,False,[],[],none
+1199,0,3,"Thorneycroft, Mr. Percival",male,37.0,1,0,376564.0,16.02,,S,England,1199,thorneycroft mr percival,3765640,True,False,False,True,[640],[],name_only
+1200,1,3,"Thorneycroft, Mrs. Florence Kate",female,33.0,1,0,376564.0,16.02,,S,England,1200,thorneycroft mrs florence kate,3765640,False,False,False,False,[],[],none
+1201,0,3,"Tikkanen, Mr. Juho",male,32.0,0,0,3101293.0,7.1806,,S,Finland,1201,tikkanen mr juho,31012930,True,False,False,True,[383],[],name_only
+1202,0,3,"Tobin, Mr. Roger",male,20.0,0,0,383121.0,7.15,,Q,Ireland,1202,tobin mr roger,3831210,True,False,False,True,[777],[],name_only
+1203,0,3,"Todoroff, Mr. Lalio",male,23.0,0,0,349216.0,7.1711,,S,Bulgaria,1203,todoroff mr lalio,3492160,True,False,False,True,[30],[],name_only
+1204,0,3,"Tomlin, Mr. Ernest Portage",male,22.0,0,0,364499.0,8.01,,S,England,1204,tomlin mr ernest portage,3644990,True,False,False,True,[815],[],name_only
+1205,1,2,"Toomey, Miss. Ellen Mary",female,48.0,0,0,13531.0,10.1,,S,Ireland,1205,toomey miss ellen mary,135310,False,False,False,False,[],[],none
+1206,0,3,"Törber, Mr. Ernst Wilhelm",male,41.0,0,0,364511.0,8.01,,S,England,1206,torber mr ernst wilhelm,3645110,False,False,False,False,[],[],none
+1207,0,3,"Torfa, Mr. Assad",male,20.0,0,0,2673.0,7.0407,,C,Lebanon,1207,torfa mr assad,26730,False,False,False,False,[],[],none
+1208,1,3,"Törnquist, Mr. William Henry",male,26.0,0,0,,,,S,Sweden,1208,tornquist mr william henry,,True,False,False,True,[272],[],name_only
+1209,0,3,"Totevski, Mr. Hristo Danchev",male,25.0,0,0,349203.0,7.1711,,S,Bulgaria,1209,totevski mr hristo danchev,3492030,False,False,False,False,[],[],none
+1210,0,2,"Troupiansky, Mr. Moses Aaron",male,23.0,0,0,233639.0,13.0,,S,England,1210,troupiansky mr moses aaron,2336390,True,False,False,True,[735],[],name_only
+1211,1,2,"Trout, Mrs. Jessie Laird",female,27.0,0,0,240929.0,12.13,,S,Scotland,1211,trout mrs jessie laird,2409290,False,False,False,False,[],[],none
+1212,1,2,"Troutt, Miss. Edwina Celia",female,27.0,0,0,34218.0,10.1,,S,England,1212,troutt miss edwina celia,342180,False,False,False,False,[],[],none
+1213,1,1,"Tucker, Mr. Gilbert Milligan jr",male,31.0,0,0,2543.0,28.1009,,C,United States,1213,tucker mr gilbert milligan jr,25430,False,False,False,False,[],[],none
+1214,1,3,"Tu'mah, Master. Jirjis Yūsuf",male,8.0,1,1,2650.0,15.0411,,C,Lebanon,1214,tu mah master jirjis yusuf,26500,False,False,False,False,[],[],none
+1215,1,3,"Tu'mah, Miss. Mariyam",female,9.0,1,1,2650.0,15.0411,,C,Lebanon,1215,tu mah miss mariyam,26500,False,False,False,False,[],[],none
+1216,1,3,"Tu'mah, Mrs. Hinnah",female,27.0,0,2,2650.0,15.0411,,C,Lebanon,1216,tu mah mrs hinnah,26500,False,False,False,False,[],[],none
+1217,0,3,"Turcin, Mr. Stjepan",male,36.0,0,0,349247.0,7.1711,,S,Croatia,1217,turcin mr stjepan,3492470,True,False,False,True,[190],[],name_only
+1218,1,3,"Turja, Miss. Anna Sofia",female,18.0,0,0,4138.0,9.161,,S,Finland,1218,turja miss anna sofia,41380,True,False,False,True,[678],[],name_only
+1219,1,3,"Turkula, Mrs. Hedwig",female,63.0,0,0,4134.0,9.1109,,S,Finland,1219,turkula mrs hedwig,41340,True,False,False,True,[484],[],name_only
+1220,0,2,"Turpin, Mrs. Dorothy Ann",female,26.0,1,0,11668.0,21.0,,S,England,1220,turpin mrs dorothy ann,116680,False,False,False,False,[],[],none
+1221,0,2,"Turpin, Mr. William John",male,29.0,1,0,11668.0,21.0,,S,England,1221,turpin mr william john,116680,False,False,False,False,[],[],none
+1222,0,1,"Uruchurtu, Don. Manuel Ramirez",male,39.0,0,0,17601.0,27.1405,,C,Mexico,1222,uruchurtu don manuel ramirez,176010,False,False,False,False,[],[],none
+1223,0,3,"van Billiard, Master. James William",male,10.0,1,1,851.0,14.1,,S,England,1223,van billiard master james william,8510,False,False,False,False,[],[],none
+1224,0,3,"van Billiard, Master. Walter John",male,9.0,1,1,851.0,14.1,,S,England,1224,van billiard master walter john,8510,False,False,False,False,[],[],none
+1225,0,3,"van Billiard, Mr. Austin Blyler",male,35.0,0,2,851.0,14.1,,S,England,1225,van billiard mr austin blyler,8510,True,False,False,True,[154],[],name_only
+1226,0,3,"Van den Steen, Mr. Leo Peter",male,28.0,0,0,345783.0,9.1,,S,Belgium,1226,van den steen mr leo peter,3457830,False,False,False,False,[],[],none
+1227,0,3,"Vandercruyssen, Mr. Victor",male,46.0,0,0,345765.0,9.0,,S,Belgium,1227,vandercruyssen mr victor,3457650,False,False,False,False,[],[],none
+1228,0,1,"Van der hoef, Mr. Wyckoff",male,61.0,0,0,111240.0,33.1,,S,United States,1228,van der hoef mr wyckoff,1112400,True,False,False,True,[171],[],name_only
+1229,0,3,"Vanderplancke, Miss. Augusta Maria",female,18.0,2,0,345764.0,18.0,,S,Belgium,1229,vanderplancke miss augusta maria,3457640,False,False,False,False,[],[],none
+1230,0,3,"Vanderplancke, Mr. Julius",male,31.0,3,0,345763.0,18.0,,S,Belgium,1230,vanderplancke mr julius,3457630,False,False,False,False,[],[],none
+1231,0,3,"Vanderplancke, Mr. Leo Edmondus",male,15.0,2,0,345763.0,18.0,,S,Belgium,1231,vanderplancke mr leo edmondus,3457630,False,False,False,False,[],[],none
+1232,0,3,"Vanderplancke, Mrs. Emelie Maria",female,31.0,1,0,345763.0,18.0,,S,Belgium,1232,vanderplancke mrs emelie maria,3457630,False,False,False,False,[],[],none
+1233,0,3,"Van de Velde, Mr. Johannes Josef",male,35.0,0,0,345780.0,9.1,,S,Belgium,1233,van de velde mr johannes josef,3457800,False,False,False,False,[],[],none
+1234,0,3,"Vandewalle, Mr. Nestor Cyriel",male,28.0,0,0,345770.0,9.1,,S,Belgium,1234,vandewalle mr nestor cyriel,3457700,False,False,False,False,[],[],none
+1235,0,3,"Van Impe, Miss. Catharina",female,10.0,0,2,345773.0,24.03,,S,Belgium,1235,van impe miss catharina,3457730,True,False,False,True,[420],[],name_only
+1236,0,3,"Van Impe, Mr. Jean Baptiste",male,36.0,1,1,345773.0,24.03,,S,Belgium,1236,van impe mr jean baptiste,3457730,True,False,False,True,[596],[],name_only
+1237,0,3,"Van Impe, Mrs. Rosalie Paula",female,30.0,1,1,345773.0,24.03,,S,Belgium,1237,van impe mrs rosalie paula,3457730,False,False,False,False,[],[],none
+1238,0,3,"van Melckebeke, Mr. Philemon",male,23.0,0,0,345777.0,9.1,,S,Belgium,1238,van melckebeke mr philemon,3457770,False,False,False,False,[],[],none
+1239,1,3,"Vartanian, Mr. David",male,22.0,0,0,2658.0,7.0406,,C,Turkey,1239,vartanian mr david,26580,False,False,False,False,[],[],none
+1240,0,2,"Veal, Mr. James",male,40.0,0,0,28221.0,13.0,,S,United States,1240,veal mr james,282210,False,False,False,False,[],[],none
+1241,0,3,"Vendel, Mr. Olof Edvin",male,20.0,0,0,350416.0,7.1701,,S,Sweden,1241,vendel mr olof edvin,3504160,False,False,False,False,[],[],none
+1242,0,3,"Veström, Miss. Hulda Amanda Adolfina",female,14.0,0,0,350406.0,7.1701,,S,Sweden,1242,vestrom miss hulda amanda adolfina,3504060,True,False,False,True,[15],[],name_only
+1243,0,3,"Vovk, Mr. Janko",male,21.0,0,0,349252.0,7.1711,,S,Slovenia,1243,vovk mr janko,3492520,True,False,False,True,[522],[],name_only
+1244,0,3,"Waelens, Mr. Achille",male,22.0,0,0,345767.0,9.0,,S,Belgium,1244,waelens mr achille,3457670,True,False,False,True,[81],[],name_only
+1245,0,1,"Walker, Mr. William Anderson",male,48.0,0,0,36967.0,34.0,,S,United States,1245,walker mr william anderson,369670,True,False,False,True,[516],[],name_only
+1246,1,2,"Wallcroft, Miss. Ellen 'Nellie'",female,36.0,0,0,13528.0,21.0,,S,England,1246,wallcroft miss ellen nellie,135280,False,False,False,False,[],[],none
+1247,1,1,"Ward, Miss. Annie Moore",female,37.0,0,0,17755.0,512.0607,,C,,1247,ward miss annie moore,177550,False,False,False,False,[],[],none
+1248,0,3,"Ware, Mr. Frederick",male,35.0,0,0,359309.0,8.01,,S,England,1248,ware mr frederick,3593090,False,False,False,False,[],[],none
+1249,0,2,"Ware, Mr. John James",male,47.0,1,0,31352.0,21.0,,S,England,1249,ware mr john james,313520,False,False,False,False,[],[],none
+1250,1,2,"Ware, Mrs. Florence Louise",female,32.0,0,0,31352.0,21.0,,S,England,1250,ware mrs florence louise,313520,False,False,False,False,[],[],none
+1251,0,2,"Ware, Mr. William Jeffery",male,23.0,1,0,28666.0,10.1,,S,England,1251,ware mr william jeffery,286660,False,False,False,False,[],[],none
+1252,0,3,"Warren, Mr. Charles William",male,31.0,0,0,49867.0,7.11,,S,England,1252,warren mr charles william,498670,False,False,False,False,[],[],none
+1253,0,1,"Warren, Mr. Frank Manley",male,63.0,1,0,110813.0,75.05,,C,United States,1253,warren mr frank manley,1108130,False,False,False,False,[],[],none
+1254,1,1,"Warren, Mrs. Anna Sophia",female,60.0,1,0,110813.0,75.05,,C,England,1254,warren mrs anna sophia,1108130,False,False,False,False,[],[],none
+1255,0,2,"Watson, Mr. Ennis Hastings",male,19.0,0,0,239856.0,,,B,Northern Ireland,1255,watson mr ennis hastings,2398560,True,False,False,True,[675],[],name_only
+1256,1,2,"Watt, Miss. Robertha Josephine",female,12.0,0,0,33595.0,15.15,,S,Scotland,1256,watt miss robertha josephine,335950,False,False,False,False,[],[],none
+1257,1,2,"Watt, Mrs. Elizabeth",female,40.0,0,0,33595.0,15.15,,S,Scotland,1257,watt mrs elizabeth,335950,False,False,False,False,[],[],none
+1258,0,3,"Wazli, Mr. Yousif Ahmed",male,23.0,0,0,2647.0,7.0406,,C,Lebanon,1258,wazli mr yousif ahmed,26470,False,False,False,False,[],[],none
+1259,1,2,"Webber, Miss. Susan",female,37.0,0,0,27267.0,13.0,,S,England,1259,webber miss susan,272670,True,False,False,True,[124],[],name_only
+1260,0,3,"Webber, Mr. James",male,66.0,0,0,3101316.0,8.01,,S,England,1260,webber mr james,31013160,True,False,False,True,[512],[],name_only
+1261,0,1,"Weir, Colonel. John",male,59.0,0,0,113800.0,26.11,,S,United States,1261,weir colonel john,1138000,False,False,False,False,[],[],none
+1262,0,2,"Weisz, Mr. Léopold",male,37.0,1,0,228414.0,26.0,,S,Hungary,1262,weisz mr leopold,2284140,False,False,False,False,[],[],none
+1263,1,2,"Weisz, Mrs. Mathilde Françoise",female,37.0,1,0,228414.0,26.0,,S,England,1263,weisz mrs mathilde francoise,2284140,False,False,False,False,[],[],none
+1264,1,2,"Wells, Master. Ralph Lester",male,2.0,1,1,29103.0,23.0,,S,England,1264,wells master ralph lester,291030,False,False,False,False,[],[],none
+1265,1,2,"Wells, Miss. Joan",female,4.0,1,1,29103.0,23.0,,S,England,1265,wells miss joan,291030,True,False,False,True,[751],[],name_only
+1266,1,2,"Wells, Mrs. Addie Dart",female,29.0,0,2,29103.0,23.0,,S,England,1266,wells mrs addie dart,291030,False,False,False,False,[],[],none
+1267,1,3,"Wennerström, Mr. August",male,27.0,0,0,350043.0,7.1511,,S,Sweden,1267,wennerstrom mr august,3500430,False,False,False,False,[],[],none
+1268,1,2,"West, Miss. Barbara Joyce",female,0.8333333333,1,2,34651.0,27.15,,S,England,1268,west miss barbara joyce,346510,False,False,False,False,[],[],none
+1269,1,2,"West, Miss. Constance Mirium",female,4.0,1,2,34651.0,27.15,,S,England,1269,west miss constance mirium,346510,True,False,False,True,[59],[],name_only
+1270,0,2,"West, Mr. Edwy Arthur",male,36.0,1,2,34651.0,27.15,,S,England,1270,west mr edwy arthur,346510,True,False,False,True,[451],[],name_only
+1271,1,2,"West, Mrs. Ada Mary",female,33.0,1,2,34651.0,27.15,,S,England,1271,west mrs ada mary,346510,False,False,False,False,[],[],none
+1272,0,2,"Wheadon, Mr. Edward Henry",male,65.0,0,0,24579.0,10.1,,S,England,1272,wheadon mr edward henry,245790,False,False,False,False,[],[],none
+1273,0,2,"Wheeler, Mr. Edwin Charles",male,26.0,0,0,2159.0,12.1706,,S,England,1273,wheeler mr edwin charles,21590,False,False,False,False,[],[],none
+1274,1,2,"Whilems, Mr. Charles",male,31.0,0,0,244270.0,13.0,,S,England,1274,whilems mr charles,2442700,False,False,False,False,[],[],none
+1275,0,1,"White, Mr. Percival Wayland",male,54.0,0,1,35281.0,77.0509,,S,United States,1275,white mr percival wayland,352810,True,False,False,True,[125],[],name_only
+1276,0,1,"White, Mr. Richard Frasar",male,21.0,0,1,35281.0,77.0509,,S,United States,1276,white mr richard frasar,352810,True,False,False,True,[103],[],name_only
+1277,1,1,"White, Mrs. Ella",female,55.0,0,0,17760.0,135.1208,,C,,1277,white mrs ella,177600,False,False,False,False,[],[],none
+1278,0,1,"Wick, Col. George Dennick",male,57.0,1,1,36928.0,164.1704,,S,United States,1278,wick col george dennick,369280,False,False,False,False,[],[],none
+1279,1,1,"Wick, Miss. Mary Natalie",female,31.0,0,2,36928.0,164.1704,,S,United States,1279,wick miss mary natalie,369280,True,False,False,True,[319],[],name_only
+1280,1,1,"Wick, Mrs. Mary Peebles",female,45.0,1,1,36928.0,164.1704,,S,United States,1280,wick mrs mary peebles,369280,False,False,False,False,[],[],none
+1281,0,3,"Widegren, Mr. Carl Peter",male,51.0,0,0,347064.0,7.15,,S,Sweden,1281,widegren mr carl peter,3470640,False,False,False,False,[],[],none
+1282,0,1,"Widener, Mr. George Dunton",male,50.0,1,1,113503.0,211.1,,S,United States,1282,widener mr george dunton,1135030,False,False,False,False,[],[],none
+1283,0,1,"Widener, Mr. Harry Elkins",male,27.0,0,2,113503.0,211.1,,S,United States,1283,widener mr harry elkins,1135030,True,False,False,True,[378],[],name_only
+1284,1,1,"Widener, Mrs. Eleanor",female,50.0,1,1,113503.0,211.1,,S,United States,1284,widener mrs eleanor,1135030,False,False,False,False,[],[],none
+1285,0,3,"Wiklund, Mr. Jakob Alfred",male,18.0,1,0,3101267.0,6.0911,,S,Finland,1285,wiklund mr jakob alfred,31012670,True,False,False,True,[372],[],name_only
+1286,0,3,"Wiklund, Mr. Karl Johan",male,21.0,1,0,3101266.0,6.0911,,S,Finland,1286,wiklund mr karl johan,31012660,False,False,False,False,[],[],none
+1287,1,3,"Wilkes, Mrs. Ellen",female,47.0,1,0,363272.0,7.0,,S,England,1287,wilkes mrs ellen,3632720,False,False,False,False,[],[],none
+1288,1,2,"Wilkinson, Mrs. Elizabeth Anne",female,30.0,1,0,2926.0,26.0,,S,England,1288,wilkinson mrs elizabeth anne,29260,False,False,False,False,[],[],none
+1289,1,1,"Willard, Miss. Constance",female,21.0,0,0,113795.0,26.11,,S,United States,1289,willard miss constance,1137950,False,False,False,False,[],[],none
+1290,0,3,"Willer, Mr. Aaron",male,37.0,0,0,3410.0,8.1403,,C,,1290,willer mr aaron,34100,False,False,False,False,[],[],none
+1291,0,3,"Willey, Mr. Edward John",male,21.0,0,0,751.0,7.11,,S,Wales,1291,willey mr edward john,7510,False,False,False,False,[],[],none
+1292,0,1,"Williams, Mr. Charles Duane",male,51.0,0,1,17597.0,61.0707,,C,Switzerland,1292,williams mr charles duane,175970,True,False,False,True,[156],[],name_only
+1293,1,2,"Williams, Mr. Charles Eugene",male,23.0,0,0,244373.0,13.0,,S,England,1293,williams mr charles eugene,2443730,True,False,False,True,[18],[],name_only
+1294,0,1,"Williams, Mr. Fletcher Fellowes Lambert",male,43.0,0,0,113510.0,35.0,,S,United States,1294,williams mr fletcher fellowes lambert,1135100,False,False,False,False,[],[],none
+1295,0,3,"Williams, Mr. Howard Hugh",male,28.0,0,0,2466.0,8.01,,S,England,1295,williams mr howard hugh,24660,False,False,False,False,[],[],none
+1296,0,3,"Williams, Mr. Leslie",male,28.0,0,0,54636.0,16.02,,S,Wales,1296,williams mr leslie,546360,True,False,False,True,[736],[],name_only
+1297,1,1,"Williams, Mr. Richard Norris II",male,21.0,0,1,17597.0,61.0707,,C,Switzerland,1297,williams mr richard norris ii,175970,False,False,False,False,[],[],none
+1298,1,1,"Wilson, Miss. Helen Alice",female,31.0,0,0,16966.0,134.1,,C,,1298,wilson miss helen alice,169660,False,False,False,False,[],[],none
+1299,0,3,"Windeløv, Mr. Einar",male,21.0,0,0,3101317.0,7.05,,S,South Africa,1299,windel v mr einar,31013170,False,False,False,False,[],[],none
+1300,0,3,"Wirz, Mr. Albert",male,27.0,0,0,315154.0,8.1303,,S,Switzerland,1300,wirz mr albert,3151540,False,False,False,False,[],[],none
+1301,0,3,"Wiseman, Mr. Philippe",male,54.0,0,0,34244.0,7.05,,S,England,1301,wiseman mr philippe,342440,False,False,False,False,[],[],none
+1302,0,3,"Wittevrongel, Mr. Camilius Aloysius",male,36.0,0,0,345771.0,9.1,,S,Belgium,1302,wittevrongel mr camilius aloysius,3457710,False,False,False,False,[],[],none
+1303,0,2,"Woodward, Mr. John Wesley",male,32.0,,,250654.0,,,S,England,1303,woodward mr john wesley,2506540,False,False,False,False,[],[],none
+1304,1,1,"Woolner, Mr. Hugh",male,46.0,0,0,19947.0,35.1,,S,England,1304,woolner mr hugh,199470,True,False,False,True,[56],[],name_only
+1305,1,2,"Wright, Miss. Marion",female,26.0,0,0,220844.0,13.1,,S,England,1305,wright miss marion,2208440,False,False,False,False,[],[],none
+1306,0,1,"Wright, Mr. George",male,62.0,0,0,113807.0,26.11,,S,Canada,1306,wright mr george,1138070,True,False,False,True,[556],[],name_only
+1307,0,3,"Yasbeck, Mr. Antoni",male,27.0,1,0,2659.0,14.0901,,C,Lebanon,1307,yasbeck mr antoni,26590,True,False,False,True,[621],[],name_only
+1308,1,3,"Yazbeck, Mrs. Selini",female,15.0,1,0,2659.0,14.0901,,C,Lebanon,1308,yazbeck mrs selini,26590,False,False,False,False,[],[],none
+1309,1,1,"Young, Miss. Marie Grice",female,36.0,0,0,17760.0,135.1208,,C,United States,1309,young miss marie grice,177600,True,False,False,True,[326],[],name_only
+1310,0,3,"Yousseff (Abi Saab), Mr. Gerios",male,26.0,0,0,2685.0,7.0406,,C,Lebanon,1310,yousseff abi saab mr gerios,26850,False,False,False,False,[],[],none
+1311,0,3,"Youssiff (Sam'aan), Mr. Gerios",male,45.0,0,0,2628.0,7.0407,,C,Lebanon,1311,youssiff sam aan mr gerios,26280,False,False,False,False,[],[],none
+1312,1,3,"Yūsuf, Mrs. Kātrīn",female,23.0,0,2,2668.0,22.0702,,C,Lebanon,1312,yusuf mrs katrin,26680,False,False,False,False,[],[],none
+1313,0,2,"Yvois, Miss. Henriette",female,24.0,0,0,248747.0,13.0,,S,France,1313,yvois miss henriette,2487470,False,False,False,False,[],[],none
+1314,0,3,"Zakarian, Mr. Mapriededer",male,22.0,0,0,2656.0,7.0406,,C,Turkey,1314,zakarian mr mapriededer,26560,False,False,False,False,[],[],none
+1315,0,3,"Zakarian, Mr. Ortin",male,27.0,0,0,2670.0,7.0406,,C,Turkey,1315,zakarian mr ortin,26700,False,False,False,False,[],[],none
+1316,1,3,"Zenni, Mr. Philip",male,25.0,0,0,2620.0,7.0406,,C,Lebanon,1316,zenni mr philip,26200,False,False,False,False,[],[],none
+1317,0,3,"Zimmermann, Mr. Leo",male,29.0,0,0,315082.0,7.1706,,S,Germany,1317,zimmermann mr leo,3150820,False,False,False,False,[],[],none

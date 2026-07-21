@@ -1,0 +1,320 @@
+{
+  "database_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/data/titanic.sqlite",
+  "sql_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/sql/analysis_queries.sql",
+  "output_directory": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql",
+  "query_count": 20,
+  "queries": [
+    {
+      "name": "01_dataset_overview",
+      "description": "Overall dataset size, class coverage, survival rate, and missing-value counts.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/01_dataset_overview.csv",
+      "rows": 1,
+      "columns": 8,
+      "column_names": [
+        "passenger_count",
+        "unique_passengers",
+        "passenger_classes",
+        "survival_rate_percent",
+        "missing_age_count",
+        "missing_cabin_count",
+        "missing_embarkation_count",
+        "missing_fare_count"
+      ]
+    },
+    {
+      "name": "02_passenger_class_distribution",
+      "description": "Passenger count and share of the dataset for each class.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/02_passenger_class_distribution.csv",
+      "rows": 3,
+      "columns": 3,
+      "column_names": [
+        "passenger_class",
+        "passenger_count",
+        "dataset_share_percent"
+      ]
+    },
+    {
+      "name": "03_class_profile",
+      "description": "Demographic, fare, family, cabin, and survival profile by passenger class.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/03_class_profile.csv",
+      "rows": 3,
+      "columns": 8,
+      "column_names": [
+        "passenger_class",
+        "passenger_count",
+        "average_age",
+        "average_fare",
+        "average_family_size",
+        "percent_travelling_alone",
+        "percent_with_cabin",
+        "survival_rate_percent"
+      ]
+    },
+    {
+      "name": "04_survival_by_class_and_sex",
+      "description": "Survival outcomes by passenger class and sex.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/04_survival_by_class_and_sex.csv",
+      "rows": 6,
+      "columns": 6,
+      "column_names": [
+        "passenger_class",
+        "sex",
+        "passenger_count",
+        "survivor_count",
+        "non_survivor_count",
+        "survival_rate_percent"
+      ]
+    },
+    {
+      "name": "05_fare_statistics_by_class",
+      "description": "Fare distribution statistics for each passenger class.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/05_fare_statistics_by_class.csv",
+      "rows": 3,
+      "columns": 6,
+      "column_names": [
+        "passenger_class",
+        "passengers_with_fare",
+        "minimum_fare",
+        "average_fare",
+        "maximum_fare",
+        "fare_variance"
+      ]
+    },
+    {
+      "name": "06_age_profile_by_class",
+      "description": "Age coverage and broad age-group composition by passenger class.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/06_age_profile_by_class.csv",
+      "rows": 3,
+      "columns": 10,
+      "column_names": [
+        "passenger_class",
+        "passenger_count",
+        "passengers_with_known_age",
+        "missing_age_count",
+        "average_age",
+        "youngest_age",
+        "oldest_age",
+        "child_count",
+        "adult_count",
+        "senior_count"
+      ]
+    },
+    {
+      "name": "07_embarkation_class_mix",
+      "description": "Passenger-class composition within each embarkation port.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/07_embarkation_class_mix.csv",
+      "rows": 9,
+      "columns": 4,
+      "column_names": [
+        "embarkation_port",
+        "passenger_class",
+        "passenger_count",
+        "percentage_within_port"
+      ]
+    },
+    {
+      "name": "08_embarkation_outcomes",
+      "description": "Fare, class, and survival patterns across embarkation ports.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/08_embarkation_outcomes.csv",
+      "rows": 4,
+      "columns": 6,
+      "column_names": [
+        "embarkation_port",
+        "passenger_count",
+        "average_passenger_class",
+        "average_fare",
+        "survival_rate_percent",
+        "percent_with_cabin"
+      ]
+    },
+    {
+      "name": "09_family_profile",
+      "description": "Passenger-class and fare patterns across engineered family-size groups.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/09_family_profile.csv",
+      "rows": 10,
+      "columns": 4,
+      "column_names": [
+        "family_size_group",
+        "passenger_class",
+        "passenger_count",
+        "average_fare"
+      ]
+    },
+    {
+      "name": "10_family_survival_profile",
+      "description": "Survival rate and passenger characteristics by family-size group.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/10_family_survival_profile.csv",
+      "rows": 4,
+      "columns": 7,
+      "column_names": [
+        "family_size_group",
+        "passenger_count",
+        "average_family_size",
+        "average_fare",
+        "average_passenger_class",
+        "survival_rate_percent",
+        "percent_travelling_alone"
+      ]
+    },
+    {
+      "name": "11_cabin_profile",
+      "description": "Passenger counts by cabin deck and passenger class.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/11_cabin_profile.csv",
+      "rows": 15,
+      "columns": 3,
+      "column_names": [
+        "cabin_deck",
+        "passenger_class",
+        "passenger_count"
+      ]
+    },
+    {
+      "name": "12_cabin_access_and_outcomes",
+      "description": "Class, fare, and survival differences between passengers with and without cabin records.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/12_cabin_access_and_outcomes.csv",
+      "rows": 2,
+      "columns": 6,
+      "column_names": [
+        "cabin_status",
+        "passenger_count",
+        "average_passenger_class",
+        "average_fare",
+        "average_age",
+        "survival_rate_percent"
+      ]
+    },
+    {
+      "name": "13_title_profile",
+      "description": "Passenger-class, demographic, fare, and survival patterns by extracted title.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/13_title_profile.csv",
+      "rows": 5,
+      "columns": 6,
+      "column_names": [
+        "passenger_title",
+        "passenger_count",
+        "average_passenger_class",
+        "average_age",
+        "average_fare",
+        "survival_rate_percent"
+      ]
+    },
+    {
+      "name": "14_ticket_prefix_profile",
+      "description": "Most common engineered ticket prefixes and their class associations.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/14_ticket_prefix_profile.csv",
+      "rows": 15,
+      "columns": 5,
+      "column_names": [
+        "ticket_prefix",
+        "passenger_count",
+        "average_passenger_class",
+        "average_fare",
+        "survival_rate_percent"
+      ]
+    },
+    {
+      "name": "15_high_fare_passengers",
+      "description": "Twenty passengers with the highest recorded fares.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/15_high_fare_passengers.csv",
+      "rows": 20,
+      "columns": 10,
+      "column_names": [
+        "passenger_id",
+        "passenger_name",
+        "passenger_class",
+        "sex",
+        "age",
+        "fare",
+        "cabin",
+        "cabin_deck",
+        "ticket_prefix",
+        "survived"
+      ]
+    },
+    {
+      "name": "16_largest_family_groups",
+      "description": "Passengers belonging to the largest onboard family groups.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/16_largest_family_groups.csv",
+      "rows": 25,
+      "columns": 9,
+      "column_names": [
+        "passenger_id",
+        "passenger_name",
+        "passenger_class",
+        "family_size",
+        "family_size_group",
+        "siblings_or_spouses",
+        "parents_or_children",
+        "fare",
+        "survived"
+      ]
+    },
+    {
+      "name": "17_feature_summary",
+      "description": "Summary statistics for the principal engineered numeric and binary features.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/17_feature_summary.csv",
+      "rows": 1,
+      "columns": 10,
+      "column_names": [
+        "average_family_size",
+        "minimum_family_size",
+        "maximum_family_size",
+        "percent_alone",
+        "percent_with_cabin",
+        "average_cabin_count",
+        "maximum_cabin_count",
+        "average_log_fare",
+        "minimum_log_fare",
+        "maximum_log_fare"
+      ]
+    },
+    {
+      "name": "18_missing_data_by_class",
+      "description": "Missing-value counts and percentages within each passenger class.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/18_missing_data_by_class.csv",
+      "rows": 3,
+      "columns": 7,
+      "column_names": [
+        "passenger_class",
+        "passenger_count",
+        "missing_age_count",
+        "missing_age_percent",
+        "missing_cabin_count",
+        "missing_cabin_percent",
+        "missing_embarkation_count"
+      ]
+    },
+    {
+      "name": "19_class_prediction_feature_profile",
+      "description": "Average values of key model features by the target passenger class.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/19_class_prediction_feature_profile.csv",
+      "rows": 3,
+      "columns": 9,
+      "column_names": [
+        "passenger_class",
+        "passenger_count",
+        "average_age",
+        "average_fare",
+        "average_fare_log",
+        "average_family_size",
+        "percent_alone",
+        "percent_with_cabin",
+        "average_cabin_count"
+      ]
+    },
+    {
+      "name": "20_potential_duplicate_tickets",
+      "description": "Tickets shared by multiple passengers, which often represent travelling groups or families.",
+      "output_path": "/Users/pontusbjorkell/Desktop/Titanic-Passenger-Class-Prediction/reports/sql/20_potential_duplicate_tickets.csv",
+      "rows": 30,
+      "columns": 5,
+      "column_names": [
+        "ticket",
+        "passenger_count",
+        "represented_classes",
+        "average_fare",
+        "passenger_classes"
+      ]
+    }
+  ]
+}

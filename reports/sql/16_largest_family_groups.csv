@@ -1,0 +1,26 @@
+passenger_id,passenger_name,passenger_class,family_size,family_size_group,siblings_or_spouses,parents_or_children,fare,survived
+160,"Sage, Master. Thomas Henry",3,11,Large,8,2,69.55,0
+181,"Sage, Miss. Constance Gladys",3,11,Large,8,2,69.55,0
+202,"Sage, Mr. Frederick",3,11,Large,8,2,69.55,0
+325,"Sage, Mr. George John Jr",3,11,Large,8,2,69.55,0
+793,"Sage, Miss. Stella Anna",3,11,Large,8,2,69.55,0
+847,"Sage, Mr. Douglas Bullen",3,11,Large,8,2,69.55,0
+864,"Sage, Miss. Dorothy Edith ""Dolly""",3,11,Large,8,2,69.55,0
+60,"Goodwin, Master. William Frederick",3,8,Large,5,2,46.9,0
+72,"Goodwin, Miss. Lillian Amy",3,8,Large,5,2,46.9,0
+387,"Goodwin, Master. Sidney Leonard",3,8,Large,5,2,46.9,0
+481,"Goodwin, Master. Harold Victor",3,8,Large,5,2,46.9,0
+679,"Goodwin, Mrs. Frederick (Augusta Tyler)",3,8,Large,1,6,46.9,0
+684,"Goodwin, Mr. Charles Edward",3,8,Large,5,2,46.9,0
+26,"Asplund, Mrs. Carl Oscar (Selma Augusta Emilia Johansson)",3,7,Large,1,5,31.3875,1
+183,"Asplund, Master. Clarence Gustaf Hugo",3,7,Large,4,2,31.3875,0
+234,"Asplund, Miss. Lillian Gertrud",3,7,Large,4,2,31.3875,1
+262,"Asplund, Master. Edvin Rojj Felix",3,7,Large,4,2,31.3875,1
+14,"Andersson, Mr. Anders Johan",3,7,Large,1,5,31.275,0
+120,"Andersson, Miss. Ellis Anna Maria",3,7,Large,4,2,31.275,0
+542,"Andersson, Miss. Ingeborg Constanzia",3,7,Large,4,2,31.275,0
+543,"Andersson, Miss. Sigrid Elisabeth",3,7,Large,4,2,31.275,0
+611,"Andersson, Mrs. Anders Johan (Alfrida Konstantia Brogren)",3,7,Large,1,5,31.275,0
+814,"Andersson, Miss. Ebba Iris Alfrida",3,7,Large,4,2,31.275,0
+851,"Andersson, Master. Sigvard Harald Elias",3,7,Large,4,2,31.275,0
+69,"Andersson, Miss. Erna Alexandra",3,7,Large,4,2,7.925,1
